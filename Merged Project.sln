@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Merged Project", "Merged Project\Merged Project.vcxproj", "{B915E665-B333-4665-962F-604A714CFCF5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Merged Project", "Merged Project\Merged Project.vcxproj", "{BE819C87-63C5-48C8-B0AA-A7E7C8BFA6BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B915E665-B333-4665-962F-604A714CFCF5}.Debug|Win32.ActiveCfg = Debug|Win32
-		{B915E665-B333-4665-962F-604A714CFCF5}.Debug|Win32.Build.0 = Debug|Win32
-		{B915E665-B333-4665-962F-604A714CFCF5}.Release|Win32.ActiveCfg = Release|Win32
-		{B915E665-B333-4665-962F-604A714CFCF5}.Release|Win32.Build.0 = Release|Win32
+		{BE819C87-63C5-48C8-B0AA-A7E7C8BFA6BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE819C87-63C5-48C8-B0AA-A7E7C8BFA6BA}.Debug|Win32.Build.0 = Debug|Win32
+		{BE819C87-63C5-48C8-B0AA-A7E7C8BFA6BA}.Release|Win32.ActiveCfg = Release|Win32
+		{BE819C87-63C5-48C8-B0AA-A7E7C8BFA6BA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
