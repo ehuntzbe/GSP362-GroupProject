@@ -3,7 +3,7 @@
 #include "Combat.h"
 
 void Look();
-void Kill(Character p_target);
+void Kill(Character* p_target);
 void North();
 void South();
 void East();

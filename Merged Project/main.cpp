@@ -5,6 +5,7 @@
 #include "ItemStructure.h"
 #include "Combat.h"
 #include "Save and Load.h"
+#include "Interface.h"
 
 int main()
 {
@@ -31,7 +32,8 @@ int main()
 		switch ( nKeyPress )
 		{
 		case 1:
-			{cout << "\n New game starting\n ";}
+			{cout << "\n New game starting\n ";
+			Interface::GetInstance()->MainGame();}
 			break;
 
 		case 2:

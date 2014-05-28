@@ -9,7 +9,7 @@ void Look()
 	cout << "EXITS:"; temp.DisplayExits(); cout << endl;
 }
 
-void Kill(Character p_target)
+void Kill(Character* p_target)
 {
 	//check if character is killable
 	//Combat(player.stats, p_target.stats);

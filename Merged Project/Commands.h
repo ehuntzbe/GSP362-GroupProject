@@ -15,6 +15,7 @@ private:
 	unordered_map<string, command> m_commandSyntax;
 	//Constructor is private for singleton implementation
 	CommandControl();
+	~CommandControl();
 	static CommandControl* m_commandInstance;
 public:
 	//Adds a command to the map

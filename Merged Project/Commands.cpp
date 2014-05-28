@@ -45,6 +45,11 @@ CommandControl::CommandControl()
 	AddCommandSyntax("down", DOWN);
 }
 
+CommandControl::~CommandControl()
+{
+
+}
+
 CommandControl* CommandControl::GetInstance()
 {
 	if (m_commandInstance == NULL)
