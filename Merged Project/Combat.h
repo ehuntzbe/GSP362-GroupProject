@@ -1,4 +1,3 @@
-#pragma once
 #include <string>
 #include <iostream>
 using namespace std;
@@ -19,6 +18,8 @@ class Combatant
 	int m_currentAgi;
 	int m_currentAs;
 
+	int m_Exp;	// Experience
+
 public:
 	//Getters for Max stats
 	int GetMaxHp()		const	{ return m_maxHp; }
@@ -34,6 +35,8 @@ public:
 	int GetAgi()				{ return m_currentAgi; }
 	int GetAs()					{ return m_currentAs; }
 
+	int GetExp()				{ return m_Exp; }	// Getter for experience
+
 	//Setters for Max stats
 	void SetMaxHp(int p_hp)		{ m_maxHp = p_hp; }
 	void SetMaxMp(int p_mp)		{ m_maxMp = p_mp; }
@@ -47,4 +50,9 @@ public:
 	void SetStr(int p_str)		{ m_currentStr = p_str; }
 	void SetAgi(int p_agi)		{ m_currentAgi = p_agi; }
 	void SetAs(int p_as)		{ m_currentAs = p_as; }
+
+	void SetExp(int p_exp)		{ m_Exp = p_exp; }	// Setter for experience
 };
+
+// Combat function prototype
+int Combat(Combatant player, Combatant enemy);	// combat function prototype
