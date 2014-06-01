@@ -1,6 +1,6 @@
 #include "Player.h"
 
-
+//Function to return the amount of experience the player has
 int Player::GetExperience()
 {
 	return m_experience; 
@@ -17,11 +17,28 @@ int Player::GetLevel()
 	}
 }
 
+//Function to reset experience to 0 and increase the amount you need to gain another level
+int Player::GetExperience()
+{
+}
+
+//Function to describe the ablities 
+string Player::GetAbilites()
+{
+}
+
+//Function for new abilites
+string Player::GetAbilites()
+{
+}
+
+//Function to return the value of stats
 int Player::GetStats()
 { 
 	return m_stats; 
 }
 
+//Function to get the current room of the player
 Room* Player::GetCurrentRoom()
 {
 	return m_currentRoom;
