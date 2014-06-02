@@ -11,3 +11,4 @@ void West();
 void Up();
 void Down();
 void Score();
+void Inventory();

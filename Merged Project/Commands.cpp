@@ -9,6 +9,7 @@ enum command
 	LOOK,
 	KILL,
 	SCORE,
+	INVENTORY,
 
 	//Directional commands
 	NORTH,	SOUTH,	EAST,	WEST,	UP,	DOWN
@@ -25,6 +26,10 @@ CommandControl::CommandControl()
 
 	AddCommandSyntax("sc", SCORE);
 	AddCommandSyntax("score", SCORE);
+
+	AddCommandSyntax("inv", INVENTORY);
+	AddCommandSyntax("i", INVENTORY);
+	AddCommandSyntax("inventory", INVENTORY);
 
 	AddCommandSyntax("n", NORTH);
 	AddCommandSyntax("north", NORTH);

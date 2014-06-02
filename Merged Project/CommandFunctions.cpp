@@ -85,3 +85,8 @@ void Score()
 {
 	//Output score screen
 }
+
+void Inventory()
+{
+	PC->DisplayInventory();
+}
