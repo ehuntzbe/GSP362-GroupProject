@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include "Character.h"
+#include "Item.h"
 using namespace std;
 
 enum EXIT
@@ -33,6 +34,8 @@ private:
 	bool m_exits[6];
 	//Stores Characters
 	vector<Character> m_npc;
+	//Stores items
+	vector<Item> m_items;
 
 public:
 	//These need to add to the exit list
@@ -48,6 +51,8 @@ public:
 	string GetDesc() const {return m_desc;}
 	void SetDesc(string p_desc) {m_desc = p_desc;}
 	void DisplayExits();
+	Character GetNPC(string p_name);
+	Item GetItem(string p_name);
 	Room();
 	~Room();
 };
