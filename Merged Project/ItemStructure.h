@@ -27,7 +27,8 @@ class Item
 {
 private:
 	string m_itemName;
-	string m_descOfItem;
+	string m_shortDesc;
+	string m_desc;
 	wear_slot m_wearSlot;
 	int m_hpBoost;
 	int m_mpBoost;
@@ -43,6 +44,9 @@ public:
 	int GetStrBoost()	const	{ return m_strBoost; }
 	int GetAgiBoost()	const	{ return m_agiBoost; }
 	int GetAsBoost()	const	{ return m_asBoost; }
+	string GetName()	const	{ return m_itemName; }
+	string GetDesc()	const	{ return m_desc; }
+	string GetShort()	const	{ return m_shortDesc; }
 	//Setters
 	wear_slot SetWearSlot() const { return m_wearSlot; }
 	void SetHpBoost(int hp)		{ m_hpBoost = hp; }
@@ -50,4 +54,7 @@ public:
 	void SetStrBoost(int str)	{ m_strBoost = str; }
 	void SetAgiBoost(int agi)	{ m_hpBoost = agi; }
 	void SetAsBoost(int as)		{ m_hpBoost = as; }
+	string SetName(string p_name)	{ m_itemName = p_name; }
+	string SetDesc(string p_desc)	{ m_desc = p_desc; }
+	string SetShort(string p_short)	{ m_shortDesc = p_short; }
 };

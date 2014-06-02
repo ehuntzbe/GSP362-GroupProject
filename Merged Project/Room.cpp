@@ -101,3 +101,27 @@ void Room::DisplayExits()
 	if (m_exits[DOWN] == true)
 		cout << " DOWN";
 }
+
+Character Room::GetNPC(string p_name)
+{
+	for (vector<Character>::iterator it = m_npc.begin(); it != m_npc.end(); ++it)
+	{
+		if (it->GetName() == p_name)
+			return *it;
+	}
+	Character nullNPC;
+	nullNPC.SetName("NULL");
+	return nullNPC;
+}
+
+Item Room::GetItem(string p_name)
+{
+	for (vector<Item>::iterator it = m_items.begin(); it != m_items.end(); ++it)
+	{
+		if (it->GetName() == p_name)
+			return *it;
+	}
+	Item nullItem;
+	nullItem.SetName("NULL");
+	return nullItem;
+}
