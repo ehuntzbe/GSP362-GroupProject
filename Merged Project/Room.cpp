@@ -104,7 +104,7 @@ void Room::DisplayExits()
 
 Character Room::GetNPC(string p_name)
 {
-	for (vector<Character>::iterator it = m_npc.begin(); it != m_npc.end(); ++it)
+	for (vector<Character>::iterator it = m_npcs.begin(); it != m_npcs.end(); ++it)
 	{
 		if (it->GetName() == p_name)
 			return *it;

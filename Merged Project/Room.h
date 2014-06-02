@@ -33,7 +33,7 @@ private:
 	//Stores whether or not the player is allowed to go through an exit
 	bool m_exits[6];
 	//Stores Characters
-	vector<Character> m_npc;
+	vector<Character> m_npcs;
 	//Stores items
 	vector<Item> m_items;
 
@@ -57,8 +57,11 @@ public:
 	string GetDesc() const {return m_desc;}
 	void SetDesc(string p_desc) {m_desc = p_desc;}
 	void DisplayExits();
+	void AddNPC(Character p_npc) {m_npcs.push_back(p_npc);}
 	Character GetNPC(string p_name);
+	void AddItem(Item p_item) {m_items.push_back(p_item);}
 	Item GetItem(string p_name);
+	bool CheckExit(EXIT p_exit) const {if (m_exits[p_exit] == true) return true; return false;}
 	Room();
 	~Room();
 };
