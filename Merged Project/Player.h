@@ -7,6 +7,8 @@
 #include "Combat.h"
 using namespace std;
 
+#define PC Player::GetInstance()
+
 /*
 -PC needs exp
 -PC needs level, level ups, and stat ups from level ups
@@ -17,7 +19,7 @@ using namespace std;
 /*
 This class is a singleton.
 */
-class Player
+class Player : public Character
 {
 private:
 	string m_abilName;
@@ -25,7 +27,6 @@ private:
 	
 	int m_experience;
 	int m_level;
-	int m_stats;
 	
 	//Constructor is private for singleton implementation
 	Player();
@@ -37,12 +38,10 @@ public:
 	void SetAbilites(string p_abilName);	//Set the abilities for a level up
 	//Getters
 	int GetExperience();
-	int GetLevel();					
-	int GetStats();					
+	int GetLevel();				
 	//Setters
 	void SetExperience(int p_exp)		{ m_experience = p_exp; } 	
 	void SetLevel(int p_lvl)			{ m_level = p_lvl; }
-	void SetStats(int p_stt)			{ m_stats = p_stt; }
 	//Access the instance of Player
 	static Player* GetInstance();
 	//Access the instance of Room

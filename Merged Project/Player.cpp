@@ -32,12 +32,6 @@ string Player::GetAbilites()
 {
 }
 
-//Function to return the value of stats
-int Player::GetStats()
-{ 
-	return m_stats; 
-}
-
 //Function to get the current room of the player
 Room* Player::GetCurrentRoom()
 {

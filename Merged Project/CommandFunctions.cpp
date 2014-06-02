@@ -12,8 +12,7 @@ void Look()
 void Kill(Character* p_target)
 {
 	if (PC->GetCurrentRoom()->GetNPC(p_target->GetName()).GetName() != "NULL")
-		//Combat(player.stats, p_target.stats);
-		cout << "Init combat." << endl;
+		Combat(PC->GetStats(), p_target->GetStats());
 }
 
 void North()
