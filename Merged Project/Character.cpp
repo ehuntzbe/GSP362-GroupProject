@@ -5,7 +5,6 @@ using namespace std;
 
 string Character::GetName()
 {
-	getline(cin, m_name);
 	return m_name;
 }
 

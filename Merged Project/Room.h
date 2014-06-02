@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
+#include "Character.h"
 using namespace std;
 
 enum EXIT
@@ -29,6 +31,9 @@ private:
 	string m_desc;
 	//Stores whether or not the player is allowed to go through an exit
 	bool m_exits[6];
+	//Stores Characters
+	vector<Character> m_npc;
+
 public:
 	//These need to add to the exit list
 	//These functions connect the room to another room and return false if attempting to over-write a room.
