@@ -1,5 +1,5 @@
 #include "Room.h"
-#include "Character.h"
+#include "Player.h"
 #include "Combat.h"
 
 void Look();
