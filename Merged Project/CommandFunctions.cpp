@@ -11,39 +11,75 @@ void Look()
 
 void Kill(Character* p_target)
 {
-	//check if character is killable
-	//Combat(player.stats, p_target.stats);
+	if (PC->GetCurrentRoom()->GetNPC(p_target->GetName()).GetName() != "NULL")
+		//Combat(player.stats, p_target.stats);
+		cout << "Init combat." << endl;
 }
 
 void North()
 {
-	//set player's current room to current room->north
-	Look();
+	if (PC->GetCurrentRoom()->CheckExit(NORTH))
+	{
+		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetN());
+		Look();
+	}
+	else
+		cout << "There is no exit that way." << endl;
 }
 
 void South()
 {
-
+	if (PC->GetCurrentRoom()->CheckExit(SOUTH))
+	{
+		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetS());
+		Look();
+	}
+	else
+		cout << "There is no exit that way." << endl;
 }
 
 void East()
 {
-
+	if (PC->GetCurrentRoom()->CheckExit(EAST))
+	{
+		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetE());
+		Look();
+	}
+	else
+		cout << "There is no exit that way." << endl;
 }
 
 void West()
 {
-
+	if (PC->GetCurrentRoom()->CheckExit(WEST))
+	{
+		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetW());
+		Look();
+	}
+	else
+		cout << "There is no exit that way." << endl;
 }
 
 void Up()
 {
-
+	if (PC->GetCurrentRoom()->CheckExit(UP))
+	{
+		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetU());
+		Look();
+	}
+	else
+		cout << "There is no exit that way." << endl;
 }
 
 void Down()
 {
-
+	if (PC->GetCurrentRoom()->CheckExit(DOWN))
+	{
+		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetD());
+		Look();
+	}
+	else
+		cout << "There is no exit that way." << endl;
 }
 
 void Score()

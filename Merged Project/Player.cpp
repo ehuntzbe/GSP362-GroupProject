@@ -43,3 +43,8 @@ Room* Player::GetCurrentRoom()
 {
 	return m_currentRoom;
 }
+
+void Player::SetCurrentRoom(Room* p_room)
+{
+	m_currentRoom = p_room;
+}

@@ -47,4 +47,5 @@ public:
 	static Player* GetInstance();
 	//Access the instance of Room
 	Room* GetCurrentRoom();
+	void SetCurrentRoom(Room* p_room);
 };

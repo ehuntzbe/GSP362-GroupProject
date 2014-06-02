@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include "Character.h"
-#include "Item.h"
+#include "ItemStructure.h"
 using namespace std;
 
 enum EXIT
@@ -46,6 +46,12 @@ public:
 	bool W(Room* p_w);
 	bool U(Room* p_u);
 	bool D(Room* p_d);
+	Room* GetN() const {return m_north;}
+	Room* GetS() const {return m_south;}
+	Room* GetE() const {return m_east;}
+	Room* GetW() const {return m_west;}
+	Room* GetU() const {return m_up;}
+	Room* GetD() const {return m_down;}
 	string GetName() const {return m_name;}
 	void SetName(string p_name) {m_name = p_name;}
 	string GetDesc() const {return m_desc;}
