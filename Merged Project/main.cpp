@@ -1,7 +1,3 @@
-//I hate git and github
-
-
-
 #include "Character.h"
 #include "Commands.h"
 #include "world.h"
