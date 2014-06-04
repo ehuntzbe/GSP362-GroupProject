@@ -29,7 +29,7 @@ private:
 	int m_level;
 	
 	//Constructor is private for singleton implementation
-	Player();
+	Player() {}
 	static Player* m_Player;
 	Room*   m_currentRoom;
 
@@ -37,8 +37,8 @@ public:
 	string GetAbilites();	//Get the abilities for player after a level up
 	void SetAbilites(string p_abilName);	//Set the abilities for a level up
 	//Getters
-	int GetExperience();
-	int GetLevel();				
+	int GetExperience() const {return m_experience;}
+	int GetLevel() const {return m_level;}
 	//Setters
 	void SetExperience(int p_exp)		{ m_experience = p_exp; } 	
 	void SetLevel(int p_lvl)			{ m_level = p_lvl; }
