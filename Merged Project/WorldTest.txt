@@ -2,12 +2,16 @@
 
 Room1
 Desc1
+2
 
 Room2
 Desc2
+0
 
 Room3
 Desc3
+0
 
 Room4
 SurpriseDesc4
+1
