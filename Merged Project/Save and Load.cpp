@@ -1,40 +1,45 @@
 #include "Save and Load.h"
 
-void Save(Character& playerChar)
+void Save(Player& playerChar)
 {
 	ofstream myfile ("PlayerCharacter.txt");
 	if (myfile.is_open())
 	{
+		Combatant temp;
+		temp = playerChar.GetStats();
+		
 		myfile << playerChar.GetName();
 		myfile << "\n";
-		myfile << playerChar.GetMaxHp();
+		myfile << temp.GetMaxHp();
 		myfile << "\n";
-		myfile << playerChar.GetMaxMp();
+		myfile << temp.GetMaxMp();
 		myfile << "\n";
-		myfile << playerChar.GetMaxStr();
+		myfile << temp.GetMaxStr();
 		myfile << "\n";
-		myfile << playerChar.GetMaxAgi();	
+		myfile << temp.GetMaxAgi();	
 		myfile << "\n";
-		myfile << playerChar.GetMaxAs();
+		myfile << temp.GetMaxAs();
 		myfile << "\n";
-		myfile << playerChar.GetHp();	
+		myfile << temp.GetHp();	
 		myfile << "\n";
-		myfile << playerChar.GetMp();	
+		myfile << temp.GetMp();	
 		myfile << "\n";
-		myfile << playerChar.GetStr();	
+		myfile << temp.GetStr();	
 		myfile << "\n";
-		myfile << playerChar.GetAgi();	
+		myfile << temp.GetAgi();	
 		myfile << "\n";
-		myfile << playerChar.GetAs();
+		myfile << temp.GetAs();
+		myfile << "\n";
+		myfile << temp.GetExp();
 		myfile << "\n";
 		myfile.close();
 
-		cout << "Save Completed";
+		cout << endl << "Save Completed" << endl << endl;
 	}
 	else cout << "Unable to open file Save fialed";
 }
 
-void Load(Character& playerChar)
+void Load(Player& playerChar)
 {
 	string m_line;
 	int m_stat = 0;
@@ -43,33 +48,39 @@ void Load(Character& playerChar)
 	{
 		getline (myfile,m_line);
 		if (m_line != "")
-		{	
-		playerChar.SetName(m_line);
-		getline (myfile,m_line);
-		playerChar.SetMaxHp(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetMaxMp(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetMaxStr(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetMaxAgi(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetMaxAs(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetHp(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetMp(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetStr(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetAgi(atoi(m_line.c_str()));
-		getline (myfile,m_line);
-		playerChar.SetAs(atoi(m_line.c_str()));
+		{
+			Combatant temp;
+			
+			playerChar.SetName(m_line);
+			getline (myfile,m_line);
+			temp.SetMaxHp(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetMaxMp(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetMaxStr(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetMaxAgi(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetMaxAs(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetHp(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetMp(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetStr(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetAgi(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetAs(atoi(m_line.c_str()));
+			getline (myfile,m_line);
+			temp.SetExp(atoi(m_line.c_str()));
 
-		cout <<  "Load Completed";
+			playerChar.SetStats(temp);
+
+			cout << endl <<"Load Completed" << endl << endl;
 
 		}
-		
+
 		else
 		{
 			cout << "Unable to Load file";

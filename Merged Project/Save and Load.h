@@ -2,8 +2,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "Character.h"
+#include "Player.h"
 using namespace std;
 
-void Save(Character& playerChar);
-void Load(Character& playerChar);
+void Save(Player& playerChar);
+void Load(Player& playerChar);
