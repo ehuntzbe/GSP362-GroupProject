@@ -38,7 +38,7 @@ public:
 	void SetAbilites(string p_abilName);	//Set the abilities for a level up
 	//Getters
 	int GetExperience() const {return m_experience;}
-	int GetLevel() const {return m_level;}
+	int GetLevel() const {return m_level;}				
 	//Setters
 	void SetExperience(int p_exp)		{ m_experience = p_exp; } 	
 	void SetLevel(int p_lvl)			{ m_level = p_lvl; }

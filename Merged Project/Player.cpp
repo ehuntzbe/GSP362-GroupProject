@@ -2,7 +2,6 @@
 
 Player* Player::m_Player = NULL;
 
-
 //Function to describe the ablities 
 string Player::GetAbilites()
 {
