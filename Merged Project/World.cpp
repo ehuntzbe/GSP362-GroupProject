@@ -55,49 +55,49 @@ void World::DisplayRoom(int p_roomID)
 	cout << "EXITS:"; m_world[p_roomID]->DisplayExits(); cout << endl;
 }
 
-void World::LoadNpcsFromFile(string npc_fileName, Room* test)
+void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 {
 	//test->NpcResize(test->GetNumNpc());
-	ifstream myfile (npc_fileName);
-	string m_line;
+	ifstream myfile (p_npcFileName);
+	string line;
 	int tempcount = 0;
 
 	if (myfile.is_open())
 	{
-		//getline (myfile,m_line);
-		while ( getline (myfile,m_line) )
+		//getline (myfile,line);
+		while ( getline (myfile,line) )
 		{
-			if(m_line == test->GetName())
+			if(line == p_room->GetName())
 			{
 				for(int a = 0; a < test->GetNumNpc(); a++)
 				{
 				Character m_npc;
 				Combatant temp;
 
-				getline (myfile,m_line);
-				m_npc.SetName(m_line);
-				getline (myfile,m_line);
-				temp.SetMaxHp(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetMaxMp(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetMaxStr(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetMaxAgi(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetMaxAs(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetHp(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetMp(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetStr(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetAgi(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetAs(atoi(m_line.c_str()));
-				getline (myfile,m_line);
-				temp.SetExp(atoi(m_line.c_str()));
+				getline (myfile,line);
+				m_npc.SetName(line);
+				getline (myfile,line);
+				temp.SetMaxHp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxMp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxStr(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxAgi(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxAs(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetHp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetStr(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetAgi(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetAs(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetExp(atoi(line.c_str()));
 
 				m_npc.SetStats(temp);
 
@@ -111,7 +111,7 @@ void World::LoadNpcsFromFile(string npc_fileName, Room* test)
 			{
 				cout << "Unable to Load file";
 			}*/
-			if(tempcount == test->GetNumNpc())
+			if(tempcount == p_room->GetNumNpc())
 			{
 				myfile.close();
 			}
@@ -120,7 +120,7 @@ void World::LoadNpcsFromFile(string npc_fileName, Room* test)
 	else cout << "Unable to open file Load failed"; 
 }
 
-void World::LoadRoomsFromFile(string p_fileName, string npc_fileName)
+void World::LoadRoomsFromFile(string p_fileName, string p_npcFileName)
 {
 	int counter = -1;
 	string line;
@@ -151,7 +151,7 @@ void World::LoadRoomsFromFile(string p_fileName, string npc_fileName)
 
 				if(m_world[counter]->GetNumNpc() > 0)
 				{
-					LoadNpcsFromFile(npc_fileName, m_world[counter]);
+					LoadNpcsFromFile(p_npcFileName, m_world[counter]);
 				}
 			}
 		}

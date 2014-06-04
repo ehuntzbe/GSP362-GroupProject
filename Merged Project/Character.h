@@ -19,7 +19,7 @@ public:
 	string GetName();				//Get name of Character
 	void SetName(string p_name);	//Set name of Character
 	Combatant GetStats() const {return m_stats;}
-	void SetStats(Combatant temp);
+	void SetStats(Combatant p_stats);
 	void DisplayInventory();
 	vector<Item> GetInventory() const {return m_inventory;}
 	void AddItem(Item p_item) {m_inventory.push_back(p_item);}

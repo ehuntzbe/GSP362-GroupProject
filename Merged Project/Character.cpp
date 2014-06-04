@@ -23,17 +23,17 @@ void Character::DisplayInventory()
 	cout << endl;
 }
 
-void Character::SetStats(Combatant temp)
+void Character::SetStats(Combatant p_stats)
 {	
-	m_stats.SetMaxHp(temp.GetMaxHp());		
-	m_stats.SetMaxMp(temp.GetMaxMp());		
-	m_stats.SetMaxStr(temp.GetMaxStr());	
-	m_stats.SetMaxAgi(temp.GetMaxAgi());	
-	m_stats.SetMaxAs(temp.GetMaxAs());		
-	m_stats.SetHp(temp.GetHp());		
-	m_stats.SetMp(temp.GetMp());		
-	m_stats.SetStr(temp.GetStr());		
-	m_stats.SetAgi(temp.GetAgi());		
-	m_stats.SetAs(temp.GetAs());		
-	m_stats.SetExp(temp.GetExp());	
+	m_stats.SetMaxHp(p_stats.GetMaxHp());		
+	m_stats.SetMaxMp(p_stats.GetMaxMp());		
+	m_stats.SetMaxStr(p_stats.GetMaxStr());	
+	m_stats.SetMaxAgi(p_stats.GetMaxAgi());	
+	m_stats.SetMaxAs(p_stats.GetMaxAs());		
+	m_stats.SetHp(p_stats.GetHp());		
+	m_stats.SetMp(p_stats.GetMp());		
+	m_stats.SetStr(p_stats.GetStr());		
+	m_stats.SetAgi(p_stats.GetAgi());		
+	m_stats.SetAs(p_stats.GetAs());		
+	m_stats.SetExp(p_stats.GetExp());	
 }
