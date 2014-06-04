@@ -1,3 +1,4 @@
+// Eric H. 6/4
 #pragma once
 #include <string>
 #include <iostream>
@@ -53,6 +54,8 @@ public:
 	void SetAs(int p_as)		{ m_currentAs = p_as; }
 
 	void SetExp(int p_exp)		{ m_Exp = p_exp; }	// Setter for experience
+
+	Combatant operator+(Combatant p_other);
 };
 
 // Combat function prototype

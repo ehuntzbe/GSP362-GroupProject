@@ -1,9 +1,10 @@
+// Eric H. 6/4
 #include <string>
 #include <iostream>
 #include "Character.h"
 using namespace std;
 
-string Character::GetName()
+string Character::GetName() const
 {
 	return m_name;
 }
@@ -11,6 +12,16 @@ string Character::GetName()
 void Character::SetName(string p_name)
 {
 	 m_name = p_name;
+}
+
+string Character::GetDesc() const
+{
+	return m_desc;
+}
+
+void Character::SetDesc(string p_desc)
+{
+	m_desc = p_desc;
 }
 
 void Character::DisplayInventory()

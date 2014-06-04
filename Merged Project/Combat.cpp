@@ -1,3 +1,4 @@
+// Eric H. 6/4
 #include <string>
 #include <iostream>
 #include <cstdlib>
@@ -99,4 +100,15 @@ int Combat(Combatant player, Combatant enemy)
 			return DEAD;
 		}
 	}
+}
+
+Combatant Combatant::operator+(Combatant p_other)
+{
+	Combatant combinedStats;
+	combinedStats.m_currentAgi = m_currentAgi + p_other.m_currentAgi;
+	combinedStats.m_currentAs = m_currentAs + p_other.m_currentAs;
+	combinedStats.m_currentStr = m_currentStr + p_other.m_currentStr;
+	combinedStats.m_currentHp = m_currentHp + p_other.m_currentHp;
+	combinedStats.m_currentMp = m_currentMp + p_other.m_currentMp;
+	return combinedStats;
 }

@@ -74,6 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Abilities.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Combat.h" />
     <ClInclude Include="CommandFunctions.h" />
@@ -87,6 +88,7 @@
     <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Abilities.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Combat.cpp" />
     <ClCompile Include="CommandFunctions.cpp" />

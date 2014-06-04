@@ -1,3 +1,4 @@
+// Eric H. 6/4
 #pragma once
 #include <string>
 #include <iostream>
@@ -16,8 +17,10 @@ private:
 	Combatant m_stats;
 	vector<Item> m_inventory;
 public:
-	string GetName();				//Get name of Character
+	string GetName() const;				//Get name of Character
 	void SetName(string p_name);	//Set name of Character
+	string GetDesc() const;
+	void SetDesc(string p_desc);
 	Combatant GetStats() const {return m_stats;}
 	void SetStats(Combatant p_stats);
 	void DisplayInventory();
