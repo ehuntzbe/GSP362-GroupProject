@@ -125,3 +125,13 @@ Item Room::GetItem(string p_name)
 	nullItem.SetName("NULL");
 	return nullItem;
 }
+
+void Room::NpcResize(int size)
+{
+	m_npcs.resize(size);
+}
+
+void Room::NpcAdd(Character p_npc)
+{
+	m_npcs.push_back(p_npc);
+}
