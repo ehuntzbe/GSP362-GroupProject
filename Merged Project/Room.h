@@ -34,6 +34,8 @@ private:
 	bool m_exits[6];
 	//Stores Characters
 	vector<Character> m_npcs;
+	//Stores number of Characters
+	int m_Numnpcs;
 	//Stores items
 	vector<Item> m_items;
 
@@ -56,8 +58,12 @@ public:
 	void SetName(string p_name) {m_name = p_name;}
 	string GetDesc() const {return m_desc;}
 	void SetDesc(string p_desc) {m_desc = p_desc;}
+	int GetNumNpc() const {return m_Numnpcs;}
+	void SetNumNpc(string p_num) {m_Numnpcs = atoi(p_num.c_str());}
 	void DisplayExits();
-	void AddNPC(Character p_npc) {m_npcs.push_back(p_npc);}
+	void NpcResize(int size);
+	void NpcAdd(Character p_npc);
+	vector<Character> NpcList() {return m_npcs;}
 	Character GetNPC(string p_name);
 	void AddItem(Item p_item) {m_items.push_back(p_item);}
 	Item GetItem(string p_name);
