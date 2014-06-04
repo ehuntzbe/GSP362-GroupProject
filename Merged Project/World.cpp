@@ -69,7 +69,7 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 		{
 			if(line == p_room->GetName())
 			{
-				for(int a = 0; a < test->GetNumNpc(); a++)
+				for(int a = 0; a < p_room->GetNumNpc(); a++)
 				{
 				Character m_npc;
 				Combatant temp;
@@ -101,7 +101,7 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 
 				m_npc.SetStats(temp);
 
-				test->NpcAdd(m_npc);
+				p_room->NpcAdd(m_npc);
 
 				tempcount++;
 				}
