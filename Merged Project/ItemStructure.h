@@ -55,6 +55,6 @@ public:
 	void SetAgiBoost(int agi)	{ m_hpBoost = agi; }
 	void SetAsBoost(int as)		{ m_hpBoost = as; }
 	void SetName(string p_name)	{ m_itemName = p_name; }
-	string SetDesc(string p_desc)	{ m_desc = p_desc; }
-	string SetShort(string p_short)	{ m_shortDesc = p_short; }
+	void SetDesc(string p_desc)	{ m_desc = p_desc; }
+	void SetShort(string p_short)	{ m_shortDesc = p_short; }
 };
