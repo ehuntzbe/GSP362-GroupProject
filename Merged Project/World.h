@@ -22,6 +22,8 @@ public:
 	bool UD(Room* p_u, Room* p_d);
 	void ConfirmConnection(bool p_connection);
 	void ConnectRooms();
-	void LoadRoomsFromFile(string p_fileName);
+	void LoadRoomsFromFile(string p_fileName, string npc_fileName);
+	void LoadNpcsFromFile(string npc_fileName, Room* test);
 	void DisplayRoom(int p_roomID);
+	int RoomCount();
 };
