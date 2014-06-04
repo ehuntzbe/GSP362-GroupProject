@@ -5,5 +5,5 @@
 #include "Player.h"
 using namespace std;
 
-void Save(Player& playerChar);
-void Load(Player& playerChar);
+void Save();
+void Load();

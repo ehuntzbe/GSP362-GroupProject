@@ -1,14 +1,14 @@
 #include "Save and Load.h"
 
-void Save(Player& playerChar)
+void Save()
 {
 	ofstream myfile ("PlayerCharacter.txt");
 	if (myfile.is_open())
 	{
 		Combatant temp;
-		temp = playerChar.GetStats();
+		temp = PC->GetStats();
 		
-		myfile << playerChar.GetName();
+		myfile << PC->GetName();
 		myfile << "\n";
 		myfile << temp.GetMaxHp();
 		myfile << "\n";
@@ -39,43 +39,43 @@ void Save(Player& playerChar)
 	else cout << "Unable to open file Save fialed";
 }
 
-void Load(Player& playerChar)
+void Load()
 {
-	string m_line;
+	string line;
 	int m_stat = 0;
 	ifstream myfile ("PlayerCharacter.txt");
 	if (myfile.is_open())
 	{
-		getline (myfile,m_line);
-		if (m_line != "")
+		getline (myfile,line);
+		if (line != "")
 		{
 			Combatant temp;
 			
-			playerChar.SetName(m_line);
-			getline (myfile,m_line);
-			temp.SetMaxHp(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetMaxMp(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetMaxStr(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetMaxAgi(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetMaxAs(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetHp(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetMp(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetStr(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetAgi(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetAs(atoi(m_line.c_str()));
-			getline (myfile,m_line);
-			temp.SetExp(atoi(m_line.c_str()));
+			PC->SetName(line);
+			getline (myfile,line);
+			temp.SetMaxHp(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetMaxMp(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetMaxStr(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetMaxAgi(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetMaxAs(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetHp(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetMp(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetStr(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetAgi(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetAs(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetExp(atoi(line.c_str()));
 
-			playerChar.SetStats(temp);
+			PC->SetStats(temp);
 
 			cout << endl <<"Load Completed" << endl << endl;
 
