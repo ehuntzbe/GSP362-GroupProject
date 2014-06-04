@@ -3,19 +3,23 @@
 #include <string>
 #include <fstream>
 #include "Room.h"
+#include "Player.h"
 
 using namespace std;
 
 const bool DISPLAY_ROOM_ID = true;
+#define WORLD World::GetInstance()
 
+//Using singleton structure
 class World
 {
 private:
 	int m_roomCount;
 	Room* *m_world;
-public:
+	static World* m_instance;
 	World();
 	~World();
+public:
 	//Functions that simplify two-way graph connections, return false if attempting to over-write a room.
 	bool NS(Room* p_n, Room* p_s);
 	bool WE(Room* p_w, Room* p_e);
@@ -26,4 +30,5 @@ public:
 	void LoadNpcsFromFile(string p_npcFileName, Room* p_room);
 	void DisplayRoom(int p_roomID);
 	int RoomCount();
+	static World* GetInstance();
 };

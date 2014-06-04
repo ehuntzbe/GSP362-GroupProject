@@ -2,11 +2,20 @@
 
 void Look()
 {
-	//get character's current room
-	Room temp;
-	cout << temp.GetName() << endl;
-	cout << temp.GetDesc() << endl;
-	cout << "EXITS:"; temp.DisplayExits(); cout << endl;
+	cout << PC->GetCurrentRoom()->GetName() << endl;
+	cout << PC->GetCurrentRoom()->GetDesc() << endl;
+	cout << "EXITS:"; PC->GetCurrentRoom()->DisplayExits(); cout << endl;
+	cout << "-Others here with you-" << endl;
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		vector<Character> others = PC->GetCurrentRoom()->NpcList();
+		for (vector<Character>::iterator it = others.begin(); it != others.end(); ++it)
+		{
+			cout << it->GetDesc() << endl;
+		}
+	}
+	else
+		cout << "Nobody." << endl;
 }
 
 void Kill(Character* p_target)

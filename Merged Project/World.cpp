@@ -1,8 +1,19 @@
 #include "World.h"
 
+World* World::m_instance = NULL;
+
 World::World()
 {
 	m_world = NULL;
+}
+
+World* World::GetInstance()
+{
+	if (m_instance == NULL)
+	{
+		m_instance = new World();
+	}
+	return m_instance;
 }
 
 bool World::NS(Room* p_n, Room* p_s)
@@ -20,6 +31,7 @@ bool World::UD(Room* p_u, Room* p_d)
 	return p_u->D(p_d) == true && p_d->U(p_u) == true;
 }
 
+//This function is outdated, but will not be deleted due to its potential ability to help in testing.
 void World::DisplayRoom(int p_roomID)
 {
 	cout << endl;
@@ -175,6 +187,7 @@ void World::ConfirmConnection(bool p_connection)
 
 void World::ConnectRooms()
 {
+	PC->SetCurrentRoom(m_world[0]);
 	ConfirmConnection(NS(m_world[1], m_world[0]));
 	ConfirmConnection(NS(m_world[0], m_world[1]));
 	ConfirmConnection(m_world[3]->N(m_world[2]));

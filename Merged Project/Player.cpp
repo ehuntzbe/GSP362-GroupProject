@@ -76,4 +76,5 @@ void Player::GenderNamePrompt()
 		getline(cin, input);
 	} while (input == "n");
 	PC->SetName(name);
+	cout << "Welcome to the world.." << endl;
 }

@@ -3,8 +3,18 @@
 #include <string>
 using namespace std;
 
-//Created here for class usage, defined in Commands.cpp
-enum command;
+//Store all valid commands here - INVALID MUST BE THE FIRST COMMAND
+enum command
+{
+	INVALID,
+	LOOK,
+	KILL,
+	SCORE,
+	INVENTORY,
+
+	//Directional commands
+	GO_NORTH,	GO_SOUTH,	GO_EAST,	GO_WEST,	GO_UP,	GO_DOWN
+};
 
 /*
 This class is a singleton. Access the only instance with CommandControl::GetInstance()

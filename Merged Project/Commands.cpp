@@ -2,18 +2,7 @@
 
 CommandControl* CommandControl::m_commandInstance = NULL;
 
-//Store all valid commands here - INVALID MUST BE THE FIRST COMMAND
-enum command
-{
-	INVALID,
-	LOOK,
-	KILL,
-	SCORE,
-	INVENTORY,
 
-	//Directional commands
-	NORTH,	SOUTH,	EAST,	WEST,	UP,	DOWN
-};
 
 //Store all command syntaxes here
 CommandControl::CommandControl()
@@ -31,23 +20,23 @@ CommandControl::CommandControl()
 	AddCommandSyntax("i", INVENTORY);
 	AddCommandSyntax("inventory", INVENTORY);
 
-	AddCommandSyntax("n", NORTH);
-	AddCommandSyntax("north", NORTH);
+	AddCommandSyntax("n", GO_NORTH);
+	AddCommandSyntax("north", GO_NORTH);
 
-	AddCommandSyntax("s", SOUTH);
-	AddCommandSyntax("south", SOUTH);
+	AddCommandSyntax("s", GO_SOUTH);
+	AddCommandSyntax("south", GO_SOUTH);
 
-	AddCommandSyntax("e", EAST);
-	AddCommandSyntax("east", EAST);
+	AddCommandSyntax("e", GO_EAST);
+	AddCommandSyntax("east", GO_EAST);
 
-	AddCommandSyntax("w", WEST);
-	AddCommandSyntax("west", WEST);
+	AddCommandSyntax("w", GO_WEST);
+	AddCommandSyntax("west", GO_WEST);
 
-	AddCommandSyntax("u", UP);
-	AddCommandSyntax("up", UP);
+	AddCommandSyntax("u", GO_UP);
+	AddCommandSyntax("up", GO_UP);
 
-	AddCommandSyntax("d", DOWN);
-	AddCommandSyntax("down", DOWN);
+	AddCommandSyntax("d", GO_DOWN);
+	AddCommandSyntax("down", GO_DOWN);
 }
 
 CommandControl::~CommandControl()

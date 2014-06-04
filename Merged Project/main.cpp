@@ -28,11 +28,13 @@ int main()
 		cout << " 4) Exit " << endl;
 		cout << "\n What would you like to do? ";
 		cin >> nKeyPress;
+		cin.clear();
 
 		switch ( nKeyPress )
 		{
 		case 1:
 			{cout << "\n New game starting\n ";
+			PC->GenderNamePrompt();
 			Interface::GetInstance()->MainGame();}
 			break;
 

@@ -2,6 +2,8 @@
 #include <string>
 #include "CommandFunctions.h"
 #include "InputParsing.h"
+#include "World.h"
+#include "Commands.h"
 using namespace std;
 
 class Interface
