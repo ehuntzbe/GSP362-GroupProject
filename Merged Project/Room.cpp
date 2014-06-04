@@ -126,9 +126,9 @@ Item Room::GetItem(string p_name)
 	return nullItem;
 }
 
-void Room::NpcResize(int size)
+void Room::NpcResize(int p_size)
 {
-	m_npcs.resize(size);
+	m_npcs.resize(p_size);
 }
 
 void Room::NpcAdd(Character p_npc)
