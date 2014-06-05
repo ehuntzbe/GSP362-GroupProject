@@ -10,6 +10,8 @@ void Save()
 		
 		myfile << PC->GetName();
 		myfile << "\n";
+		myfile << PC->GetDesc();
+		myfile << "\n";
 		myfile << temp.GetMaxHp();
 		myfile << "\n";
 		myfile << temp.GetMaxMp();
@@ -52,6 +54,8 @@ void Load()
 			Combatant temp;
 			
 			PC->SetName(line);
+			getline (myfile,line);
+			PC->SetDesc(line);
 			getline (myfile,line);
 			temp.SetMaxHp(atoi(line.c_str()));
 			getline (myfile,line);

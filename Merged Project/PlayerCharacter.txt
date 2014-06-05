@@ -1,4 +1,5 @@
 generic
+male
 500
 700
 200
