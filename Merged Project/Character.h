@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <vector>
+#include <list>
 #include "Combat.h"
 #include "ItemStructure.h"
 using namespace std;
@@ -15,7 +15,7 @@ private:
 	string m_name;
 	string m_desc;
 	Combatant m_stats;
-	vector<Item> m_inventory;
+	list<Item> m_inventory;
 public:
 	string GetName() const;				//Get name of Character
 	void SetName(string p_name);	//Set name of Character
@@ -24,6 +24,7 @@ public:
 	Combatant GetStats() const {return m_stats;}
 	void SetStats(Combatant p_stats);
 	void DisplayInventory();
-	vector<Item> GetInventory() const {return m_inventory;}
+	list<Item> GetInventory() const {return m_inventory;}
 	void AddItem(Item p_item) {m_inventory.push_back(p_item);}
+	void RemoveItem(string p_itemName);
 };

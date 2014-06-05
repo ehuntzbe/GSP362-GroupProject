@@ -27,7 +27,7 @@ void Character::SetDesc(string p_desc)
 void Character::DisplayInventory()
 {
 	cout << "You are carrying " << m_inventory.size() << " items in your inventory." << endl;
-	for (vector<Item>::iterator it = m_inventory.begin(); it != m_inventory.end(); ++it)
+	for (list<Item>::iterator it = m_inventory.begin(); it != m_inventory.end(); ++it)
 	{
 		cout << it->GetShort() << endl;
 	}
@@ -47,4 +47,16 @@ void Character::SetStats(Combatant p_stats)
 	m_stats.SetAgi(p_stats.GetAgi());		
 	m_stats.SetAs(p_stats.GetAs());		
 	m_stats.SetExp(p_stats.GetExp());	
+}
+
+void Character::RemoveItem(string p_itemName)
+{
+	for (list<Item>::iterator it = m_inventory.begin(); it != m_inventory.end(); ++it)
+	{
+		if (it->GetName() == p_itemName)
+		{
+			m_inventory.erase(it);
+			break;
+		}
+	}
 }

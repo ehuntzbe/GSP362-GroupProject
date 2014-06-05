@@ -78,3 +78,11 @@ void Player::GenderNamePrompt()
 	PC->SetName(name);
 	cout << "Welcome to the world.." << endl;
 }
+
+void Player::EquipItem(Item p_item)
+{
+	if (m_equipment[p_item.GetWearSlot()].GetName() != "null")
+		AddItem(m_equipment[p_item.GetWearSlot()]);
+	m_equipment[p_item.GetWearSlot()] = p_item;
+	RemoveItem(p_item.GetName());
+}

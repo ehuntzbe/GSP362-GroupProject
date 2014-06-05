@@ -6,6 +6,7 @@
 #include "Room.h"
 #include "Combat.h"
 #include "Abilities.h"
+#include <unordered_map>
 using namespace std;
 
 #define PC Player::GetInstance()
@@ -29,6 +30,7 @@ private:
 	int m_level;
 	Room* m_currentRoom;
 	vector<ability> m_abilities; //all abilities (not just unlocked ones)
+	unordered_map<wear_slot, Item> m_equipment; //equipment slots
 	//Constructor is private for singleton implementation
 	Player();
 	static Player* m_Player;
@@ -46,4 +48,5 @@ public:
 	static Player* GetInstance();
 	void AddAbility(ability p_ability);
 	void GenderNamePrompt();
+	void EquipItem(Item p_item);
 };

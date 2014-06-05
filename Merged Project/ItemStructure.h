@@ -37,6 +37,7 @@ private:
 	int m_asBoost;
 
 public:
+	Item() {m_itemName = "null";}
 	//Getters
 	wear_slot GetWearSlot() const { return m_wearSlot; }
 	int GetHpBoost()	const	{ return m_hpBoost; }
@@ -48,7 +49,7 @@ public:
 	string GetDesc()	const	{ return m_desc; }
 	string GetShort()	const	{ return m_shortDesc; }
 	//Setters
-	wear_slot SetWearSlot() const { return m_wearSlot; }
+	void SetWearSlot(wear_slot p_wearSlot) { m_wearSlot = p_wearSlot; }
 	void SetHpBoost(int hp)		{ m_hpBoost = hp; }
 	void SetMpBoost(int mp)		{ m_mpBoost = mp; }
 	void SetStrBoost(int str)	{ m_strBoost = str; }
