@@ -47,6 +47,7 @@ public:
 	//Access the instance of Player
 	static Player* GetInstance();
 	void AddAbility(ability p_ability);
+	vector<ability> GetAbilities() const {return m_abilities;}
 	void GenderNamePrompt();
 	void EquipItem(Item p_item);
 };
