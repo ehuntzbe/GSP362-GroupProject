@@ -14,8 +14,9 @@ class Character
 private:
 	string m_name;
 	string m_desc;
-	Combatant m_stats;
 	list<Item> m_inventory;
+protected:
+	Combatant m_stats;
 public:
 	string GetName() const;				//Get name of Character
 	void SetName(string p_name);	//Set name of Character

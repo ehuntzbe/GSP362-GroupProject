@@ -17,5 +17,5 @@ struct ability
 	string m_name; //name displayed in the ability list
 	string m_desc; //description given when ability is used
 	bool IsUnlocked() const; //returns whether or not the unlock level is lower than the player's level
-	void AddAbilities();
+	static void AddAbilities();
 };

@@ -35,6 +35,7 @@ int main()
 		case 1:
 			{cout << "\n New game starting\n ";
 			PC->GenderNamePrompt();
+			ability::AddAbilities();
 			Interface::GetInstance()->MainGame();}
 			break;
 

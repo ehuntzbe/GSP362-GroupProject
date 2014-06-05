@@ -6,7 +6,19 @@ Player* Player::m_Player = NULL;
 
 Player::Player()
 {
-
+	m_experience = 0;
+	m_level = 1;
+	m_stats.SetAgi(1);
+	m_stats.SetAs(1);
+	m_stats.SetExp(0);
+	m_stats.SetHp(1);
+	m_stats.SetMp(1);
+	m_stats.SetStr(1);
+	m_stats.SetMaxAgi(1);
+	m_stats.SetMaxAs(1);
+	m_stats.SetMaxHp(1);
+	m_stats.SetMaxMp(1);
+	m_stats.SetMaxStr(1);
 }
 
 Player* Player::GetInstance()
