@@ -1,5 +1,6 @@
 Room1
 boba
+Smells like feet
 500
 700
 200
@@ -12,6 +13,7 @@ boba
 50
 123
 fett
+Smells like fresh road kill
 600
 700
 200
@@ -26,6 +28,7 @@ fett
 
 Room4
 generic
+Smells like air
 900
 200
 200
