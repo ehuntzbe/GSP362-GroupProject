@@ -11,7 +11,7 @@ void ability::AddAbilities()
 {
 	//Here are some sample abilities
 	ability abBuf;
-	abBuf.m_name = "Mana Bullet"; //simple ability that gives up mana for an increased damage shot
+	abBuf.m_name = "Mana Bullet"; //simple ability that gives up mana for an increased damage shot (reduces ENEMY's HP)
 	abBuf.m_desc = "You fire a simple bullet of mana at the enemy.";
 	abBuf.m_unlockLevel = 1;
 	abBuf.m_cooldown = 0;
@@ -19,7 +19,7 @@ void ability::AddAbilities()
 	abBuf.m_mpCost = 2;
 	abBuf.m_target = ENEMY;
 	abBuf.m_type = HP;
-	abBuf.m_amount = PC->GetStats().GetStr() * 1.5;
+	abBuf.m_amount = -(PC->GetStats().GetStr() * 1.5);
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Beam"; //higher mana cost, higher damage, a 1-round cooldown
@@ -30,7 +30,7 @@ void ability::AddAbilities()
 	abBuf.m_mpCost = 4;
 	abBuf.m_target = ENEMY;
 	abBuf.m_type = HP;
-	abBuf.m_amount = PC->GetStats().GetStr() * 2.25;
+	abBuf.m_amount = -(PC->GetStats().GetStr() * 2.25);
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Surge"; //buffs the players strength by 2 for 4 rounds at a 4 round cooldown

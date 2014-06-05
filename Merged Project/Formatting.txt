@@ -1,0 +1,39 @@
+-Naming Conventions-
+m_ is used for member variables of a class/structure
+p_ is used for parameters in a function
+no prefix is used for temporary variables inside of functions
+ThisCasing() is used for functions
+thiscasing is used for enumerators
+THIS_CASING is used for enumerator values and constants
+
+-World Loading-
+Line 1: number of rooms in the world
+Line 2: blank
+Line 3: Name of room
+Line 4: Description of room
+Line 5: Number of NPCs in room
+Repeat Lines 2-5 until every room is done.
+
+-NPC Loading-
+
+-New Ability-
+abBuf.m_name = "Name of Ability";
+abBuf.m_desc = "This is what's seen when the ability is used.";
+abBuf.m_unlockLevel = 2; //Player gains this ability at level 2
+abBuf.m_cooldown = 3; //Player has to wait 3 rounds to use the ability again. If this is a buff or debuff, this is also how long it lasts.
+abBuf.m_hpCost = 5; //This is how much hp is paid for the ability to be used
+abBuf.m_mpCost = 5; //This is how much mp is maid for the ability to be used
+abBuf.m_target = ENEMY; //Other target is SELF. This is whose stats the ability will be affecting.
+abBuf.m_type = HP; //This is what stat is being affected. In this case, HP.
+abBuf.m_amount = -(PC->GetStats().GetStr() * 2); //This is how much the variable will be changed by. In this case, twice the player's strength.
+Overall, this ability will be listed as Name of Ability in the ability list, unlocked at level 2,
+will need 5 mana and health to use, will say This is what's seen when the ability is used. when used,
+and will change the ENEMY's HP by negative twice the player's strength.
+
+-New Command-
+Add the command value to the 'command' enumerator in Commands.h (Ex: SCORE)
+Add the syntaxes for the command under Commands.cpp's CommandControl::CommandControl() function (Ex: AddCommandSyntax("score", SCORE);)
+Add the function prototype to the CommandFunctions.h file (Ex: void Score();)
+Add the function definition to the CommandFunctions.cpp file (Ex: void Score() {})
+Add a condition to call the function in Interface.cpp (Ex: if(cmd == SCORE) {Score();})
+
