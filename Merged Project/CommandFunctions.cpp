@@ -1,3 +1,4 @@
+//Cory J 6/5
 #include "CommandFunctions.h"
 
 void Look()
@@ -98,4 +99,21 @@ void Score()
 void Inventory()
 {
 	PC->DisplayInventory();
+}
+
+void Abilities()
+{
+	for (vector<ability>::iterator it = PC->GetAbilities().begin(); it != PC->GetAbilities().end(); ++it)
+	{
+		//if(PC->GetLevel() >= it->m_unlockLevel)// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
+		//cout << "Name: " << it->m_name << endl;
+		//cout << "Description: " << it->m_desc << endl;
+		//cout << "Cool Down: " << it->m_cooldown << endl;
+		//cout << "HP Cost: " << it->m_hpCost << endl;
+		//cout << "MP Cost: " << it->m_mpCost << endl;
+		//cout << "Target: " << it->m_target << endl;
+		//cout << "Affects: " << it->m_type << endl;
+		//cout << "Amount: " << it->m_amount << endl;
+		cout << "testing" << endl;
+	}
 }

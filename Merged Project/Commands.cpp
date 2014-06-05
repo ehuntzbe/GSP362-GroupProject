@@ -1,3 +1,4 @@
+//Cory J. 6/5
 #include "Commands.h"
 
 CommandControl* CommandControl::m_commandInstance = NULL;
@@ -19,6 +20,10 @@ CommandControl::CommandControl()
 	AddCommandSyntax("inv", INVENTORY);
 	AddCommandSyntax("i", INVENTORY);
 	AddCommandSyntax("inventory", INVENTORY);
+	
+	AddCommandSyntax("abil", ABILITIES);
+	AddCommandSyntax("a", ABILITIES);
+	AddCommandSyntax("abilities", ABILITIES);
 
 	AddCommandSyntax("n", GO_NORTH);
 	AddCommandSyntax("north", GO_NORTH);

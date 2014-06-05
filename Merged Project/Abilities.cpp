@@ -11,6 +11,7 @@ void ability::AddAbilities()
 {
 	//Here are some sample abilities
 	ability abBuf;
+
 	abBuf.m_name = "Mana Bullet"; //simple ability that gives up mana for an increased damage shot (reduces ENEMY's HP)
 	abBuf.m_desc = "You fire a simple bullet of mana at the enemy.";
 	abBuf.m_unlockLevel = 1;

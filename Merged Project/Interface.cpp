@@ -57,5 +57,7 @@ void Interface::MainGame()
 		}
 		if (cmd == SCORE)
 			Score();
+		if (cmd == ABILITIES)
+			Abilities();
 	}
 }
