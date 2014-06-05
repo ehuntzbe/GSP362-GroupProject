@@ -50,7 +50,8 @@ void World::DisplayRoom(int p_roomID)
 			temp = m_world[p_roomID]->NpcList();
 			tempStats = temp[a].GetStats();
 
-			cout << "Name: "<< temp[a].GetName() <<endl;				
+			cout << "Name: "<< temp[a].GetName() <<endl;
+			cout << "Desc: "<< temp[a].GetDesc() <<endl;
 			cout << "Max HP: "<< tempStats.GetMaxHp() <<endl;		
 			cout << "Max MP: "<< tempStats.GetMaxMp() <<endl;		
 			cout << "Max Str: "<< tempStats.GetMaxStr() <<endl;		
@@ -88,6 +89,8 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 
 				getline (myfile,line);
 				m_npc.SetName(line);
+				getline (myfile,line);
+				m_npc.SetDesc(line);
 				getline (myfile,line);
 				temp.SetMaxHp(atoi(line.c_str()));
 				getline (myfile,line);
