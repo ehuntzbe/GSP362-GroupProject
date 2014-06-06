@@ -6,9 +6,11 @@
 #include "Combat.h"
 #include "Save and Load.h"
 #include "Interface.h"
+#include "Sound.h"
 
 int main()
 {
+	BackgroundSoundINTRO();
 	cout << " DDD      A      R R R  K   K   GGGGG U    U N      N \n"
 		" D  D    A A     R   R  K  K    G     U    U N N    N \n"
 		" D   D  A   A    R  R   K K     G     U    U N  N   N \n"
