@@ -1,6 +1,6 @@
-Room1
+A1
 boba
-Smells like feet
+Smells like feet 4
 500
 700
 200
@@ -26,7 +26,7 @@ Smells like fresh road kill
 60
 456
 
-Room4
+A3
 generic
 Smells like air
 900
