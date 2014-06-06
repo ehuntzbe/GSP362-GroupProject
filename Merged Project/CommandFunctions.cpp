@@ -94,6 +94,14 @@ void Down()
 void Score()
 {
 	//Output score screen
+	cout << "Name: " << PC->GetName() << endl;
+	cout << "Level: " << PC->GetLevel() << endl;
+	cout << "Exp: " << PC->GetExperience() << endl;
+	cout << "HP: " <<  PC->GetStats().GetHp() << "/" << PC->GetStats().GetMaxHp() << endl;
+	cout << "MP: " <<  PC->GetStats().GetMp() << "/" << PC->GetStats().GetMaxMp() << endl;
+	cout << "Strength: " <<  PC->GetStats().GetStr() << endl;
+	cout << "Agility: " <<  PC->GetStats().GetAgi() << endl;
+	cout << "Armor: " << PC->GetStats().GetAs() << endl;
 }
 
 void Inventory()
@@ -115,6 +123,5 @@ void Abilities()
 		cout << "Target: " << it->m_target << endl;
 		cout << "Affects: " << it->m_type << endl;
 		cout << "Amount: " << it->m_amount << endl;
-		cout << "testing" << endl;
 	}
 }

@@ -25,6 +25,10 @@ CommandControl::CommandControl()
 	AddCommandSyntax("a", ABILITIES);
 	AddCommandSyntax("abilities", ABILITIES);
 
+	AddCommandSyntax("scre", SCORE);
+	AddCommandSyntax("sc", SCORE);
+	AddCommandSyntax("score", SCORE);
+
 	AddCommandSyntax("n", GO_NORTH);
 	AddCommandSyntax("north", GO_NORTH);
 
