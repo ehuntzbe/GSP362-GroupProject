@@ -417,7 +417,7 @@ void World::ConnectRooms()
 	//A3
 	ConfirmConnection(m_world[83]->N(m_world[84]));
 	//A4
-	ConfirmConnection(m_world[85]->N(m_world[86]));
+	ConfirmConnection(m_world[84]->N(m_world[86]));
 	//A5
 	ConfirmConnection(m_world[86]->E(m_world[87]));
 	//Inn1

@@ -1,6 +1,6 @@
-A1
-boba
-Smells like feet 4
+A6
+Unknown Soldier Sword
+Unknown Soldier Sword
 500
 700
 200
@@ -12,8 +12,10 @@ Smells like feet 4
 500
 50
 123
-fett
-Smells like fresh road kill
+
+2B1
+Unknown Soldier Sword
+Unknown Soldier Sword
 600
 700
 200
@@ -26,9 +28,9 @@ Smells like fresh road kill
 60
 456
 
-A3
-generic
-Smells like air
+2A4
+Unknown Soldier Spear
+Unknown Soldier Spear
 900
 200
 200
@@ -40,3 +42,737 @@ Smells like air
 600
 50
 123
+
+2A6
+Unknown Soldier Spear
+Unknown Soldier Spear
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+456
+
+2A8
+Mini Boss Unknown Soldier Magitech
+Mini Boss Unknown Soldier Magitech
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+456
+
+2A10
+Boss Unknown Leader
+Boss Unknown Leader
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+456
+
+3A2
+Run off Slime
+Run Off Slime
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+3B1
+Short Imp
+Short Imp
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+3A5
+Evil Shrub
+Evil Shrub
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+4A4
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Rat 
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+456
+
+4B1
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+4A7
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+4A8
+Fedvel Guard
+Fedvel Guard
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+4A11
+Fedvel Guard
+Fedvel Guard
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Rat
+Rat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+5A2
+Fedvel Guard
+Fedvel Guard
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+5A3
+Fedvel Guard
+Fedvel Guard
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+5B1
+Fedvel Guard
+Fedvel Guard
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+5C1
+Fedvel Guard
+Fedvel Guard
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+5A4
+Mini Boss Fedvel Captain Guard
+Mini Boss Fedvel Captain Guard
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+5A6
+Boss Lopon
+Boss Lopon
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6B2
+Giant Ice Breathing Turnip
+Giant Ice Breathing Turnip
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Giant Ice Breathing Turnip
+Giant Ice Breathing Turnip
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6B4
+Giant Ice Breathing Turnip
+Giant Ice Breathing Turnip
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6B6
+Insane False Kingdom Soldier
+Insane False Kingdom Soldier
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Giant Ice Breathing Turnip
+Giant Ice Breathing Turnip
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6B9
+Demon Possessed Salmon
+Demon Possessed Salmon
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6C2
+Insane False Kingdom Soldier
+Insane False Kingdom Soldier
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Insane False Kingdom Soldier
+Insane False Kingdom Soldier
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6C5
+Giant Ice Breathing Turnip
+Giant Ice Breathing Turnip
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6A3
+Giant Ice Breathing Turnip
+Giant Ice Breathing Turnip
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6A5
+Possessed Salmon
+Possessed Salmon
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6A8
+Mini Boss Bear Wearing a Tophat
+Mini Boss Bear Wearing a Tophat
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+6A10
+Boss Insane False Kingdom Soldier
+Boss Insane False Kingdom Soldier
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+7Inn3
+Mini Boss Pilp
+Mini Boss Pilp
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+7Inn4
+Boss Four Knights of Falsehood, Trew
+Boss Four Knights of Falsehood, Trew
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+8B1
+Mogan Kingdom Guard Gun
+Mogan Kingdom Guard Gun
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+8A5
+Mogan Kingdom Guard Cannon
+Mogan Kingdom Guard Cannon
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+8A7
+Mini Boss Magitech Cyclops Red
+Mini Boss Magitech Cyclops Red
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Mini Boss Magitech Cyclops Blue
+Mini Boss Magitech Cyclops Blue
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+8B2
+Mogan Kingdom Guard Gun
+Mogan Kingdom Guard Gun
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Mogan Kingdom Guard Gun
+Mogan Kingdom Guard Gun
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+8A9
+Mogan Kingdom Guard Cannon
+Mogan Kingdom Guard Cannon
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+9A3
+Mini Boss Magitech Cyclops Red
+Mini Boss Magitech Cyclops Red
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+9A5
+Mogan Kingdom Guard Gun
+Mogan Kingdom Guard Gun
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+Mogan Kingdom Guard Cannon
+Mogan Kingdom Guard Cannon
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+9A8
+Mini Boss Magitech Cyclops Blue
+Mini Boss Magitech Cyclops Blue
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+9A11
+Mini Boss Four Knights of Falsehood, Shade
+Mini Boss Four Knights of Falsehood, Shade
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+9A15
+Boss The False
+Boss The False
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+0A3
+Boss The Truth
+Boss The Truth
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
+
+0A4
+Boss The Dragon of the False Kingdom, Darklight Truth
+Boss The Dragon of the False Kingdom, Darklight Truth
+600
+700
+200
+800
+50
+460
+320
+300
+400
+60
