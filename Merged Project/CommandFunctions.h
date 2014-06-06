@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "Combat.h"
 #include "Abilities.h"
+#include "Interface.h"
 
 void Look();
 void Kill(Character* p_target);

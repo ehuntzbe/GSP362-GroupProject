@@ -13,7 +13,7 @@ void ability::AddAbilities()
 	ability abBuf;
 
 	abBuf.m_name = "Mana Bullet"; //simple ability that gives up mana for an increased damage shot (reduces ENEMY's HP)
-	abBuf.m_desc = "You fire a simple bullet of mana at the enemy.";
+	abBuf.m_desc = "You fire a simple bullet of mana at the enemy.\n";
 	abBuf.m_unlockLevel = 1;
 	abBuf.m_cooldown = 0;
 	abBuf.m_hpCost = 0;
@@ -24,7 +24,7 @@ void ability::AddAbilities()
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Beam"; //higher mana cost, higher damage, a 1-round cooldown
-	abBuf.m_desc = "You fire a beam of mana at the enemy.";
+	abBuf.m_desc = "You fire a beam of mana at the enemy.\n";
 	abBuf.m_unlockLevel = 2;
 	abBuf.m_cooldown = 1;
 	abBuf.m_hpCost = 0;
@@ -35,7 +35,7 @@ void ability::AddAbilities()
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Surge"; //buffs the players strength by 2 for 4 rounds at a 4 round cooldown
-	abBuf.m_desc = "You pump mana through the veins of your muscles, increasing the power of your attacks.";
+	abBuf.m_desc = "You pump mana through the veins of your muscles,\nincreasing the power of your attacks.\n";
 	abBuf.m_unlockLevel = 5;
 	abBuf.m_cooldown = 4;
 	abBuf.m_hpCost = 2;
@@ -46,7 +46,7 @@ void ability::AddAbilities()
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Synchronization"; //full heal
-	abBuf.m_desc = "You synchronize with the mana of the world, healing your wounds completely.";
+	abBuf.m_desc = "You synchronize with the mana of the world,\nhealing your wounds completely.\n";
 	abBuf.m_unlockLevel = 15;
 	abBuf.m_cooldown = 3;
 	abBuf.m_hpCost = 0;

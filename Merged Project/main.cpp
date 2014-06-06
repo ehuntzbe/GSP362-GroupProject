@@ -59,7 +59,7 @@ int main()
 		}
 		cout << "\n";
 
-		if( nKeyPress == 4)
+		if( nKeyPress == 4 )
 		{
 			return (0);
 		}
