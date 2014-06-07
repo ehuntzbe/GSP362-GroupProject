@@ -156,7 +156,7 @@ void Abilities()
 				cout << "Ability " << i+1 << ": " << it->m_name << endl;
 			}
 		}
-		cout << "Enter the number of the ability to see its full effects or 0 to quit: \n";
+		cout << "Enter the number of the ability to see its full effects or 0 to quit: ";
 		cin >> userInput;
 		cin.clear();
 		cout << endl;
