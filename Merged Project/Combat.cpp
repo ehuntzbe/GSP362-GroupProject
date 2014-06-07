@@ -5,7 +5,7 @@
 #include "Combat.h"
 using namespace std;
 
-outcome Combat(Combatant player, Combatant enemy)
+combat_outcome Combat(Combatant player, Combatant enemy)
 {	// Plays a combat.
 	// Returns true if player defeats enemy, and false otherwise
 
@@ -31,7 +31,7 @@ outcome Combat(Combatant player, Combatant enemy)
 
 		// attack
 		if((userInput == "a") || (userInput == "attack")) {
-			damage = ((player.GetStr()/2) + (rand() % (player.GetStr()/2))) - ((enemy.GetAg()/2) + (rand() % (enemy.GetAg()/2)));
+			damage = ((player.GetStr()/2) + (rand() % (player.GetStr()/2))) - ((enemy.GetAs()/2) + (rand() % (enemy.GetAs()/2)));
 			if(damage < 0)	damage = 0;
 			hp = enemy.GetHp();
 			hp = hp - damage;
@@ -45,7 +45,7 @@ outcome Combat(Combatant player, Combatant enemy)
 
 		// flee
 		if((userInput == "f") || (userInput == "flee")) {
-			if((player.GetAg() > enemy.GetAg()) && (rand() % 3 < 2))	return FLED;
+			if((player.GetAgi() > enemy.GetAgi()) && (rand() % 3 < 2))	return FLED;
 		}
 
 		// if enemy's hp is 0 or less, kill enemy and return true
@@ -60,7 +60,7 @@ outcome Combat(Combatant player, Combatant enemy)
 		switch(enemy_choice) {
 		case 0:
 			// attack
-			damage = ((enemy.GetStr()/2) + (rand() % (enemy.GetStr()/2))) - ((player.GetAg()/2) + (rand() % (player.GetAg()/2)));
+			damage = ((enemy.GetStr()/2) + (rand() % (enemy.GetStr()/2))) - ((player.GetAs()/2) + (rand() % (player.GetAs()/2)));
 			if(damage < 0)	damage = 0;
 			
 			hp = player.GetHp();
