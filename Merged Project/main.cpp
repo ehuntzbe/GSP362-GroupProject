@@ -17,7 +17,9 @@ int main()
 		" D   D A A A A   R R    K  K    G GGG U    U N   N  N \n"
 		" D  D A       A  R   R  K   K   G   G U    U N    N N \n"
 		" DDD A         A R    R K    K  GGGGG UUUUUU N     NN \n" << endl;
-
+	
+	string sInput;
+	stringstream convertInput;
 	int nKeyPress; // Holds the key pressed by the user
 	bool bContinue = true;
 
@@ -29,8 +31,18 @@ int main()
 		cout << " 3) Credits " << endl;
 		cout << " 4) Exit " << endl;
 		cout << "\n What would you like to do? ";
-		cin >> nKeyPress;
-		cin.clear();
+		getline(cin, sInput);
+		convertInput.str("");
+		convertInput.clear();
+		convertInput.str(sInput);
+		while (!(convertInput >> nKeyPress))
+		{
+			convertInput.str("");
+			convertInput.clear();
+			cout << "Make sure to enter the NUMBER that is next to the option you want to choose: ";
+			getline(cin, sInput);
+			convertInput.str(sInput);
+		}
 
 		switch ( nKeyPress )
 		{

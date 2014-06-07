@@ -143,8 +143,6 @@ void Inventory()
 void Abilities()
 {
 	vector<ability> pcAbil = PC->GetAbilities();
-
-	fstream f();
 	string sInput;
 	int userInput; // Holds the key pressed by the user
 	stringstream convertInput;
