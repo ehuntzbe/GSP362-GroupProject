@@ -1,12 +1,12 @@
 #include "Sound.h"
 
-void BackgroundSoundINTRO()
+void BackgroundSound(LPTSTR filename)
 {
-	PlaySound(TEXT("electricpercussion.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	PlaySound(filename, NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
 
-void SoundEffectATTACK()
+void SoundEffect(LPTSTR filename, LPTSTR backgroundfilename)
 {
-	PlaySound(TEXT("defaultjump.wav"), NULL, SND_FILENAME);
-	PlaySound(TEXT("electricpercussion.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	PlaySound(filename, NULL, SND_FILENAME);
+	PlaySound(backgroundfilename, NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
