@@ -5,9 +5,7 @@
 #include "Combat.h"
 using namespace std;
 
-
-
-combat_outcome Combat(Combatant player, Combatant enemy)
+outcome Combat(Combatant player, Combatant enemy)
 {	// Plays a combat.
 	// Returns true if player defeats enemy, and false otherwise
 
@@ -33,14 +31,8 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 
 		// attack
 		if((userInput == "a") || (userInput == "attack")) {
-			// attack formula for player:
-			//		(R + s/2)*(m+1)
-
-			// R = random number (ranging from 1 to 4)
-			// s = strength
-			// m = magic
-
-			damage = ((rand() % 4 + 1) + player.GetStr()/2) * (1 + player.GetMp()/2);
+			damage = ((player.GetStr()/2) + (rand() % (player.GetStr()/2))) - ((enemy.GetAg()/2) + (rand() % (enemy.GetAg()/2)));
+			if(damage < 0)	damage = 0;
 			hp = enemy.GetHp();
 			hp = hp - damage;
 			enemy.SetHp(hp);
@@ -53,7 +45,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 
 		// flee
 		if((userInput == "f") || (userInput == "flee")) {
-			if(rand() % 3 == 0)	return FLED;
+			if((player.GetAg() > enemy.GetAg()) && (rand() % 3 < 2))	return FLED;
 		}
 
 		// if enemy's hp is 0 or less, kill enemy and return true
@@ -64,20 +56,13 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		enemy_guard = false;
 
 		// let enemy perform random attack on player
-		int enemy_choice = rand() % 3;
+		int enemy_choice = rand() % 2;
 		switch(enemy_choice) {
 		case 0:
 			// attack
-
-			// attack formula for enemy:
-			//		(R + s/2)*(m+1)
-
-			// R = random number (ranging from 1 to 3)
-			// s = strength
-			// m = magic
-
-			damage = ((rand() % 3 + 1) + player.GetStr()/2) * (1 + player.GetMp()/2);
-
+			damage = ((enemy.GetStr()/2) + (rand() % (enemy.GetStr()/2))) - ((player.GetAg()/2) + (rand() % (player.GetAg()/2)));
+			if(damage < 0)	damage = 0;
+			
 			hp = player.GetHp();
 			hp = hp - damage;
 			player.SetHp(hp);
@@ -86,11 +71,6 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		case 1:
 			// guard
 			enemy_guard = true;
-			break;
-
-		case 2:
-			// flee
-			if(rand() % 4 == 0)	return FLED;
 			break;
 		}
 
