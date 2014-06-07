@@ -26,6 +26,8 @@ void Interface::MainGame()
 	string input = "";
 	vector<string> parsedInput;
 	bool quitGame = false;
+	Look();
+	cout << "Type 'help' (no ' marks) for a short explanation of basic commands." << endl;
 	while(!quitGame)
 	{
 		cout << ">";
@@ -50,14 +52,12 @@ void Interface::MainGame()
 		if (cmd == GO_UP)
 			Up();
 		if (cmd == KILL)
-		{
-			//Character* target = FindChar(parsedInput.back()); //Need a FindChar function that will check through the characters in the room and return the one that has the target the player gave
-			//if(target != NULL))
-			//	Kill(target);
-		}
+			Kill(parsedInput.back());
 		if (cmd == SCORE)
 			Score();
 		if (cmd == ABILITIES)
 			Abilities();
+		if (cmd == HELP)
+			Help();
 	}
 }

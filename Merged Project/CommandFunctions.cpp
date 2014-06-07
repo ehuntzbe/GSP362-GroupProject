@@ -19,14 +19,14 @@ void Look()
 		cout << "Nobody." << endl;
 }
 
-void Kill(Character* p_target)
+void Kill(string p_target)
 {
 	combat_outcome battle;
 	Room* room = PC->GetCurrentRoom();
-	Character opponent = room->GetNPC(p_target->GetName());
+	Character opponent = room->GetNPC(p_target);
 	if (opponent.GetName() != "NULL")
 	{
-		battle = Combat(PC->GetStats(), p_target->GetStats());
+		battle = Combat(PC->GetStats(), opponent.GetStats());
 		switch (battle)
 		{
 		case DEAD:
@@ -39,19 +39,21 @@ void Kill(Character* p_target)
 			//Remove debuffs placed on the player and enemy?
 			break;
 		case KILLED:
-			if (p_target->GetInventory().size() > 0)
+			if (opponent.GetInventory().size() > 0)
 			{
-				list<Item> loot = p_target->GetInventory();
+				list<Item> loot = opponent.GetInventory();
 				for (list<Item>::iterator it = loot.begin(); it != loot.end(); ++it)
 				{
 					room->AddItem(*it);
 				}
 			}
-			PC->AwardExperience(p_target->GetStats().GetExp());
-			room->RemoveNpc(p_target->GetName());
+			PC->AwardExperience(opponent.GetStats().GetExp());
+			room->RemoveNpc(opponent.GetName());
 			break;
 		}
 	}
+	else
+		cout << "That is not a valid target." << endl;
 }
 
 void North()
@@ -255,4 +257,14 @@ void Abilities()
 	{
 		Interface::GetInstance()->MainGame();
 	}
+}
+
+void Help()
+{
+	cout << "If there are ' marks around a word, that means it is a command. You do not type in the ' marks around the command." << endl;
+	cout << "'look' or 'l' will show you the contents of the room you are in." << endl;
+	cout << "'north' or 'n' will move you north if it is a valid exit for the room you are in. The other directions have similar commands." << endl;
+	cout << "'kill' or 'k' will attempt battle with an npc. Note this command requires a target. Ex: 'kill ogre' would attempt battle with the ogre in the room." << endl;
+	cout << "'score' or 'sc' will show you your current stats." << endl;
+	cout << "'abilities' or 'ab' will show you all of your current abilities and what they do." << endl;
 }

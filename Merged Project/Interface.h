@@ -4,6 +4,7 @@
 #include "InputParsing.h"
 #include "World.h"
 #include "Commands.h"
+#include "Room.h"
 using namespace std;
 
 class Interface

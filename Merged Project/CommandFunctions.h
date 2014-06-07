@@ -6,7 +6,7 @@
 #include "Interface.h"
 
 void Look();
-void Kill(Character* p_target);
+void Kill(string p_target);
 void North();
 void South();
 void East();
@@ -16,3 +16,4 @@ void Down();
 void Score();
 void Inventory();
 void Abilities();
+void Help();

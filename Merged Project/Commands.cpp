@@ -14,6 +14,9 @@ CommandControl::CommandControl()
 	AddCommandSyntax("l", LOOK);
 	AddCommandSyntax("look", LOOK);
 
+	AddCommandSyntax("h", HELP);
+	AddCommandSyntax("help", HELP);
+
 	AddCommandSyntax("sc", SCORE);
 	AddCommandSyntax("score", SCORE);
 
@@ -23,6 +26,7 @@ CommandControl::CommandControl()
 	
 	AddCommandSyntax("abil", ABILITIES);
 	AddCommandSyntax("a", ABILITIES);
+	AddCommandSyntax("ab", ABILITIES);
 	AddCommandSyntax("abilities", ABILITIES);
 
 	AddCommandSyntax("scre", SCORE);
