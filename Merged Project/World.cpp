@@ -1,4 +1,4 @@
-//Ashton 6/6/2014 9:07 PM
+//Joshua 6/5/2014 - 6/62014
 #include "World.h"
 
 World* World::m_instance = NULL;
@@ -63,6 +63,7 @@ void World::DisplayRoom(int p_roomID)
 			cout << "Str: "<< tempStats.GetStr() <<endl;			
 			cout << "Agi: "<< tempStats.GetAgi() <<endl;			
 			cout << "As: "<< tempStats.GetAs() <<endl;
+			cout << "Exp: "<< tempStats.GetExp() <<endl <<endl;
 		}
 	}
 	cout << "EXITS:"; m_world[p_roomID]->DisplayExits(); cout << endl;
@@ -84,49 +85,47 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 			{
 				for(int a = 0; a < p_room->GetNumNpc(); a++)
 				{
-					Character m_npc;
-					Combatant temp;
+				Character m_npc;
+				Combatant temp;
 
-					getline (myfile,line);
-					if(line == "")
-					{
-						getline (myfile,line);
-					}
-					m_npc.SetName(line);
-					getline (myfile,line);
-					m_npc.SetDesc(line);
-					getline (myfile,line);
-					temp.SetMaxHp(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetMaxMp(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetMaxStr(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetMaxAgi(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetMaxAs(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetHp(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetMp(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetStr(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetAgi(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetAs(atoi(line.c_str()));
+				getline (myfile,line);
+				m_npc.SetName(line);
+				getline (myfile,line);
+				m_npc.SetDesc(line);
+				getline (myfile,line);
+				temp.SetMaxHp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxMp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxStr(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxAgi(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMaxAs(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetHp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetMp(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetStr(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetAgi(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetAs(atoi(line.c_str()));
+				getline (myfile,line);
+				temp.SetExp(atoi(line.c_str()));
 
-					m_npc.SetStats(temp);
+				m_npc.SetStats(temp);
 
-					p_room->NpcAdd(m_npc);
+				p_room->NpcAdd(m_npc);
 
-					tempcount++;
+				tempcount++;
 				}
 			}
 
 			/*else
 			{
-			cout << "Unable to Load file";
+				cout << "Unable to Load file";
 			}*/
 			if(tempcount == p_room->GetNumNpc())
 			{
