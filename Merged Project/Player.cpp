@@ -88,7 +88,7 @@ void Player::GenderNamePrompt()
 		getline(cin, input);
 	} while (input == "n");
 	PC->SetName(name);
-	cout << "Welcome to the world.." << endl;
+	cout << "Welcome to Dark Gun, Apprentice.." << endl;
 }
 
 void Player::EquipItem(Item p_item)

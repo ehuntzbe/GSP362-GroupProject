@@ -47,18 +47,18 @@ int main()
 		switch ( nKeyPress )
 		{
 		case 1:
-			{cout << "\n New game starting\n ";
+			{cout << "\nNew game starting\n";
 			PC->GenderNamePrompt();
 			ability::AddAbilities();
 			Interface::GetInstance()->MainGame();}
 			break;
 
 		case 2:
-			{cout << "\n Your game is loading\n ";}
+			{cout << "\nYour game is loading\n";}
 			break;
 
 		case 3:
-			{cout << "\n Credits Screen \n ";}
+			{cout << "\nCredits Screen\n";}
 			break;
 
 		case 4:
