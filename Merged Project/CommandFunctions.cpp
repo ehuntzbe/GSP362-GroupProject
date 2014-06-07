@@ -159,8 +159,7 @@ void Abilities()
 				cout << "Ability " << i+1 << ": " << it->m_name << endl;
 			}
 		}
-<<<<<<< HEAD
-		cout << "Enter the number of the ability to see its full effects or 0 to quit: \n";
+		cout << "Enter the number of the ability to see its full effects or 0 to quit: ";
 		getline(cin, sInput);
 		convertInput.str("");
 		convertInput.clear();
@@ -173,11 +172,6 @@ void Abilities()
 			getline(cin, sInput);
 			convertInput.str(sInput);
 		}
-=======
-		cout << "Enter the number of the ability to see its full effects or 0 to quit: ";
-		cin >> userInput;
-		cin.clear();
->>>>>>> b84d2a70e74eef08e4e210a490d33f6a2f17d933
 		cout << endl;
 		userInput--;
 		if (userInput == -1)
