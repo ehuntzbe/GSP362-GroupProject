@@ -1,7 +1,7 @@
 127
 
 Room1
-Desc "\n" line2 "\\n" line3 \\n line 4
+Desc \n line2 \n line3 \n line 4
 0
 
 A1

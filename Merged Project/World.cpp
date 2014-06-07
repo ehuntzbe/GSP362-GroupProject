@@ -136,6 +136,24 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 	else cout << "Unable to open file Load failed"; 
 }
 
+vector<string> World::ParseDescription(string p_desc)
+{
+	vector<string> description;
+	string buf = "";
+	for (int i = 0; i < p_desc.size(); i++)
+	{
+		if (p_desc[i] == '\\' && p_desc[i+1] == 'n')
+		{
+			description.push_back(buf);
+			i+=2;
+			buf = "";
+		}
+		else
+			buf += p_desc[i];
+	}
+	return description;
+}
+
 void World::LoadRoomsFromFile(string p_fileName, string p_npcFileName)
 {
 	int counter = -1;
@@ -161,7 +179,14 @@ void World::LoadRoomsFromFile(string p_fileName, string p_npcFileName)
 			{
 				m_world[counter]->SetName(line);
 				getline (myfile, line);
-				m_world[counter]->SetDesc(line);
+				vector<string> desc = ParseDescription(line);
+				string parsedDesc = "";
+				for (int i = 0; i < desc.size(); i++)
+				{
+					parsedDesc += desc[i];
+					parsedDesc += "\n";
+				}
+				m_world[counter]->SetDesc(parsedDesc);
 				getline (myfile, line);
 				m_world[counter]->SetNumNpc(line);
 

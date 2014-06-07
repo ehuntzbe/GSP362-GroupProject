@@ -26,6 +26,7 @@ public:
 	bool UD(Room* p_u, Room* p_d);
 	void ConfirmConnection(bool p_connection);
 	void ConnectRooms();
+	vector<string> ParseDescription(string p_desc);
 	void LoadRoomsFromFile(string p_fileName, string p_npcFileName);
 	void LoadNpcsFromFile(string p_npcFileName, Room* p_room);
 	void DisplayRoom(int p_roomID);
