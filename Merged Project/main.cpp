@@ -7,6 +7,7 @@
 #include "Save and Load.h"
 #include "Interface.h"
 #include "Sound.h"
+#include <time.h>
 
 int main()
 {
@@ -22,7 +23,7 @@ int main()
 	stringstream convertInput;
 	int nKeyPress; // Holds the key pressed by the user
 	bool bContinue = true;
-
+	srand(time(NULL));
 	while ( bContinue )
 	{
 		// read a key here into nKeypress

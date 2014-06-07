@@ -26,6 +26,7 @@ void Kill(string p_target)
 	Character opponent = room->GetNPC(p_target);
 	if (opponent.GetName() != "NULL")
 	{
+		cout << "You have entered combat with " << opponent.GetName() << "!" << endl;
 		battle = Combat(PC->GetStats(), opponent.GetStats());
 		switch (battle)
 		{
@@ -37,6 +38,7 @@ void Kill(string p_target)
 		case FLED:
 			//I don't think anything happens here, we can decide if we do want something to happen other than ending combat
 			//Remove debuffs placed on the player and enemy?
+			cout << "You got away." << endl;
 			break;
 		case KILLED:
 			if (opponent.GetInventory().size() > 0)

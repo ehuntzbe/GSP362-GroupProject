@@ -21,6 +21,9 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 
 		// ask for command input from player, and execute it
 		do {
+			cout << "Attack \tGuard\n"
+				"xxxxxxx \tFlee\n" //replace xxxxxxx with Ability when implemented
+				"HP: " << player.GetHp() << "/" << player.GetMaxHp() << " | MP: " << player.GetMp() << "/" << player.GetMaxMp() << " |>" << endl;
 			getline(cin, userInput);
 			if(	(userInput == "a") || (userInput == "attack") ||
 				(userInput == "g") || (userInput == "guard") ||
@@ -33,6 +36,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		if((userInput == "a") || (userInput == "attack")) {
 			damage = ((player.GetStr()/2) + (rand() % (player.GetStr()/2))) - ((enemy.GetAs()/2) + (rand() % (enemy.GetAs()/2)));
 			if(damage < 0)	damage = 0;
+			cout << "You hit the enemy for " << damage << " damage!" << endl;
 			hp = enemy.GetHp();
 			hp = hp - damage;
 			enemy.SetHp(hp);
@@ -41,15 +45,19 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		// guard
 		if((userInput == "g") || (userInput == "guard")) {
 			player_guard = true;
+			cout << "You put up your guard.." << endl;
 		}
 
 		// flee
 		if((userInput == "f") || (userInput == "flee")) {
-			if((player.GetAgi() > enemy.GetAgi()) && (rand() % 3 < 2))	return FLED;
+			cout << "You attempt to flee." << endl;
+			if(((player.GetAgi()/2) + (rand() % (player.GetAgi()/2))) - ((enemy.GetAgi()/2) + (rand() % (enemy.GetAgi()/2))) > 0)	return FLED;
+			cout << "You couldn't get away!" << endl;
 		}
 
 		// if enemy's hp is 0 or less, kill enemy and return true
 		if(enemy.GetHp() <= 0) {
+			cout << "You strike the finishing blow!" << endl;
 			return KILLED;
 		}
 		
@@ -62,7 +70,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 			// attack
 			damage = ((enemy.GetStr()/2) + (rand() % (enemy.GetStr()/2))) - ((player.GetAs()/2) + (rand() % (player.GetAs()/2)));
 			if(damage < 0)	damage = 0;
-			
+			cout << "The enemy hits you for " << damage << " damage!" << endl;
 			hp = player.GetHp();
 			hp = hp - damage;
 			player.SetHp(hp);
@@ -70,12 +78,14 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 
 		case 1:
 			// guard
+			cout << "The enemy puts up their guard.." << endl;
 			enemy_guard = true;
 			break;
 		}
 
 		// if player's hp is 0 or less, kill player and return false
 		if(player.GetHp() <= 0) {
+			cout << "A fatal low strikes you.." << endl;
 			return DEAD;
 		}
 	}

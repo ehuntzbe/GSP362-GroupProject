@@ -141,7 +141,10 @@ void Room::RemoveNpc(string p_name)
 	for (vector<Character>::iterator it = m_npcs.begin(); it != m_npcs.end(); ++it)
 	{
 		if (it->GetName() == p_name)
+		{
 			m_npcs.erase(it);
+			break;
+		}
 	}
 }
 
@@ -150,6 +153,9 @@ void Room::RemoveItem(string p_name)
 	for (vector<Item>::iterator it = m_items.begin(); it != m_items.end(); ++it)
 	{
 		if (it->GetName() == p_name)
+		{
 			m_items.erase(it);
+			break;
+		}
 	}
 }
