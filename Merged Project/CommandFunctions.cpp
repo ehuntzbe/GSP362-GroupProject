@@ -144,7 +144,10 @@ void Abilities()
 {
 	vector<ability> pcAbil = PC->GetAbilities();
 
+	fstream f();
+	string sInput;
 	int userInput; // Holds the key pressed by the user
+	stringstream convertInput;
 	while (true)
 	{
 		int i = -1;
@@ -157,8 +160,18 @@ void Abilities()
 			}
 		}
 		cout << "Enter the number of the ability to see its full effects or 0 to quit: \n";
-		cin >> userInput;
-		cin.clear();
+		getline(cin, sInput);
+		convertInput.str("");
+		convertInput.clear();
+		convertInput.str(sInput);
+		while (!(convertInput >> userInput))
+		{
+			convertInput.str("");
+			convertInput.clear();
+			cout << "Make sure to enter the NUMBER that is next to the ability you want to see: ";
+			getline(cin, sInput);
+			convertInput.str(sInput);
+		}
 		cout << endl;
 		userInput--;
 		if (userInput == -1)

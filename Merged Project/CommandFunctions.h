@@ -4,6 +4,7 @@
 #include "Combat.h"
 #include "Abilities.h"
 #include "Interface.h"
+#include <sstream>
 
 void Look();
 void Kill(string p_target);
