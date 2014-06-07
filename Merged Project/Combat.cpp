@@ -5,10 +5,9 @@
 #include "Combat.h"
 using namespace std;
 
-enum combat_outcome {DEAD=0, FLED, KILL};
 
 
-int Combat(Combatant player, Combatant enemy)
+combat_outcome Combat(Combatant player, Combatant enemy)
 {	// Plays a combat.
 	// Returns true if player defeats enemy, and false otherwise
 
@@ -59,7 +58,7 @@ int Combat(Combatant player, Combatant enemy)
 
 		// if enemy's hp is 0 or less, kill enemy and return true
 		if(enemy.GetHp() <= 0) {
-			return KILL;
+			return KILLED;
 		}
 		
 		enemy_guard = false;

@@ -4,6 +4,8 @@
 #include <iostream>
 using namespace std;
 
+enum combat_outcome {DEAD, FLED, KILLED};
+
 class Combatant
 {
 	// Max member varibles
@@ -59,4 +61,4 @@ public:
 };
 
 // Combat function prototype
-int Combat(Combatant player, Combatant enemy);	// combat function prototype
+combat_outcome Combat(Combatant player, Combatant enemy);	// combat function prototype

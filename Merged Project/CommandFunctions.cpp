@@ -21,8 +21,37 @@ void Look()
 
 void Kill(Character* p_target)
 {
-	if (PC->GetCurrentRoom()->GetNPC(p_target->GetName()).GetName() != "NULL")
-		Combat(PC->GetStats(), p_target->GetStats());
+	combat_outcome battle;
+	Room* room = PC->GetCurrentRoom();
+	Character opponent = room->GetNPC(p_target->GetName());
+	if (opponent.GetName() != "NULL")
+	{
+		battle = Combat(PC->GetStats(), p_target->GetStats());
+		switch (battle)
+		{
+		case DEAD:
+			cout << "Game over." << endl;
+			system("pause");
+			exit(0);
+			break;
+		case FLED:
+			//I don't think anything happens here, we can decide if we do want something to happen other than ending combat
+			//Remove debuffs placed on the player and enemy?
+			break;
+		case KILLED:
+			if (p_target->GetInventory().size() > 0)
+			{
+				list<Item> loot = p_target->GetInventory();
+				for (list<Item>::iterator it = loot.begin(); it != loot.end(); ++it)
+				{
+					room->AddItem(*it);
+				}
+			}
+			PC->AwardExperience(p_target->GetStats().GetExp());
+			room->RemoveNpc(p_target->GetName());
+			break;
+		}
+	}
 }
 
 void North()

@@ -63,6 +63,8 @@ public:
 	void DisplayExits();
 	void NpcResize(int size);
 	void NpcAdd(Character p_npc);
+	void RemoveNpc(string p_name);
+	void RemoveItem(string p_name);
 	vector<Character> NpcList() {return m_npcs;}
 	Character GetNPC(string p_name);
 	void AddItem(Item p_item) {m_items.push_back(p_item);}
