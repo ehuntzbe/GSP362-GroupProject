@@ -5,31 +5,31 @@ Desc \n line2 \n line3 \n line 4
 0
 
 A1
-Desc1 Map 1
+Desc1 Melonos: Hey, wake up kid. Today is the day. Melonos smacks you with an object to wake you up.\n Apprentice: Im up, Im up. Stop whacking me with that. IS THAT A SWORD! Who wakes somebody up with a sword. \n Melonos: Somebody that needs his apprentice up to make the most important delivery in an old man’s life.\n Apprentice: You mean that it’s ready. The ultimate weapon you made for the king.\n Melonos: Yes my boy, the Dark Gun is complete. Now put some pants on and deliver it before we both die of old age. You put on your clothes, pick up your personal magitech sword and head out the door.\n Melonos: Good luck my boy, say hi to the king and queen for me. Try not to look stupid in front of the princess. Apprentice: Thanks, try not to fall asleep while working and accidentally set your beard ablaze. Melonos: That only happened once. Also you must remember to never use the Dark Gun. Don’t even play with it. It is meant to bond to its first user until they die. 
 0
 
 A2
-Desc2
+Desc2 The forest is teeming with life. The forest that surrounds most of the five kingdoms looks like this. Many different trees and cute little animals.\n Apprentice: Man, it has been only 60 years since Melonos and the king of Dartosk started the Magitechnological Revolution. I can’t even remember a time when any kingdom didn’t have magitechnology.\n Apprentice: Maybe I should stop talking to myself, the animals are starting to look at me funny. Nah.
 0
 
 A3
-Desc3
+Desc3 The forest is teeming with life. The forest that surrounds most of the five kingdoms looks like this. Many different trees and cute little animals.\n You get to a fork in the road. One way continuing forward and one that goes west.\n Apprentice: I remember the last time I came this way I went west and got lost. But I did leave some extra items there in case I needed them.
 0
 
 B1
-Bdesc4
+Bdesc4 The turn has led you to a slightly darker patch of the forest. The cute animals are there but are much quieter. The trees rustle in the wind as you walk.\n Apprentice: Ok, this place is as creepy as I remember. I hope nothing attacks me. Which would be odd because everything in this forest is usually cute and tame.
 0
 
 B2
-Bdesc5
+Bdesc5 The forest seems to be getting creepy as you go. Getting darker and more damp. You see several animals that seem to be scared. The tree line has blocked your path westward and you are left with the option of going north through a small opening.\n Apprentice: Alright, this was not so freaky last time. Maybe I should just get back on the path before I get eaten or beaten to death.
 0
 
 B3
-Bdesc6
+Bdesc6 The trees here are vibrant and wonderful. Greener then anyplace else in the forest. A delightful meadow filled with beautiful flowers and cute bunny’s all run around a small hole.\n Apprentice: Why was the path here so creepy. This place is great. I would take a nap but I do have a job to do. Lets see what I left for myself in that hole.
 0
 
 A4
-Desc7
+Desc7 It is starting to get dark but the forest is still teeming with life. The forest that surrounds most of the five kingdoms looks like this. Many different trees and cute little animals. You can see the exit to the forest. Just a little bit more to go.
 0
 
 A5
