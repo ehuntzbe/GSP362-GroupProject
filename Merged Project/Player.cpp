@@ -136,6 +136,7 @@ void Player::UnequipItem(Item p_item)
 	statsGained.SetMp(mp);		statsGained.SetMaxMp(mp);
 	Combatant newStats = PC->GetStats() + statsGained; //add stats gained to previous stats
 	PC->SetStats(newStats); //set the PC's stats to these new stats
+	cout << "You unequip " << p_item.GetShort() << "." << endl;
 }
 
 void Player::EquipItem(Item p_item)
@@ -157,6 +158,7 @@ void Player::EquipItem(Item p_item)
 	statsGained.SetMp(mp);		statsGained.SetMaxMp(mp);
 	Combatant newStats = PC->GetStats() + statsGained; //add stats gained to previous stats
 	PC->SetStats(newStats); //set the PC's stats to these new stats
+	cout << "You equip " << p_item.GetShort() << "." << endl;
 }
 
 void Player::ChangeStatFocus()

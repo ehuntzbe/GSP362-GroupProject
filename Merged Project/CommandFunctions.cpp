@@ -251,7 +251,6 @@ void Wear(string p_target)
 		if (it->GetName() == p_target)
 		{
 			PC->EquipItem(*it);
-			cout << "You equip " << it->GetShort() << "." << endl;
 			return;
 		}
 	}
@@ -266,7 +265,6 @@ void Remove(string p_target)
 		if (equipment[(wear_slot)it].GetName() == p_target)
 		{
 			PC->UnequipItem(equipment[(wear_slot)it]);
-			cout << "You unequip " << equipment[(wear_slot)it].GetShort() << "." << endl;
 			return;
 		}
 	}
