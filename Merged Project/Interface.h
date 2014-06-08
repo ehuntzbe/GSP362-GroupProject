@@ -16,4 +16,5 @@ private:
 public:
 	static Interface* GetInstance();
 	static void MainGame();
+	static void Prompt();
 };

@@ -21,6 +21,11 @@ Interface* Interface::GetInstance()
 	return m_interfaceInstance;
 }
 
+void Interface::Prompt()
+{
+	cout << "HP: " << PC->GetStats().GetHp() << "/" << PC->GetStats().GetMaxHp() << " | MP: " << PC->GetStats().GetMp() << "/" << PC->GetStats().GetMaxMp() << " |> ";
+}
+
 void Interface::MainGame()
 {
 	string input = "";
@@ -30,7 +35,7 @@ void Interface::MainGame()
 	cout << "Type 'help' (no ' marks) for a short explanation of basic commands." << endl;
 	while(!quitGame)
 	{
-		cout << ">";
+		Prompt();
 		getline(cin, input);
 		for (int i = 0; i < input.size(); i++)
 			tolower(input[i]);
