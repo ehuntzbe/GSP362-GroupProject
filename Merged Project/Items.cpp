@@ -8,6 +8,7 @@ void LoadItems()
 	WoodenSword.SetName("woodsword"); //this is what the player types to get, wear, remove it
 	WoodenSword.SetDesc("A wooden sword lies here, covered with splinters."); //this is what the player sees when the item is in the room
 	WoodenSword.SetShort("a wooden sword"); //this is what the player sees when the item is worn or in their inventory
+	PC->AddItem(WoodenSword); //test code
 
 	Item LeatherCap;
 	LeatherCap.SetAsBoost(2);

@@ -43,6 +43,7 @@ public:
 	void AddAbility(ability p_ability);
 	vector<ability> GetAbilities() const {return m_abilities;}
 	void GenderNamePrompt();
+	void UnequipItem(Item p_item);
 	void EquipItem(Item p_item);
 	void ChangeStatFocus();
 	unordered_map<wear_slot, Item> GetEquipment() const {return m_equipment;}

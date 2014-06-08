@@ -73,6 +73,10 @@ void Interface::MainGame()
 			Inventory();
 		if (cmd == EQUIPMENT)
 			Equipment();
+		if (cmd == WEAR)
+			Wear(parsedInput.back());
+		if (cmd == REMOVE)
+			Remove(parsedInput.back());
 		if (cmd == EXAMINE)
 		{	
 			command targetCmd = CommandControl::GetInstance()->GetCommand(parsedInput.back());

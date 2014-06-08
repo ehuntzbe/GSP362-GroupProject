@@ -34,6 +34,11 @@ CommandControl::CommandControl()
 	AddCommandSyntax("equip", EQUIPMENT);
 	AddCommandSyntax("equipment", EQUIPMENT);
 
+	AddCommandSyntax("wear", WEAR);
+
+	AddCommandSyntax("rem", REMOVE);
+	AddCommandSyntax("remove", REMOVE);
+
 	AddCommandSyntax("abil", ABILITIES);
 	AddCommandSyntax("a", ABILITIES);
 	AddCommandSyntax("ab", ABILITIES);

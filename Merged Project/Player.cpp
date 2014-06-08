@@ -119,6 +119,12 @@ void Player::GenderNamePrompt()
 	cout << endl << "Welcome to Dark Gun, Apprentice.." << endl;
 }
 
+void Player::UnequipItem(Item p_item)
+{
+	AddItem(m_equipment[p_item.GetWearSlot()]);
+	m_equipment[p_item.GetWearSlot()] = Item();
+}
+
 void Player::EquipItem(Item p_item)
 {
 	if (m_equipment[p_item.GetWearSlot()].GetName() != "none")

@@ -243,6 +243,36 @@ void Equipment()
 	cout << "Feet: " << equipment[FEET].GetShort() << endl;
 }
 
+void Wear(string p_target)
+{
+	list<Item> inventory = PC->GetInventory();
+	for (list<Item>::iterator it = inventory.begin(); it != inventory.end(); ++it)
+	{
+		if (it->GetName() == p_target)
+		{
+			PC->EquipItem(*it);
+			cout << "You equip " << it->GetShort() << "." << endl;
+			return;
+		}
+	}
+	cout << "That is not a valid item." << endl;
+}
+
+void Remove(string p_target)
+{
+	unordered_map<wear_slot, Item> equipment = PC->GetEquipment();
+	for (int it = HEAD; it != FEET; ++it)
+	{
+		if (equipment[(wear_slot)it].GetName() == p_target)
+		{
+			PC->UnequipItem(equipment[(wear_slot)it]);
+			cout << "You unequip " << equipment[(wear_slot)it].GetShort() << "." << endl;
+			return;
+		}
+	}
+	cout << "That is not a valid item." << endl;
+}
+
 void ExaInv()
 {
 	list<Item> inventory = PC->GetInventory();

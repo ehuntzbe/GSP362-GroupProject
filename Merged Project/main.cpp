@@ -7,6 +7,7 @@
 #include "Save and Load.h"
 #include "Interface.h"
 #include "Sound.h"
+#include "Items.h"
 #include <time.h>
 
 int main()
@@ -51,6 +52,7 @@ int main()
 			{cout << "\nNew game starting\n";
 			PC->GenderNamePrompt();
 			ability::AddAbilities();
+			LoadItems(); //test code
 			Interface::GetInstance()->MainGame();}
 			break;
 

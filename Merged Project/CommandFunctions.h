@@ -21,6 +21,8 @@ void Help();
 void Growth();
 bool Quit();
 void Equipment();
+void Wear(string p_target);
+void Remove(string p_target);
 void ExaInv();
 void ExaEquip();
 void ExaLook();
