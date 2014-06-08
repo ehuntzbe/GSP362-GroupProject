@@ -39,7 +39,7 @@ void Interface::MainGame()
 		Prompt();
 		getline(cin, input);
 		for (int i = 0; i < input.size(); i++)
-			tolower(input[i]);
+			input[i] = tolower(input[i]);
 		parsedInput = ParseInput(input);
 		command cmd = CommandControl::GetInstance()->GetCommand(parsedInput.front());
 		string target = parsedInput.back();

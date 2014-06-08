@@ -37,7 +37,7 @@ private:
 	int m_asBoost;
 
 public:
-	Item() {m_itemName = "null";}
+	Item() {m_itemName = "null"; m_hpBoost = 0; m_mpBoost = 0; m_strBoost = 0; m_agiBoost = 0; m_asBoost = 0; m_wearSlot = HANDS; m_desc = "null"; m_shortDesc = "null";}
 	//Getters
 	wear_slot GetWearSlot() const { return m_wearSlot; }
 	int GetHpBoost()	const	{ return m_hpBoost; }

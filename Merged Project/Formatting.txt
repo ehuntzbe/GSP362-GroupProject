@@ -47,6 +47,14 @@ Overall, this ability will be listed as Name of Ability in the ability list, unl
 will need 5 mana and health to use, will say This is what's seen when the ability is used. when used,
 and will change the ENEMY's HP by negative twice the player's strength.
 
+-New Item-
+In Items.cpp, LoadItems()
+Item instanceName;
+instanceName.SetStrboost(1); //choose what stats you want changed while wearing this item. in this case, strength by positive 1.
+instanceName.SetName("testitem"); //this is the name the player will type to target the item for wearing and such (wear testitem)
+instanceName.SetDesc("A test item floats before you."); //this is what is seen when the player types look
+instanceName.SetShort("a simple test item"); //this is what is seen when the player types inventory or equipment
+
 -New Command-
 Add the command value to the 'command' enumerator in Commands.h (Ex: SCORE)
 Add the syntaxes for the command under Commands.cpp's CommandControl::CommandControl() function (Ex: AddCommandSyntax("score", SCORE);)

@@ -95,8 +95,8 @@ void Player::GenderNamePrompt()
 		{
 			cout << "Enter your gender (m/f): ";
 			getline(cin, gender);
-			for (int i = 0; i < input.size(); i++)
-				tolower(gender[i]);
+			for (int i = 0; i < gender.size(); i++)
+				gender[i] = tolower(gender[i]);
 		} while (gender != "m" && gender != "f");
 		if (gender == "m")
 			PC->SetDesc("male");

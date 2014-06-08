@@ -81,6 +81,7 @@
     <ClInclude Include="Commands.h" />
     <ClInclude Include="InputParsing.h" />
     <ClInclude Include="Interface.h" />
+    <ClInclude Include="Items.h" />
     <ClInclude Include="ItemStructure.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Room.h" />
@@ -96,6 +97,7 @@
     <ClCompile Include="Commands.cpp" />
     <ClCompile Include="InputParsing.cpp" />
     <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="Items.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Room.cpp" />

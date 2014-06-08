@@ -13,7 +13,6 @@ CommandControl::CommandControl()
 
 	AddCommandSyntax("k", KILL);
 	AddCommandSyntax("kill", KILL);
-	AddCommandSyntax("K", KILL);
 
 	AddCommandSyntax("l", LOOK);
 	AddCommandSyntax("look", LOOK);
