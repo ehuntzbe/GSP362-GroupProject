@@ -53,6 +53,9 @@ CommandControl::CommandControl()
 
 	AddCommandSyntax("d", GO_DOWN);
 	AddCommandSyntax("down", GO_DOWN);
+
+	AddCommandSyntax("q", QUIT);
+	AddCommandSyntax("quit", QUIT);
 }
 
 CommandControl::~CommandControl()

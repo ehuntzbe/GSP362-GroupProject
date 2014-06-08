@@ -19,3 +19,4 @@ void Inventory();
 void Abilities();
 void Help();
 void Growth();
+bool Quit();

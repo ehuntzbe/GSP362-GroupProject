@@ -3,20 +3,20 @@
 
 void Look()
 {
-	cout << PC->GetCurrentRoom()->GetName() << endl;
+	cout << endl << PC->GetCurrentRoom()->GetName() << endl;
 	cout << PC->GetCurrentRoom()->GetDesc() << endl;
-	cout << "EXITS:"; PC->GetCurrentRoom()->DisplayExits(); cout << endl;
-	cout << "-Others here with you-" << endl;
+	cout << "EXITS:"; PC->GetCurrentRoom()->DisplayExits(); cout << endl;	
 	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
 	{
+		cout << "-Others here with you-" << endl;
 		vector<Character> others = PC->GetCurrentRoom()->NpcList();
 		for (vector<Character>::iterator it = others.begin(); it != others.end(); ++it)
 		{
 			cout << it->GetDesc() << endl;
 		}
 	}
-	else
-		cout << "Nobody." << endl;
+	/*else
+		cout << "Nobody." << endl;*/
 }
 
 void Kill(string p_target)
@@ -128,6 +128,7 @@ void Score()
 {
 	//Output score screen
 	cout << "Name: " << PC->GetName() << endl;
+	cout << "Gender: " << PC->GetDesc() << endl;
 	cout << "Level: " << PC->GetLevel() << endl;
 	cout << "Exp: " << PC->GetExperience() << endl;
 	cout << "HP: " <<  PC->GetStats().GetHp() << "/" << PC->GetStats().GetMaxHp() << endl;
@@ -204,6 +205,7 @@ void Help()
 	cout << "'score' or 'sc' will show you your current stats." << endl;
 	cout << "'abilities' or 'ab' will show you all of your current abilities and what they do." << endl;
 	cout << "'growth' or 'grow' will allow you to choose your primary and secondary stat growths." << endl;
+	cout << "'quit' or 'q' will quit the game." << endl;
 }
 
 void Growth()
@@ -211,4 +213,9 @@ void Growth()
 	cout << "You can set your primary and secondary stat growths. Your primary stat will grow the fastest, while your secondary stat will grow at a rate between your primary stat and the rest of your stats.\n"
 		"These can be changed at any time outside of combat, and only come into play during a level up." << endl;
 	PC->ChangeStatFocus();
+}
+
+bool Quit()
+{
+	return true;
 }

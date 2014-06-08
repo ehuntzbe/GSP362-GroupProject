@@ -10,16 +10,16 @@ Player::Player()
 	m_level = 1;
 	m_primeStat = "none";
 	m_secondStat = "none";
-	m_stats.SetAgi(500);
-	m_stats.SetAs(30);
+	m_stats.SetAgi(300);
+	m_stats.SetAs(100);
 	m_stats.SetExp(0);
-	m_stats.SetHp(460);
-	m_stats.SetMp(200);
+	m_stats.SetHp(600);
+	m_stats.SetMp(500);
 	m_stats.SetStr(200);
-	m_stats.SetMaxAgi(600);
-	m_stats.SetMaxAs(50);
-	m_stats.SetMaxHp(900);
-	m_stats.SetMaxMp(230);
+	m_stats.SetMaxAgi(300);
+	m_stats.SetMaxAs(100);
+	m_stats.SetMaxHp(600);
+	m_stats.SetMaxMp(500);
 	m_stats.SetMaxStr(200);
 }
 
@@ -116,7 +116,7 @@ void Player::GenderNamePrompt()
 		getline(cin, input);
 	} while (input == "n");
 	PC->SetName(name);
-	cout << "Welcome to Dark Gun, Apprentice.." << endl;
+	cout << endl << "Welcome to Dark Gun, Apprentice.." << endl;
 }
 
 void Player::EquipItem(Item p_item)
