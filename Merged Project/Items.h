@@ -2,4 +2,8 @@
 #include "ItemStructure.h"
 #include "Player.h"
 
-void LoadItems();
+struct WorldItems
+{
+	static vector<Item> m_items;
+	static void SpawnItems();
+};

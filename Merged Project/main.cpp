@@ -52,7 +52,7 @@ int main()
 			{cout << "\nNew game starting\n";
 			PC->GenderNamePrompt();
 			ability::AddAbilities();
-			LoadItems(); //test code
+			WorldItems::SpawnItems(); //test code
 			Interface::GetInstance()->MainGame();}
 			break;
 

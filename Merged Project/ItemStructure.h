@@ -23,6 +23,11 @@ enum wear_slot
 	BODY, LEGS, FEET
 };
 
+enum save_location
+{
+	NOWHERE, IN_INVENTORY, IN_EQUIPMENT, IN_ROOM, IN_NPC
+};
+
 class Item
 {
 private:
@@ -35,9 +40,13 @@ private:
 	int m_strBoost;
 	int m_agiBoost;
 	int m_asBoost;
+	//Save and load data
+	save_location m_location;
+	int m_locationId;
+	int m_itemId;
 
 public:
-	Item() {m_itemName = "none"; m_hpBoost = 0; m_mpBoost = 0; m_strBoost = 0; m_agiBoost = 0; m_asBoost = 0; m_wearSlot = HANDS; m_desc = "none"; m_shortDesc = "none";}
+	Item() {m_itemName = "none"; m_location = NOWHERE; m_locationId = -1; m_itemId = -1; m_hpBoost = 0; m_mpBoost = 0; m_strBoost = 0; m_agiBoost = 0; m_asBoost = 0; m_wearSlot = HANDS; m_desc = "none"; m_shortDesc = "none";}
 	//Getters
 	wear_slot GetWearSlot() const { return m_wearSlot; }
 	int GetHpBoost()	const	{ return m_hpBoost; }
@@ -48,6 +57,9 @@ public:
 	string GetName()	const	{ return m_itemName; }
 	string GetDesc()	const	{ return m_desc; }
 	string GetShort()	const	{ return m_shortDesc; }
+	save_location GetSaveLocation() const {return m_location;}
+	int GetLocationId() const	{ return m_locationId; }
+	int GetItemId()		const	{ return m_itemId; }
 	//Setters
 	void SetWearSlot(wear_slot p_wearSlot) { m_wearSlot = p_wearSlot; }
 	void SetHpBoost(int hp)		{ m_hpBoost = hp; }
@@ -58,4 +70,7 @@ public:
 	void SetName(string p_name)	{ m_itemName = p_name; }
 	void SetDesc(string p_desc)	{ m_desc = p_desc; }
 	void SetShort(string p_short)	{ m_shortDesc = p_short; }
+	void SetSaveLocation(save_location p_loc) {m_location = p_loc;}
+	void SetLocationId(int p_id) {m_locationId = p_id;}
+	void SetItemId(int p_id) {m_itemId = p_id;}
 };
