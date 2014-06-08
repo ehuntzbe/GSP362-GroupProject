@@ -10,6 +10,9 @@ CommandControl::CommandControl()
 {
 	AddCommandSyntax("grow", GROWTH);
 	AddCommandSyntax("growth", GROWTH);
+	
+	AddCommandSyntax("exa", EXAMINE);
+	AddCommandSyntax("examine", EXAMINE);
 
 	AddCommandSyntax("k", KILL);
 	AddCommandSyntax("kill", KILL);
@@ -27,6 +30,10 @@ CommandControl::CommandControl()
 	AddCommandSyntax("i", INVENTORY);
 	AddCommandSyntax("inventory", INVENTORY);
 	
+	AddCommandSyntax("eq", EQUIPMENT);
+	AddCommandSyntax("equip", EQUIPMENT);
+	AddCommandSyntax("equipment", EQUIPMENT);
+
 	AddCommandSyntax("abil", ABILITIES);
 	AddCommandSyntax("a", ABILITIES);
 	AddCommandSyntax("ab", ABILITIES);

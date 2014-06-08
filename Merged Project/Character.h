@@ -24,7 +24,6 @@ public:
 	void SetDesc(string p_desc);
 	Combatant GetStats() const {return m_stats;}
 	void SetStats(Combatant p_stats);
-	void DisplayInventory();
 	list<Item> GetInventory() const {return m_inventory;}
 	void AddItem(Item p_item) {m_inventory.push_back(p_item);}
 	void RemoveItem(string p_itemName);

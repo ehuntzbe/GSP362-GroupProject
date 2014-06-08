@@ -69,5 +69,21 @@ void Interface::MainGame()
 			Growth();
 		if (cmd == QUIT)
 			quitGame = Quit();
+		if (cmd == INVENTORY)
+			Inventory();
+		if (cmd == EQUIPMENT)
+			Equipment();
+		if (cmd == EXAMINE)
+		{	
+			command targetCmd = CommandControl::GetInstance()->GetCommand(parsedInput.back());
+			if (targetCmd == INVENTORY)
+				ExaInv();
+			else if (targetCmd == EQUIPMENT)
+				ExaEquip();
+			else if (targetCmd == LOOK)
+				ExaLook();
+			else
+				cout << "That is not a valid target to examine." << endl;
+		}
 	}
 }

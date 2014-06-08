@@ -24,16 +24,6 @@ void Character::SetDesc(string p_desc)
 	m_desc = p_desc;
 }
 
-void Character::DisplayInventory()
-{
-	cout << "You are carrying " << m_inventory.size() << " items in your inventory." << endl;
-	for (list<Item>::iterator it = m_inventory.begin(); it != m_inventory.end(); ++it)
-	{
-		cout << it->GetShort() << endl;
-	}
-	cout << endl;
-}
-
 void Character::SetStats(Combatant p_stats)
 {	
 	m_stats.SetMaxHp(p_stats.GetMaxHp());		

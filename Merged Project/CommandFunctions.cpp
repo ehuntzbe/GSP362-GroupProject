@@ -140,7 +140,13 @@ void Score()
 
 void Inventory()
 {
-	PC->DisplayInventory();
+	list<Item> inventory = PC->GetInventory();
+	cout << "You are carrying " << inventory.size() << " items in your inventory." << endl;
+	for (list<Item>::iterator it = inventory.begin(); it != inventory.end(); ++it)
+	{
+		cout << it->GetShort() << endl;
+	}
+	cout << endl;
 }
 
 void Abilities()
@@ -201,10 +207,13 @@ void Help()
 	cout << "If there are ' marks around a word, that means it is a command. You do not type in the ' marks around the command." << endl;
 	cout << "'look' or 'l' will show you the contents of the room you are in." << endl;
 	cout << "'north' or 'n' will move you north if it is a valid exit for the room you are in. The other directions have similar commands." << endl;
-	cout << "'kill' or 'k' will attempt battle with an npc. Note this command requires a target. Ex: 'kill ogre' would attempt battle with the ogre in the room." << endl;
+	cout << "'kill <target>' or 'k <target>' will attempt battle with an npc. Note this command requires a target. Ex: 'kill ogre' would attempt battle with the ogre in the room." << endl;
 	cout << "'score' or 'sc' will show you your current stats." << endl;
 	cout << "'abilities' or 'ab' will show you all of your current abilities and what they do." << endl;
 	cout << "'growth' or 'grow' will allow you to choose your primary and secondary stat growths." << endl;
+	cout << "'inventory' or 'i' will show you all the items you are carrying." << endl;
+	cout << "'equipment' or 'eq' will show you all the items you are wearing." << endl;
+	cout << "'examine <inventory/equipment/look>' or 'exa' will allow you to see the names of all valid targets. Ex: 'exa eq' will show you the names of all worn items." << endl;
 	cout << "'quit' or 'q' will quit the game." << endl;
 }
 
@@ -218,4 +227,59 @@ void Growth()
 bool Quit()
 {
 	return true;
+}
+
+void Equipment()
+{
+	unordered_map<wear_slot, Item> equipment = PC->GetEquipment();
+	cout << "Head: " << equipment[HEAD].GetShort() << endl;
+	cout << "Shoulders: " << equipment[SHOULDERS].GetShort() << endl;
+	cout << "Arms: " << equipment[ARMS].GetShort() << endl;
+	cout << "Hands: " << equipment[HANDS].GetShort() << endl;
+	cout << "Mainhand: " << equipment[MAINHAND].GetShort() << endl;
+	cout << "Offhand: " << equipment[OFFHAND].GetShort() << endl;
+	cout << "Body: " << equipment[BODY].GetShort() << endl;
+	cout << "Legs: " << equipment[LEGS].GetShort() << endl;
+	cout << "Feet: " << equipment[FEET].GetShort() << endl;
+}
+
+void ExaInv()
+{
+	list<Item> inventory = PC->GetInventory();
+	cout << "You are carrying " << inventory.size() << " items in your inventory." << endl;
+	for (list<Item>::iterator it = inventory.begin(); it != inventory.end(); ++it)
+	{
+		cout << "(" << it->GetName() << ") " << it->GetShort() << endl;
+	}
+	cout << endl;
+}
+
+void ExaEquip()
+{
+	unordered_map<wear_slot, Item> equipment = PC->GetEquipment();
+	cout << "Head: " << "(" << equipment[HEAD].GetName() << ") " << equipment[HEAD].GetShort() << endl;
+	cout << "Shoulders: " << "(" << equipment[SHOULDERS].GetName() << ") " << equipment[SHOULDERS].GetShort() << endl;
+	cout << "Arms: " << "(" << equipment[ARMS].GetName() << ") " << equipment[ARMS].GetShort() << endl;
+	cout << "Hands: " << "(" << equipment[HANDS].GetName() << ") " << equipment[HANDS].GetShort() << endl;
+	cout << "Mainhand: " << "(" << equipment[MAINHAND].GetName() << ") " << equipment[MAINHAND].GetShort() << endl;
+	cout << "Offhand: " << "(" << equipment[OFFHAND].GetName() << ") " << equipment[OFFHAND].GetShort() << endl;
+	cout << "Body: " << "(" << equipment[BODY].GetName() << ") " << equipment[BODY].GetShort() << endl;
+	cout << "Legs: " << "(" << equipment[LEGS].GetName() << ") " << equipment[LEGS].GetShort() << endl;
+	cout << "Feet: " << "(" << equipment[FEET].GetName() << ") " << equipment[FEET].GetShort() << endl;
+}
+
+void ExaLook()
+{
+	cout << endl << PC->GetCurrentRoom()->GetName() << endl;
+	cout << PC->GetCurrentRoom()->GetDesc() << endl;
+	cout << "EXITS:"; PC->GetCurrentRoom()->DisplayExits(); cout << endl;	
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		cout << "-Others here with you-" << endl;
+		vector<Character> others = PC->GetCurrentRoom()->NpcList();
+		for (vector<Character>::iterator it = others.begin(); it != others.end(); ++it)
+		{
+			cout << "(" << it->GetName() << ") " << it->GetDesc() << endl;
+		}
+	}
 }

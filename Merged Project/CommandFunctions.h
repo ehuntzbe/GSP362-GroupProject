@@ -20,3 +20,7 @@ void Abilities();
 void Help();
 void Growth();
 bool Quit();
+void Equipment();
+void ExaInv();
+void ExaEquip();
+void ExaLook();

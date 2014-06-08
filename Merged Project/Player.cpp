@@ -121,7 +121,7 @@ void Player::GenderNamePrompt()
 
 void Player::EquipItem(Item p_item)
 {
-	if (m_equipment[p_item.GetWearSlot()].GetName() != "null")
+	if (m_equipment[p_item.GetWearSlot()].GetName() != "none")
 		AddItem(m_equipment[p_item.GetWearSlot()]);
 	m_equipment[p_item.GetWearSlot()] = p_item;
 	RemoveItem(p_item.GetName());

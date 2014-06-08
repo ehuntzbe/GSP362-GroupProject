@@ -45,4 +45,5 @@ public:
 	void GenderNamePrompt();
 	void EquipItem(Item p_item);
 	void ChangeStatFocus();
+	unordered_map<wear_slot, Item> GetEquipment() const {return m_equipment;}
 };
