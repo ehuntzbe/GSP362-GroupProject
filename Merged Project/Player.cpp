@@ -123,14 +123,40 @@ void Player::UnequipItem(Item p_item)
 {
 	AddItem(m_equipment[p_item.GetWearSlot()]);
 	m_equipment[p_item.GetWearSlot()] = Item();
+	Combatant statsGained;
+	int agi = -p_item.GetAgiBoost();
+	int as = -p_item.GetAsBoost();
+	int str = -p_item.GetStrBoost();
+	int hp = -p_item.GetHpBoost();
+	int mp = -p_item.GetMpBoost();
+	statsGained.SetAgi(agi);	statsGained.SetMaxAgi(agi);
+	statsGained.SetAs(as);		statsGained.SetMaxAs(agi);
+	statsGained.SetStr(str);	statsGained.SetMaxStr(str);
+	statsGained.SetHp(hp);		statsGained.SetMaxHp(hp);
+	statsGained.SetMp(mp);		statsGained.SetMaxMp(mp);
+	Combatant newStats = PC->GetStats() + statsGained; //add stats gained to previous stats
+	PC->SetStats(newStats); //set the PC's stats to these new stats
 }
 
 void Player::EquipItem(Item p_item)
 {
 	if (m_equipment[p_item.GetWearSlot()].GetName() != "none")
-		AddItem(m_equipment[p_item.GetWearSlot()]);
+		UnequipItem(p_item);
 	m_equipment[p_item.GetWearSlot()] = p_item;
 	RemoveItem(p_item.GetName());
+	Combatant statsGained;
+	int agi = p_item.GetAgiBoost();
+	int as = p_item.GetAsBoost();
+	int str = p_item.GetStrBoost();
+	int hp = p_item.GetHpBoost();
+	int mp = p_item.GetMpBoost();
+	statsGained.SetAgi(agi);	statsGained.SetMaxAgi(agi);
+	statsGained.SetAs(as);		statsGained.SetMaxAs(agi);
+	statsGained.SetStr(str);	statsGained.SetMaxStr(str);
+	statsGained.SetHp(hp);		statsGained.SetMaxHp(hp);
+	statsGained.SetMp(mp);		statsGained.SetMaxMp(mp);
+	Combatant newStats = PC->GetStats() + statsGained; //add stats gained to previous stats
+	PC->SetStats(newStats); //set the PC's stats to these new stats
 }
 
 void Player::ChangeStatFocus()

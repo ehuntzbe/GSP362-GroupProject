@@ -99,5 +99,10 @@ Combatant Combatant::operator+(Combatant p_other)
 	combinedStats.m_currentStr = m_currentStr + p_other.m_currentStr;
 	combinedStats.m_currentHp = m_currentHp + p_other.m_currentHp;
 	combinedStats.m_currentMp = m_currentMp + p_other.m_currentMp;
+	combinedStats.m_maxAgi = m_maxAgi + p_other.m_maxAgi;
+	combinedStats.m_maxAs = m_maxAs + p_other.m_maxAs;
+	combinedStats.m_maxStr = m_maxStr + p_other.m_maxStr;
+	combinedStats.m_maxHp = m_maxHp + p_other.m_maxHp;
+	combinedStats.m_maxMp = m_maxMp + p_other.m_maxMp;
 	return combinedStats;
 }
