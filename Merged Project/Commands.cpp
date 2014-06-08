@@ -8,6 +8,9 @@ CommandControl* CommandControl::m_commandInstance = NULL;
 //Store all command syntaxes here
 CommandControl::CommandControl()
 {
+	AddCommandSyntax("grow", GROWTH);
+	AddCommandSyntax("growth", GROWTH);
+
 	AddCommandSyntax("k", KILL);
 	AddCommandSyntax("kill", KILL);
 

@@ -203,4 +203,12 @@ void Help()
 	cout << "'kill' or 'k' will attempt battle with an npc. Note this command requires a target. Ex: 'kill ogre' would attempt battle with the ogre in the room." << endl;
 	cout << "'score' or 'sc' will show you your current stats." << endl;
 	cout << "'abilities' or 'ab' will show you all of your current abilities and what they do." << endl;
+	cout << "'growth' or 'grow' will allow you to choose your primary and secondary stat growths." << endl;
+}
+
+void Growth()
+{
+	cout << "You can set your primary and secondary stat growths. Your primary stat will grow the fastest, while your secondary stat will grow at a rate between your primary stat and the rest of your stats.\n"
+		"These can be changed at any time outside of combat, and only come into play during a level up." << endl;
+	PC->ChangeStatFocus();
 }

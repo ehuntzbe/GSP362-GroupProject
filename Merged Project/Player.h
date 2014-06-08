@@ -13,14 +13,6 @@ using namespace std;
 struct ability;
 
 /*
--PC needs exp
--PC needs level, level ups, and stat ups from level ups
--PC needs to unlock abilities from level ups
--PC needs a variable to store the current room s/he's in
-*/
-
-
-/*
 This class is a singleton.
 */
 class Player : public Character
@@ -34,6 +26,8 @@ private:
 	//Constructor is private for singleton implementation
 	Player();
 	static Player* m_Player;
+	string m_primeStat;
+	string m_secondStat;
 
 public:
 	int GetExperience() const {return m_experience;}
@@ -50,4 +44,5 @@ public:
 	vector<ability> GetAbilities() const {return m_abilities;}
 	void GenderNamePrompt();
 	void EquipItem(Item p_item);
+	void ChangeStatFocus();
 };
