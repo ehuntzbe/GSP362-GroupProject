@@ -115,6 +115,8 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 					temp.SetAgi(atoi(line.c_str()));
 					getline (myfile,line);
 					temp.SetAs(atoi(line.c_str()));
+					getline (myfile,line);
+					temp.SetExp(atoi(line.c_str()));
 
 					m_npc.SetStats(temp);
 
@@ -217,10 +219,8 @@ void World::ConfirmConnection(bool p_connection)
 
 void World::ConnectRooms()
 {
-	//Map 1
-	PC->SetCurrentRoom(m_world[0]);
-	//A1
-	ConfirmConnection(m_world[0]->N(m_world[1]));
+	//A1 & Map 1
+	PC->SetCurrentRoom(m_world[1]);
 	//A2
 	ConfirmConnection(m_world[1]->N(m_world[2]));
 	//A3
