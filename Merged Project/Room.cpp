@@ -106,8 +106,16 @@ Character Room::GetNPC(string p_name)
 {
 	for (vector<Character>::iterator it = m_npcs.begin(); it != m_npcs.end(); ++it)
 	{
-		if (it->GetName() == p_name)
+		string temp;
+		temp = it->GetName();
+		for(int a = 0; a < temp.size(); a++)
+		{
+			temp[a] = tolower(temp[a]);
+		}
+		if (temp == p_name)
+		{
 			return *it;
+		}
 	}
 	Character nullNPC;
 	nullNPC.SetName("NULL");
