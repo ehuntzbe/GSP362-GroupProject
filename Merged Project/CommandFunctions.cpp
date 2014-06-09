@@ -58,6 +58,7 @@ void Kill(string p_target)
 			room->RemoveNpc(opponent.GetName());
 			break;
 		}
+		Look();
 	}
 	else
 		cout << "That is not a valid target." << endl;
