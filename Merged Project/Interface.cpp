@@ -89,5 +89,9 @@ void Interface::MainGame()
 			else
 				cout << "That is not a valid target to examine." << endl;
 		}
+		if (cmd == GET)
+			Get(parsedInput.back());
+		if (cmd == DROP)
+			Drop(parsedInput.back());
 	}
 }

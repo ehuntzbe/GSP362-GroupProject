@@ -20,6 +20,10 @@ CommandControl::CommandControl()
 	AddCommandSyntax("l", LOOK);
 	AddCommandSyntax("look", LOOK);
 
+	AddCommandSyntax("get", GET);
+
+	AddCommandSyntax("drop", DROP);
+
 	AddCommandSyntax("h", HELP);
 	AddCommandSyntax("help", HELP);
 

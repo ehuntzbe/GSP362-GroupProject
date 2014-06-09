@@ -26,3 +26,5 @@ void Remove(string p_target);
 void ExaInv();
 void ExaEquip();
 void ExaLook();
+void Get(string p_target);
+void Drop(string p_target);

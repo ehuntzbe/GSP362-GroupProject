@@ -8,6 +8,8 @@ enum command
 {
 	INVALID,
 	LOOK,
+	GET,
+	DROP,
 	EXAMINE,
 	KILL,
 	SCORE,

@@ -15,8 +15,13 @@ void Look()
 			cout << it->GetDesc() << endl;
 		}
 	}
-	/*else
-		cout << "Nobody." << endl;*/
+	vector<Item> roomItems = PC->GetCurrentRoom()->ItemList();
+	if (roomItems.size() > 0)
+	{
+		cout << "-Items in the area-" << endl;
+		for (vector<Item>::iterator it = roomItems.begin(); it != roomItems.end(); ++it)
+			cout << it->GetDesc() << endl;
+	}
 }
 
 void Kill(string p_target)
@@ -308,6 +313,37 @@ void ExaLook()
 		for (vector<Character>::iterator it = others.begin(); it != others.end(); ++it)
 		{
 			cout << "(" << it->GetName() << ") " << it->GetDesc() << endl;
+		}
+	}
+	vector<Item> roomItems = PC->GetCurrentRoom()->ItemList();
+	if (roomItems.size() > 0)
+	{
+		cout << "-Items in the area-" << endl;
+		for (vector<Item>::iterator it = roomItems.begin(); it != roomItems.end(); ++it)
+			cout << "(" << it->GetName() << ") " << it->GetDesc() << endl;
+	}
+}
+
+void Get(string p_target)
+{
+	Room* room = PC->GetCurrentRoom();
+	cout << "You drop " << room->GetItem(p_target).GetShort() << "." << endl;
+	PC->AddItem(room->GetItem(p_target));
+	room->RemoveItem(p_target);
+}
+
+void Drop(string p_target)
+{
+	Room* room = PC->GetCurrentRoom();
+	list<Item> items = PC->GetInventory();
+	for (list<Item>::iterator it = items.begin(); it != items.end(); ++it)
+	{
+		if (it->GetName() == p_target)
+		{
+			cout << "You drop " << it->GetShort() << "." << endl;
+			room->AddItem(*it);
+			PC->RemoveItem(p_target);
+			break;
 		}
 	}
 }

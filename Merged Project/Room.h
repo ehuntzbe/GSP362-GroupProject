@@ -67,6 +67,7 @@ public:
 	void RemoveItem(string p_name);
 	vector<Character> NpcList() {return m_npcs;}
 	Character GetNPC(string p_name);
+	vector<Item> ItemList() {return m_items;}
 	void AddItem(Item p_item) {m_items.push_back(p_item);}
 	Item GetItem(string p_name);
 	bool CheckExit(EXIT p_exit) const {if (m_exits[p_exit] == true) return true; return false;}
