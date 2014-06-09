@@ -6,21 +6,28 @@ Player* Player::m_Player = NULL;
 
 Player::Player()
 {
+	/*
+	 Hp - 50
+	 MP - 30
+     strength - 15
+     agility - 10
+     armor score - 0
+	*/
 	m_experience = 0;
 	m_level = 1;
 	m_primeStat = "none";
 	m_secondStat = "none";
-	m_stats.SetAgi(300);
-	m_stats.SetAs(100);
+	m_stats.SetAgi(10);
+	m_stats.SetAs(0);
 	m_stats.SetExp(0);
-	m_stats.SetHp(600);
-	m_stats.SetMp(500);
-	m_stats.SetStr(200);
-	m_stats.SetMaxAgi(300);
-	m_stats.SetMaxAs(100);
-	m_stats.SetMaxHp(600);
-	m_stats.SetMaxMp(500);
-	m_stats.SetMaxStr(200);
+	m_stats.SetHp(50);
+	m_stats.SetMp(30);
+	m_stats.SetStr(15);
+	m_stats.SetMaxAgi(10);
+	m_stats.SetMaxAs(0);
+	m_stats.SetMaxHp(50);
+	m_stats.SetMaxMp(30);
+	m_stats.SetMaxStr(15);
 }
 
 Player* Player::GetInstance()
