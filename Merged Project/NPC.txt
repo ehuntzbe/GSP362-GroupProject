@@ -1,7 +1,7 @@
 A6
 Unknown Soldier Sword
 Unknown Soldier Sword
-500
+400
 700
 200
 500
@@ -15,7 +15,7 @@ Unknown Soldier Sword
 2B1
 Unknown Soldier Sword
 Unknown Soldier Sword
-600
+400
 700
 200
 800
@@ -29,7 +29,7 @@ Unknown Soldier Sword
 2A4
 Unknown Soldier Spear
 Unknown Soldier Spear
-900
+400
 200
 200
 500
@@ -43,7 +43,7 @@ Unknown Soldier Spear
 2A6
 Unknown Soldier Spear
 Unknown Soldier Spear
-600
+400
 700
 200
 800
@@ -57,7 +57,7 @@ Unknown Soldier Spear
 2A8
 Mini Boss Unknown Soldier Magitech
 Mini Boss Unknown Soldier Magitech
-600
+400
 700
 200
 800
@@ -85,7 +85,7 @@ Boss Unknown Leader
 3A2
 Run off Slime
 Run Off Slime
-600
+300
 700
 200
 800
@@ -99,7 +99,7 @@ Run Off Slime
 3B1
 Short Imp
 Short Imp
-600
+450
 700
 200
 800
@@ -113,7 +113,7 @@ Short Imp
 3A5
 Evil Shrub
 Evil Shrub
-600
+400
 700
 200
 800

@@ -223,10 +223,12 @@ void World::ConnectRooms()
 	PC->SetCurrentRoom(m_world[1]);
 	//A2
 	ConfirmConnection(m_world[1]->N(m_world[2]));
+	ConfirmConnection(m_world[2]->S(m_world[1]));
 	//A3
 	ConfirmConnection(m_world[2]->N(m_world[3]));
 	ConfirmConnection(m_world[3]->N(m_world[7]));
 	ConfirmConnection(m_world[3]->W(m_world[4]));
+	ConfirmConnection(m_world[3]->S(m_world[2]));
 	//B1
 	ConfirmConnection(m_world[4]->W(m_world[5]));
 	ConfirmConnection(m_world[4]->E(m_world[3]));
@@ -236,46 +238,64 @@ void World::ConnectRooms()
 	ConfirmConnection(NS(m_world[6], m_world[5]));
 	//A4
 	ConfirmConnection(m_world[7]->N(m_world[8]));
+	ConfirmConnection(m_world[7]->S(m_world[3]));
 	//A5
 	ConfirmConnection(m_world[8]->N(m_world[9]));
+	ConfirmConnection(m_world[8]->S(m_world[7]));
 	//A6
 	ConfirmConnection(m_world[9]->N(m_world[10]));
+	ConfirmConnection(m_world[9]->S(m_world[8]));
 	//Map 2
 	//A1
 	ConfirmConnection(m_world[10]->N(m_world[11]));
+	ConfirmConnection(m_world[10]->S(m_world[9]));
 	//A2
 	ConfirmConnection(m_world[11]->N(m_world[12]));
 	ConfirmConnection(m_world[11]->W(m_world[13]));
+	ConfirmConnection(m_world[11]->S(m_world[10]));
 	//B1
 	ConfirmConnection(m_world[12]->S(m_world[11]));
 	//A3
 	ConfirmConnection(m_world[13]->W(m_world[14]));
+	ConfirmConnection(m_world[13]->E(m_world[11]));
 	//A4
 	ConfirmConnection(m_world[14]->W(m_world[15]));
+	ConfirmConnection(m_world[14]->E(m_world[13]));
 	//A5
 	ConfirmConnection(m_world[15]->W(m_world[16]));
+	ConfirmConnection(m_world[15]->E(m_world[14]));
 	//A6
 	ConfirmConnection(m_world[16]->N(m_world[17]));
+	ConfirmConnection(m_world[16]->E(m_world[15]));
 	//A7
 	ConfirmConnection(m_world[17]->N(m_world[18]));
+	ConfirmConnection(m_world[17]->S(m_world[16]));
 	//A8
 	ConfirmConnection(m_world[18]->N(m_world[19]));
+	ConfirmConnection(m_world[18]->S(m_world[17]));
 	//A9
 	ConfirmConnection(m_world[19]->N(m_world[20]));
+	ConfirmConnection(m_world[19]->S(m_world[18]));
 	//A10
 	ConfirmConnection(m_world[20]->N(m_world[21]));
+	ConfirmConnection(m_world[20]->S(m_world[19]));
 	//A11
 	ConfirmConnection(m_world[21]->N(m_world[22]));
+	ConfirmConnection(m_world[21]->S(m_world[20]));
 	//Map 3
 	//A1
 	ConfirmConnection(m_world[22]->N(m_world[23]));
+	ConfirmConnection(m_world[22]->S(m_world[21]));
 	//A2
 	ConfirmConnection(m_world[23]->N(m_world[24]));
+	ConfirmConnection(m_world[23]->S(m_world[22]));
 	//A3
 	ConfirmConnection(m_world[24]->N(m_world[25]));
+	ConfirmConnection(m_world[24]->S(m_world[23]));
 	//A4
 	ConfirmConnection(m_world[25]->W(m_world[26]));
 	ConfirmConnection(m_world[25]->N(m_world[28]));
+	ConfirmConnection(m_world[25]->S(m_world[24]));
 	//B1
 	ConfirmConnection(m_world[26]->W(m_world[27]));
 	ConfirmConnection(m_world[26]->E(m_world[25]));
@@ -283,13 +303,17 @@ void World::ConnectRooms()
 	ConfirmConnection(m_world[27]->E(m_world[26]));
 	//A5
 	ConfirmConnection(m_world[28]->N(m_world[29]));
+	ConfirmConnection(m_world[28]->S(m_world[25]));
 	//A6
 	ConfirmConnection(m_world[29]->N(m_world[30]));
+	ConfirmConnection(m_world[29]->S(m_world[28]));
 	//Map 4
 	//A1
 	ConfirmConnection(m_world[30]->N(m_world[31]));
+	ConfirmConnection(m_world[30]->S(m_world[29]));
 	//A2
 	ConfirmConnection(m_world[31]->N(m_world[32]));
+	ConfirmConnection(m_world[31]->S(m_world[30]));
 	//A3
 	ConfirmConnection(m_world[32]->W(m_world[33]));
 	ConfirmConnection(m_world[32]->S(m_world[31]));
@@ -332,6 +356,7 @@ void World::ConnectRooms()
 	//Map 5
 	//A1
 	ConfirmConnection(m_world[45]->N(m_world[46]));
+	ConfirmConnection(m_world[45]->S(m_world[44]));
 	//A2
 	ConfirmConnection(m_world[46]->N(m_world[47]));
 	ConfirmConnection(m_world[46]->S(m_world[45]));
@@ -358,11 +383,14 @@ void World::ConnectRooms()
 	ConfirmConnection(m_world[53]->S(m_world[52]));
 	//A6
 	ConfirmConnection(m_world[54]->N(m_world[55]));
+	ConfirmConnection(m_world[54]->S(m_world[53]));
 	//A7
 	ConfirmConnection(m_world[55]->N(m_world[56]));
+	ConfirmConnection(m_world[55]->S(m_world[54]));
 	//Map 6
 	//A1
 	ConfirmConnection(m_world[56]->N(m_world[57]));
+	ConfirmConnection(m_world[56]->S(m_world[55]));
 	//A2
 	ConfirmConnection(m_world[57]->N(m_world[72]));
 	ConfirmConnection(m_world[57]->S(m_world[55]));
@@ -429,36 +457,53 @@ void World::ConnectRooms()
 	ConfirmConnection(m_world[76]->S(m_world[75]));
 	//A8
 	ConfirmConnection(m_world[77]->E(m_world[78]));
+	ConfirmConnection(m_world[77]->W(m_world[76]));
 	//A9
 	ConfirmConnection(m_world[78]->E(m_world[79]));
+	ConfirmConnection(m_world[78]->W(m_world[77]));
 	//A10
 	ConfirmConnection(m_world[79]->E(m_world[80]));
+	ConfirmConnection(m_world[79]->W(m_world[78]));
 	//A11
 	ConfirmConnection(m_world[80]->N(m_world[81]));
+	ConfirmConnection(m_world[80]->W(m_world[79]));
 	//Map 7
 	//A1
 	ConfirmConnection(m_world[81]->N(m_world[82]));
+	ConfirmConnection(m_world[81]->S(m_world[80]));
 	//A2
 	ConfirmConnection(m_world[82]->N(m_world[83]));
+	ConfirmConnection(m_world[82]->S(m_world[81]));
 	//A3
 	ConfirmConnection(m_world[83]->N(m_world[84]));
+	ConfirmConnection(m_world[83]->S(m_world[82]));
 	//A4
-	ConfirmConnection(m_world[84]->N(m_world[86]));
+	ConfirmConnection(m_world[84]->N(m_world[85]));
+	ConfirmConnection(m_world[84]->S(m_world[83]));
 	//A5
+	ConfirmConnection(m_world[85]->E(m_world[86]));
+	ConfirmConnection(m_world[85]->S(m_world[84]));
 	ConfirmConnection(m_world[86]->E(m_world[87]));
+	ConfirmConnection(m_world[86]->W(m_world[85]));
 	//Inn1
 	ConfirmConnection(m_world[87]->E(m_world[88]));
+	ConfirmConnection(m_world[87]->W(m_world[86]));
 	//Inn2
 	ConfirmConnection(m_world[88]->N(m_world[89]));
+	ConfirmConnection(m_world[88]->W(m_world[87]));
 	//Inn3
 	ConfirmConnection(m_world[89]->N(m_world[90]));
+	ConfirmConnection(m_world[89]->S(m_world[88]));
 	//Inn4
 	ConfirmConnection(m_world[90]->W(m_world[91]));
+	ConfirmConnection(m_world[90]->S(m_world[89]));
 	//A6
 	ConfirmConnection(m_world[91]->N(m_world[92]));
+	ConfirmConnection(m_world[91]->E(m_world[90]));
 	//Map 8
 	//A1
 	ConfirmConnection(m_world[92]->N(m_world[93]));
+	ConfirmConnection(m_world[92]->S(m_world[91]));
 	//A2
 	ConfirmConnection(m_world[93]->W(m_world[94]));
 	ConfirmConnection(m_world[93]->S(m_world[91]));
@@ -470,7 +515,7 @@ void World::ConnectRooms()
 	ConfirmConnection(m_world[95]->S(m_world[94]));
 	//A4
 	ConfirmConnection(m_world[96]->W(m_world[97]));
-	ConfirmConnection(m_world[91]->E(m_world[94]));
+	ConfirmConnection(m_world[96]->E(m_world[94]));
 	//A5
 	ConfirmConnection(m_world[97]->N(m_world[98]));
 	ConfirmConnection(m_world[97]->E(m_world[96]));
@@ -479,9 +524,11 @@ void World::ConnectRooms()
 	ConfirmConnection(m_world[98]->S(m_world[97]));
 	//A7
 	ConfirmConnection(m_world[99]->N(m_world[100]));
+	ConfirmConnection(m_world[99]->S(m_world[98]));
 	//A8
 	ConfirmConnection(m_world[100]->N(m_world[102]));
 	ConfirmConnection(m_world[100]->W(m_world[101]));
+	ConfirmConnection(m_world[100]->S(m_world[99]));
 	//B2
 	ConfirmConnection(m_world[101]->E(m_world[100]));
 	//A9
@@ -495,48 +542,71 @@ void World::ConnectRooms()
 	ConfirmConnection(m_world[104]->W(m_world[103]));
 	//A12
 	ConfirmConnection(m_world[105]->N(m_world[106]));
+	ConfirmConnection(m_world[105]->S(m_world[104]));
 	//Map 9
 	//A1
 	ConfirmConnection(m_world[106]->N(m_world[107]));
+	ConfirmConnection(m_world[106]->S(m_world[105]));
 	//A2
 	ConfirmConnection(m_world[107]->N(m_world[108]));
+	ConfirmConnection(m_world[107]->S(m_world[106]));
 	//A3
 	ConfirmConnection(m_world[108]->N(m_world[109]));
+	ConfirmConnection(m_world[108]->S(m_world[107]));
 	//A4
 	ConfirmConnection(m_world[109]->E(m_world[110]));
+	ConfirmConnection(m_world[109]->S(m_world[108]));
 	//A5
 	ConfirmConnection(m_world[110]->E(m_world[111]));
+	ConfirmConnection(m_world[110]->W(m_world[109]));
 	//A6
 	ConfirmConnection(m_world[111]->N(m_world[112]));
+	ConfirmConnection(m_world[111]->W(m_world[110]));
 	//A7
 	ConfirmConnection(m_world[112]->W(m_world[113]));
+	ConfirmConnection(m_world[112]->E(m_world[111]));
 	//A8
 	ConfirmConnection(m_world[113]->W(m_world[114]));
+	ConfirmConnection(m_world[113]->E(m_world[112]));
 	//A9
 	ConfirmConnection(m_world[114]->W(m_world[115]));
+	ConfirmConnection(m_world[114]->E(m_world[113]));
 	//A10
 	ConfirmConnection(m_world[115]->N(m_world[116]));
+	ConfirmConnection(m_world[115]->E(m_world[114]));
 	//A11
 	ConfirmConnection(m_world[116]->N(m_world[117]));
+	ConfirmConnection(m_world[116]->S(m_world[115]));
 	//A12
 	ConfirmConnection(m_world[117]->E(m_world[118]));
+	ConfirmConnection(m_world[117]->S(m_world[116]));
 	//A13
 	ConfirmConnection(m_world[118]->E(m_world[119]));
+	ConfirmConnection(m_world[118]->W(m_world[117]));
 	//A14
 	ConfirmConnection(m_world[119]->E(m_world[120]));
+	ConfirmConnection(m_world[119]->W(m_world[118]));
 	//A15
 	ConfirmConnection(m_world[120]->N(m_world[121]));
+	ConfirmConnection(m_world[120]->W(m_world[119]));
 	//A16
 	ConfirmConnection(m_world[121]->N(m_world[122]));
+	ConfirmConnection(m_world[121]->S(m_world[120]));
 	//Map 10
 	//A1
 	ConfirmConnection(m_world[122]->N(m_world[123]));
+	ConfirmConnection(m_world[122]->S(m_world[121]));
 	//A2
 	ConfirmConnection(m_world[123]->N(m_world[124]));
+	ConfirmConnection(m_world[123]->S(m_world[122]));
 	//A3
 	ConfirmConnection(m_world[124]->N(m_world[125]));
+	ConfirmConnection(m_world[124]->S(m_world[123]));
 	//A4
 	ConfirmConnection(m_world[125]->N(m_world[126]));
+	ConfirmConnection(m_world[125]->S(m_world[124]));
+	//End
+	ConfirmConnection(m_world[126]->S(m_world[125]));
 
 
 
