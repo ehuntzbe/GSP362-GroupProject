@@ -18,13 +18,13 @@ Player::Player()
 	m_primeStat = "none";
 	m_secondStat = "none";
 	m_stats.SetAgi(10);
-	m_stats.SetAs(0);
+	m_stats.SetAs(5);
 	m_stats.SetExp(0);
 	m_stats.SetHp(50);
 	m_stats.SetMp(30);
 	m_stats.SetStr(15);
 	m_stats.SetMaxAgi(10);
-	m_stats.SetMaxAs(0);
+	m_stats.SetMaxAs(5);
 	m_stats.SetMaxHp(50);
 	m_stats.SetMaxMp(30);
 	m_stats.SetMaxStr(15);

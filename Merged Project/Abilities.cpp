@@ -55,4 +55,15 @@ void ability::AddAbilities()
 	abBuf.m_type = HP;
 	abBuf.m_amount = PC->GetStats().GetMaxHp() - PC->GetStats().GetHp();
 	PC->AddAbility(abBuf);
+
+	abBuf.m_name = "Mana Bomb"; //higher mana cost, higher damage, a 3-round cooldown
+	abBuf.m_desc = "You throw a bomb made of mana at the enemy.\n";
+	abBuf.m_unlockLevel = 10;
+	abBuf.m_cooldown = 3;
+	abBuf.m_hpCost = 0;
+	abBuf.m_mpCost = 30;
+	abBuf.m_target = ENEMY;
+	abBuf.m_type = HP;
+	abBuf.m_amount = -(PC->GetStats().GetStr() * 3);
+	PC->AddAbility(abBuf);
 }

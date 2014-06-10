@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "Combat.h"
+#include "Sound.h"
 using namespace std;
 
 combat_outcome Combat(Combatant player, Combatant enemy)
@@ -21,8 +22,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 
 		// ask for command input from player, and execute it
 		do {
-			cout << "Attack \tGuard\n"
-				"xxxxxxx \tFlee\n" //replace xxxxxxx with Ability when implemented
+			cout << "Attack \tGuard \txxxxxxx \tFlee \n" //replace xxxxxxx with Ability when implemented
 				"HP: " << player.GetHp() << "/" << player.GetMaxHp() << " | MP: " << player.GetMp() << "/" << player.GetMaxMp() << " |>" << endl;
 			getline(cin, userInput);
 			if(	(userInput == "a") || (userInput == "attack") ||
@@ -40,24 +40,32 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 			hp = enemy.GetHp();
 			hp = hp - damage;
 			enemy.SetHp(hp);
+			SoundEffect(L"defaultjump.wav",L"Joke.wav");
 		}
 
 		// guard
 		if((userInput == "g") || (userInput == "guard")) {
 			player_guard = true;
 			cout << "You put up your guard.." << endl;
+			SoundEffect(L"defaultjump.wav",L"Joke.wav");
 		}
 
 		// flee
 		if((userInput == "f") || (userInput == "flee")) {
 			cout << "You attempt to flee." << endl;
-			if(((player.GetAgi()/2) + (rand() % (player.GetAgi()/2))) - ((enemy.GetAgi()/2) + (rand() % (enemy.GetAgi()/2))) > 0)	return FLED;
+			if(((player.GetAgi()/2) + (rand() % (player.GetAgi()/2))) - ((enemy.GetAgi()/2) + (rand() % (enemy.GetAgi()/2))) > 0)
+			{
+					return FLED;
+					SoundEffect(L"defaultjump.wav",L"Joke.wav");
+			}
 			cout << "You couldn't get away!" << endl;
+			SoundEffect(L"defaultjump.wav",L"Joke.wav");
 		}
 
 		// if enemy's hp is 0 or less, kill enemy and return true
 		if(enemy.GetHp() <= 0) {
 			cout << "You strike the finishing blow!" << endl;
+			SoundEffect(L"defaultjump.wav",L"Joke.wav");
 			return KILLED;
 		}
 		

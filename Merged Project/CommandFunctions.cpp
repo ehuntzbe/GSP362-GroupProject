@@ -37,7 +37,6 @@ void Kill(string p_target)
 		{
 		case DEAD:
 			cout << "Game over." << endl;
-			system("pause");
 			exit(0);
 			break;
 		case FLED:
