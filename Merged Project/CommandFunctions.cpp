@@ -272,7 +272,10 @@ void Equipment()
 	cout << "Shoulders: " << equipment[SHOULDERS].GetShort() << endl;
 	cout << "Arms: " << equipment[ARMS].GetShort() << endl;
 	cout << "Hands: " << equipment[HANDS].GetShort() << endl;
-	cout << "Mainhand: " << equipment[MAINHAND].GetShort() << endl;
+	if (PC->GetLevel() < 3) //whatever level the dark gun is gained at
+		cout << "Mainhand: a magitech sword" << endl;
+	else
+		cout << "Mainhand: the Dark Gun" << endl;
 	cout << "Offhand: " << equipment[OFFHAND].GetShort() << endl;
 	cout << "Body: " << equipment[BODY].GetShort() << endl;
 	cout << "Legs: " << equipment[LEGS].GetShort() << endl;
@@ -325,7 +328,10 @@ void ExaEquip()
 	cout << "Shoulders: " << "(" << equipment[SHOULDERS].GetName() << ") " << equipment[SHOULDERS].GetShort() << endl;
 	cout << "Arms: " << "(" << equipment[ARMS].GetName() << ") " << equipment[ARMS].GetShort() << endl;
 	cout << "Hands: " << "(" << equipment[HANDS].GetName() << ") " << equipment[HANDS].GetShort() << endl;
-	cout << "Mainhand: " << "(" << equipment[MAINHAND].GetName() << ") " << equipment[MAINHAND].GetShort() << endl;
+	if (PC->GetLevel() < 3) //whatever level the dark gun is gained at
+		cout << "Mainhand: (no name) a magitech sword" << endl;
+	else
+		cout << "Mainhand: (no name) the Dark Gun" << endl;
 	cout << "Offhand: " << "(" << equipment[OFFHAND].GetName() << ") " << equipment[OFFHAND].GetShort() << endl;
 	cout << "Body: " << "(" << equipment[BODY].GetName() << ") " << equipment[BODY].GetShort() << endl;
 	cout << "Legs: " << "(" << equipment[LEGS].GetName() << ") " << equipment[LEGS].GetShort() << endl;

@@ -19,7 +19,7 @@ A generic item class or structure that should contain.
 enum wear_slot
 {
 	HEAD, SHOULDERS, ARMS, 
-	HANDS, OFFHAND, MAINHAND, 
+	HANDS, OFFHAND,
 	BODY, LEGS, FEET
 };
 
