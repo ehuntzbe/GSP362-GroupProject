@@ -28,3 +28,4 @@ void ExaEquip();
 void ExaLook();
 void Get(string p_target);
 void Drop(string p_target);
+void Use(string p_target);

@@ -54,7 +54,7 @@ void Kill(string p_target)
 					room->AddItem(*it);
 				}
 			}
-			PC->AwardExperience(opponent.GetStats().GetExp());
+			PC->AwardExperience(opponent.GetStats()->GetExp());
 			room->RemoveNpc(opponent.GetName());
 			break;
 		}
@@ -167,11 +167,11 @@ void Score()
 	cout << "Gender: " << PC->GetDesc() << endl;
 	cout << "Level: " << PC->GetLevel() << endl;
 	cout << "Exp: " << PC->GetExperience() << endl;
-	cout << "HP: " <<  PC->GetStats().GetHp() << "/" << PC->GetStats().GetMaxHp() << endl;
-	cout << "MP: " <<  PC->GetStats().GetMp() << "/" << PC->GetStats().GetMaxMp() << endl;
-	cout << "Strength: " <<  PC->GetStats().GetStr() << endl;
-	cout << "Agility: " <<  PC->GetStats().GetAgi() << endl;
-	cout << "Armor: " << PC->GetStats().GetAs() << endl;
+	cout << "HP: " <<  PC->GetStats()->GetHp() << "/" << PC->GetStats()->GetMaxHp() << endl;
+	cout << "MP: " <<  PC->GetStats()->GetMp() << "/" << PC->GetStats()->GetMaxMp() << endl;
+	cout << "Strength: " <<  PC->GetStats()->GetStr() << endl;
+	cout << "Agility: " <<  PC->GetStats()->GetAgi() << endl;
+	cout << "Armor: " << PC->GetStats()->GetAs() << endl;
 }
 
 void Inventory()
@@ -364,9 +364,15 @@ void ExaLook()
 void Get(string p_target)
 {
 	Room* room = PC->GetCurrentRoom();
-	cout << "You drop " << room->GetItem(p_target).GetShort() << "." << endl;
-	PC->AddItem(room->GetItem(p_target));
-	room->RemoveItem(p_target);
+	Item gotItem = room->GetItem(p_target);
+	if (gotItem.GetName() != "none")
+	{
+		cout << "You get " << gotItem.GetShort() << "." << endl;
+		PC->AddItem(gotItem);
+		room->RemoveItem(p_target);
+	}
+	else
+		cout << "You do not see that item here." << endl;
 }
 
 void Drop(string p_target)
@@ -380,7 +386,54 @@ void Drop(string p_target)
 			cout << "You drop " << it->GetShort() << "." << endl;
 			room->AddItem(*it);
 			PC->RemoveItem(p_target);
-			break;
+			return;
 		}
 	}
+	cout << "You do not have that item." << endl;
+}
+
+void Use(string p_target)
+{
+	Room* room = PC->GetCurrentRoom();
+	list<Item> items = PC->GetInventory();
+	for (list<Item>::iterator it = items.begin(); it != items.end(); ++it)
+	{
+		if (it->GetName() == p_target)
+		{
+			if (it->GetWearSlot() == NONE)
+			{
+				cout << "You use " << it->GetShort() << "." << endl;
+				switch(it->GetUseAffect())
+				{
+				case HP: //restores health
+					PC->GetStats()->SetHp(PC->GetStats()->GetHp()+it->GetUseAffectAmount());
+					if (PC->GetStats()->GetHp() > PC->GetStats()->GetMaxHp())
+						PC->GetStats()->SetHp(PC->GetStats()->GetMaxHp());
+					break;
+				case MP: //restores mana
+					PC->GetStats()->SetMp(PC->GetStats()->GetMp()+it->GetUseAffectAmount());
+					if (PC->GetStats()->GetMp() > PC->GetStats()->GetMaxMp())
+						PC->GetStats()->SetMp(PC->GetStats()->GetMaxMp());
+					break;
+				case STR: //increases strength permanently
+					PC->GetStats()->SetStr(PC->GetStats()->GetStr()+it->GetUseAffectAmount());
+					PC->GetStats()->SetMaxStr(PC->GetStats()->GetMaxStr()+it->GetUseAffectAmount());
+					break;
+				case AGI: //increases agility permanently
+					PC->GetStats()->SetAgi(PC->GetStats()->GetAgi()+it->GetUseAffectAmount());
+					PC->GetStats()->SetMaxAgi(PC->GetStats()->GetMaxAgi()+it->GetUseAffectAmount());
+					break;
+				case AS: //increases armor score permanently
+					PC->GetStats()->SetAs(PC->GetStats()->GetAs()+it->GetUseAffectAmount());
+					PC->GetStats()->SetMaxAs(PC->GetStats()->GetMaxAs()+it->GetUseAffectAmount());
+					break;
+				}
+				PC->RemoveItem(p_target);
+			}
+			else
+				cout << "You cannot use this item." << endl;
+			return;
+		}
+	}
+	cout << "You do not have that item." << endl;
 }

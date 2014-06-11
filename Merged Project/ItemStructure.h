@@ -18,7 +18,7 @@ A generic item class or structure that should contain.
 
 enum wear_slot
 {
-	HEAD, SHOULDERS, ARMS, 
+	NONE, HEAD, SHOULDERS, ARMS, 
 	HANDS, OFFHAND,
 	BODY, LEGS, FEET
 };
@@ -27,6 +27,8 @@ enum save_location
 {
 	NOWHERE, IN_INVENTORY, IN_EQUIPMENT, IN_ROOM, IN_NPC
 };
+
+enum type;
 
 class Item
 {
@@ -45,8 +47,11 @@ private:
 	int m_locationId;
 	int m_itemId;
 
+	type m_useItemAffect;
+	int m_useItemAmount;
+
 public:
-	Item() {m_itemName = "none"; m_location = NOWHERE; m_locationId = -1; m_itemId = -1; m_hpBoost = 0; m_mpBoost = 0; m_strBoost = 0; m_agiBoost = 0; m_asBoost = 0; m_wearSlot = HANDS; m_desc = "none"; m_shortDesc = "none";}
+	Item();
 	//Getters
 	wear_slot GetWearSlot() const { return m_wearSlot; }
 	int GetHpBoost()	const	{ return m_hpBoost; }
@@ -60,6 +65,8 @@ public:
 	save_location GetSaveLocation() const {return m_location;}
 	int GetLocationId() const	{ return m_locationId; }
 	int GetItemId()		const	{ return m_itemId; }
+	type GetUseAffect()	const	{ return m_useItemAffect; }
+	int GetUseAffectAmount() const	{ return m_useItemAmount; }
 	//Setters
 	void SetWearSlot(wear_slot p_wearSlot) { m_wearSlot = p_wearSlot; }
 	void SetHpBoost(int hp)		{ m_hpBoost = hp; }
@@ -73,4 +80,6 @@ public:
 	void SetSaveLocation(save_location p_loc) {m_location = p_loc;}
 	void SetLocationId(int p_id) {m_locationId = p_id;}
 	void SetItemId(int p_id) {m_itemId = p_id;}
+	void SetUseAffect(type p_affect) {m_useItemAffect = p_affect;}
+	void SetUseAffectAmount(int p_amt) {m_useItemAmount = p_amt;}
 };

@@ -21,6 +21,7 @@ enum command
 	HELP,
 	GROWTH,
 	QUIT,
+	USE,
 
 	//Directional commands
 	GO_NORTH,	GO_SOUTH,	GO_EAST,	GO_WEST,	GO_UP,	GO_DOWN

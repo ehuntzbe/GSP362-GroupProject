@@ -61,4 +61,4 @@ public:
 };
 
 // Combat function prototype
-combat_outcome Combat(Combatant player, Combatant enemy);	// combat function prototype
+combat_outcome Combat(Combatant *player, Combatant *enemy);	// combat function prototype

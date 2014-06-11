@@ -46,23 +46,23 @@ void World::DisplayRoom(int p_roomID)
 		for (int a = 0; a < m_world[p_roomID]->GetNumNpc(); a++)
 		{
 			vector<Character> temp;
-			Combatant tempStats;
+			Combatant* tempStats;
 						
 			temp = m_world[p_roomID]->NpcList();
 			tempStats = temp[a].GetStats();
 
 			cout << "Name: "<< temp[a].GetName() <<endl;
 			cout << "Desc: "<< temp[a].GetDesc() <<endl;
-			cout << "Max HP: "<< tempStats.GetMaxHp() <<endl;		
-			cout << "Max MP: "<< tempStats.GetMaxMp() <<endl;		
-			cout << "Max Str: "<< tempStats.GetMaxStr() <<endl;		
-			cout << "Max Agi: "<< tempStats.GetMaxAgi() <<endl;		
-			cout << "Max As: "<< tempStats.GetMaxAs() <<endl;		
-			cout << "HP: "<< tempStats.GetHp() <<endl;			
-			cout << "MP: "<< tempStats.GetMp() <<endl;			
-			cout << "Str: "<< tempStats.GetStr() <<endl;			
-			cout << "Agi: "<< tempStats.GetAgi() <<endl;			
-			cout << "As: "<< tempStats.GetAs() <<endl;
+			cout << "Max HP: "<< tempStats->GetMaxHp() <<endl;		
+			cout << "Max MP: "<< tempStats->GetMaxMp() <<endl;		
+			cout << "Max Str: "<< tempStats->GetMaxStr() <<endl;		
+			cout << "Max Agi: "<< tempStats->GetMaxAgi() <<endl;		
+			cout << "Max As: "<< tempStats->GetMaxAs() <<endl;		
+			cout << "HP: "<< tempStats->GetHp() <<endl;			
+			cout << "MP: "<< tempStats->GetMp() <<endl;			
+			cout << "Str: "<< tempStats->GetStr() <<endl;			
+			cout << "Agi: "<< tempStats->GetAgi() <<endl;			
+			cout << "As: "<< tempStats->GetAs() <<endl;
 		}
 	}
 	cout << "EXITS:"; m_world[p_roomID]->DisplayExits(); cout << endl;

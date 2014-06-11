@@ -14,6 +14,8 @@ CommandControl::CommandControl()
 	AddCommandSyntax("exa", EXAMINE);
 	AddCommandSyntax("examine", EXAMINE);
 
+	AddCommandSyntax("use", USE);
+
 	AddCommandSyntax("k", KILL);
 	AddCommandSyntax("kill", KILL);
 

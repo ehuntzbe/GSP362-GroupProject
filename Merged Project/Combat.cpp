@@ -6,7 +6,7 @@
 #include "Sound.h"
 using namespace std;
 
-combat_outcome Combat(Combatant player, Combatant enemy)
+combat_outcome Combat(Combatant *player, Combatant *enemy)
 {	// Plays a combat.
 	// Returns true if player defeats enemy, and false otherwise
 
@@ -23,7 +23,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		// ask for command input from player, and execute it
 		do {
 			cout << "Attack \tGuard \txxxxxxx \tFlee \n" //replace xxxxxxx with Ability when implemented
-				"HP: " << player.GetHp() << "/" << player.GetMaxHp() << " | MP: " << player.GetMp() << "/" << player.GetMaxMp() << " |>" << endl;
+				"HP: " << player->GetHp() << "/" << player->GetMaxHp() << " | MP: " << player->GetMp() << "/" << player->GetMaxMp() << " |>" << endl;
 			getline(cin, userInput);
 			if(	(userInput == "a") || (userInput == "attack") ||
 				(userInput == "g") || (userInput == "guard") ||
@@ -34,12 +34,12 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 
 		// attack
 		if((userInput == "a") || (userInput == "attack")) {
-			damage = ((player.GetStr()/2) + (rand() % (player.GetStr()/2))) - ((enemy.GetAs()/2) + (rand() % (enemy.GetAs()/2)));
+			damage = ((player->GetStr()/2) + (rand() % (player->GetStr()/2))) - ((enemy->GetAs()/2) + (rand() % (enemy->GetAs()/2)));
 			if(damage < 0)	damage = 0;
 			cout << "You hit the enemy for " << damage << " damage!" << endl;
-			hp = enemy.GetHp();
+			hp = enemy->GetHp();
 			hp = hp - damage;
-			enemy.SetHp(hp);
+			enemy->SetHp(hp);
 			SoundEffect(L"defaultjump.wav",L"Joke.wav");
 		}
 
@@ -53,7 +53,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		// flee
 		if((userInput == "f") || (userInput == "flee")) {
 			cout << "You attempt to flee." << endl;
-			if(((player.GetAgi()/2) + (rand() % (player.GetAgi()/2))) - ((enemy.GetAgi()/2) + (rand() % (enemy.GetAgi()/2))) > 0)
+			if(((player->GetAgi()/2) + (rand() % (player->GetAgi()/2))) - ((enemy->GetAgi()/2) + (rand() % (enemy->GetAgi()/2))) > 0)
 			{
 					return FLED;
 					SoundEffect(L"defaultjump.wav",L"Joke.wav");
@@ -63,7 +63,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		}
 
 		// if enemy's hp is 0 or less, kill enemy and return true
-		if(enemy.GetHp() <= 0) {
+		if(enemy->GetHp() <= 0) {
 			cout << "You strike the finishing blow!" << endl;
 			SoundEffect(L"defaultjump.wav",L"Joke.wav");
 			return KILLED;
@@ -76,12 +76,12 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		switch(enemy_choice) {
 		case 0:
 			// attack
-			damage = ((enemy.GetStr()/2) + (rand() % (enemy.GetStr()/2))) - ((player.GetAs()/2) + (rand() % (player.GetAs()/2)));
+			damage = ((enemy->GetStr()/2) + (rand() % (enemy->GetStr()/2))) - ((player->GetAs()/2) + (rand() % (player->GetAs()/2)));
 			if(damage < 0)	damage = 0;
 			cout << "The enemy hits you for " << damage << " damage!" << endl;
-			hp = player.GetHp();
+			hp = player->GetHp();
 			hp = hp - damage;
-			player.SetHp(hp);
+			player->SetHp(hp);
 			break;
 
 		case 1:
@@ -92,7 +92,7 @@ combat_outcome Combat(Combatant player, Combatant enemy)
 		}
 
 		// if player's hp is 0 or less, kill player and return false
-		if(player.GetHp() <= 0) {
+		if(player->GetHp() <= 0) {
 			cout << "A fatal low strikes you.." << endl;
 			return DEAD;
 		}

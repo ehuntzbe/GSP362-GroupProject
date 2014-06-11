@@ -5,34 +5,34 @@ void Save()
 	ofstream myfile ("PlayerCharacter.txt");
 	if (myfile.is_open())
 	{
-		Combatant temp;
+		Combatant *temp;
 		temp = PC->GetStats();
 		
 		myfile << PC->GetName();
 		myfile << "\n";
 		myfile << PC->GetDesc();
 		myfile << "\n";
-		myfile << temp.GetMaxHp();
+		myfile << temp->GetMaxHp();
 		myfile << "\n";
-		myfile << temp.GetMaxMp();
+		myfile << temp->GetMaxMp();
 		myfile << "\n";
-		myfile << temp.GetMaxStr();
+		myfile << temp->GetMaxStr();
 		myfile << "\n";
-		myfile << temp.GetMaxAgi();	
+		myfile << temp->GetMaxAgi();	
 		myfile << "\n";
-		myfile << temp.GetMaxAs();
+		myfile << temp->GetMaxAs();
 		myfile << "\n";
-		myfile << temp.GetHp();	
+		myfile << temp->GetHp();	
 		myfile << "\n";
-		myfile << temp.GetMp();	
+		myfile << temp->GetMp();	
 		myfile << "\n";
-		myfile << temp.GetStr();	
+		myfile << temp->GetStr();	
 		myfile << "\n";
-		myfile << temp.GetAgi();	
+		myfile << temp->GetAgi();	
 		myfile << "\n";
-		myfile << temp.GetAs();
+		myfile << temp->GetAs();
 		myfile << "\n";
-		myfile << temp.GetExp();
+		myfile << temp->GetExp();
 		myfile << "\n";
 		myfile.close();
 

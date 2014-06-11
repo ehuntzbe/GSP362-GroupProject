@@ -4,6 +4,11 @@
 #include "Character.h"
 using namespace std;
 
+Character::Character()
+{
+	m_stats = new Combatant();
+}
+
 string Character::GetName() const
 {
 	return m_name;
@@ -26,17 +31,17 @@ void Character::SetDesc(string p_desc)
 
 void Character::SetStats(Combatant p_stats)
 {	
-	m_stats.SetMaxHp(p_stats.GetMaxHp());		
-	m_stats.SetMaxMp(p_stats.GetMaxMp());		
-	m_stats.SetMaxStr(p_stats.GetMaxStr());	
-	m_stats.SetMaxAgi(p_stats.GetMaxAgi());	
-	m_stats.SetMaxAs(p_stats.GetMaxAs());		
-	m_stats.SetHp(p_stats.GetHp());		
-	m_stats.SetMp(p_stats.GetMp());		
-	m_stats.SetStr(p_stats.GetStr());		
-	m_stats.SetAgi(p_stats.GetAgi());		
-	m_stats.SetAs(p_stats.GetAs());		
-	m_stats.SetExp(p_stats.GetExp());	
+	m_stats->SetMaxHp(p_stats.GetMaxHp());		
+	m_stats->SetMaxMp(p_stats.GetMaxMp());		
+	m_stats->SetMaxStr(p_stats.GetMaxStr());	
+	m_stats->SetMaxAgi(p_stats.GetMaxAgi());	
+	m_stats->SetMaxAs(p_stats.GetMaxAs());		
+	m_stats->SetHp(p_stats.GetHp());		
+	m_stats->SetMp(p_stats.GetMp());		
+	m_stats->SetStr(p_stats.GetStr());		
+	m_stats->SetAgi(p_stats.GetAgi());		
+	m_stats->SetAs(p_stats.GetAs());		
+	m_stats->SetExp(p_stats.GetExp());	
 }
 
 void Character::RemoveItem(string p_itemName)

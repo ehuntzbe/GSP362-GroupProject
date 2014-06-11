@@ -17,17 +17,17 @@ Player::Player()
 	m_level = 1;
 	m_primeStat = "none";
 	m_secondStat = "none";
-	m_stats.SetAgi(10);
-	m_stats.SetAs(5);
-	m_stats.SetExp(0);
-	m_stats.SetHp(50);
-	m_stats.SetMp(30);
-	m_stats.SetStr(15);
-	m_stats.SetMaxAgi(10);
-	m_stats.SetMaxAs(5);
-	m_stats.SetMaxHp(50);
-	m_stats.SetMaxMp(30);
-	m_stats.SetMaxStr(15);
+	m_stats->SetAgi(10);
+	m_stats->SetAs(5);
+	m_stats->SetExp(0);
+	m_stats->SetHp(46);
+	m_stats->SetMp(30);
+	m_stats->SetStr(15);
+	m_stats->SetMaxAgi(10);
+	m_stats->SetMaxAs(5);
+	m_stats->SetMaxHp(50);
+	m_stats->SetMaxMp(30);
+	m_stats->SetMaxStr(15);
 }
 
 Player* Player::GetInstance()
@@ -73,7 +73,14 @@ void Player::LevelUp()
 	statsGained.SetStr(str);	statsGained.SetMaxStr(str);
 	statsGained.SetHp(hp);		statsGained.SetMaxHp(hp);
 	statsGained.SetMp(mp);		statsGained.SetMaxMp(mp);
-	Combatant newStats = PC->GetStats() + statsGained; //add stats gained to previous stats
+	Combatant oldStats;
+	Combatant* pOldStats = PC->GetStats();
+	oldStats.SetAgi(pOldStats->GetAgi());	oldStats.SetMaxAgi(pOldStats->GetMaxAgi());
+	oldStats.SetAs(pOldStats->GetAs());		oldStats.SetMaxAs(pOldStats->GetMaxAs());
+	oldStats.SetStr(pOldStats->GetStr());	oldStats.SetMaxStr(pOldStats->GetMaxStr());
+	oldStats.SetHp(pOldStats->GetHp());	oldStats.SetMaxHp(pOldStats->GetMaxHp());
+	oldStats.SetMp(pOldStats->GetMp());	oldStats.SetMaxMp(pOldStats->GetMaxMp());
+	Combatant newStats = oldStats + statsGained; //add stats gained to previous stats
 	PC->SetStats(newStats); //set the PC's stats to these new stats
 }
 
@@ -141,7 +148,14 @@ void Player::UnequipItem(Item p_item)
 	statsGained.SetStr(str);	statsGained.SetMaxStr(str);
 	statsGained.SetHp(hp);		statsGained.SetMaxHp(hp);
 	statsGained.SetMp(mp);		statsGained.SetMaxMp(mp);
-	Combatant newStats = PC->GetStats() + statsGained; //add stats gained to previous stats
+	Combatant oldStats;
+	Combatant* pOldStats = PC->GetStats();
+	oldStats.SetAgi(pOldStats->GetAgi());	oldStats.SetMaxAgi(pOldStats->GetMaxAgi());
+	oldStats.SetAs(pOldStats->GetAs());		oldStats.SetMaxAs(pOldStats->GetMaxAs());
+	oldStats.SetStr(pOldStats->GetStr());	oldStats.SetMaxStr(pOldStats->GetMaxStr());
+	oldStats.SetHp(pOldStats->GetHp());	oldStats.SetMaxHp(pOldStats->GetMaxHp());
+	oldStats.SetMp(pOldStats->GetMp());	oldStats.SetMaxMp(pOldStats->GetMaxMp());
+	Combatant newStats = oldStats + statsGained; //add stats gained to previous stats
 	PC->SetStats(newStats); //set the PC's stats to these new stats
 	cout << "You unequip " << p_item.GetShort() << "." << endl;
 }
@@ -163,7 +177,14 @@ void Player::EquipItem(Item p_item)
 	statsGained.SetStr(str);	statsGained.SetMaxStr(str);
 	statsGained.SetHp(hp);		statsGained.SetMaxHp(hp);
 	statsGained.SetMp(mp);		statsGained.SetMaxMp(mp);
-	Combatant newStats = PC->GetStats() + statsGained; //add stats gained to previous stats
+	Combatant oldStats;
+	Combatant* pOldStats = PC->GetStats();
+	oldStats.SetAgi(pOldStats->GetAgi());	oldStats.SetMaxAgi(pOldStats->GetMaxAgi());
+	oldStats.SetAs(pOldStats->GetAs());		oldStats.SetMaxAs(pOldStats->GetMaxAs());
+	oldStats.SetStr(pOldStats->GetStr());	oldStats.SetMaxStr(pOldStats->GetMaxStr());
+	oldStats.SetHp(pOldStats->GetHp());	oldStats.SetMaxHp(pOldStats->GetMaxHp());
+	oldStats.SetMp(pOldStats->GetMp());	oldStats.SetMaxMp(pOldStats->GetMaxMp());
+	Combatant newStats = oldStats + statsGained; //add stats gained to previous stats
 	PC->SetStats(newStats); //set the PC's stats to these new stats
 	cout << "You equip " << p_item.GetShort() << "." << endl;
 }

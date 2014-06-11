@@ -98,6 +98,7 @@
     <ClCompile Include="InputParsing.cpp" />
     <ClCompile Include="Interface.cpp" />
     <ClCompile Include="Items.cpp" />
+    <ClCompile Include="ItemStructure.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Room.cpp" />

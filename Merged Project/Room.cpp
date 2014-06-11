@@ -118,7 +118,6 @@ Character Room::GetNPC(string p_name)
 		}
 	}
 	Character nullNPC;
-	nullNPC.SetName("NULL");
 	return nullNPC;
 }
 
@@ -130,7 +129,6 @@ Item Room::GetItem(string p_name)
 			return *it;
 	}
 	Item nullItem;
-	nullItem.SetName("NULL");
 	return nullItem;
 }
 

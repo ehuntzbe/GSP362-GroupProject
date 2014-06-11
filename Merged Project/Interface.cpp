@@ -23,7 +23,7 @@ Interface* Interface::GetInstance()
 
 void Interface::Prompt()
 {
-	cout << PC->GetName() << " || HP: " << PC->GetStats().GetHp() << "/" << PC->GetStats().GetMaxHp() << " | MP: " << PC->GetStats().GetMp() << "/" << PC->GetStats().GetMaxMp() << " |> ";
+	cout << PC->GetName() << " || HP: " << PC->GetStats()->GetHp() << "/" << PC->GetStats()->GetMaxHp() << " | MP: " << PC->GetStats()->GetMp() << "/" << PC->GetStats()->GetMaxMp() << " |> ";
 }
 
 void Interface::MainGame()
@@ -93,5 +93,7 @@ void Interface::MainGame()
 			Get(parsedInput.back());
 		if (cmd == DROP)
 			Drop(parsedInput.back());
+		if (cmd == USE)
+			Use(parsedInput.back());
 	}
 }

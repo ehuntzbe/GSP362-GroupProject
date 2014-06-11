@@ -18,6 +18,21 @@ void WorldItems::SpawnItems()
 	itemId++;
 	PC->AddItem(WoodenSword); //test code
 
+
+	Item WeakHerb;
+	WeakHerb.SetWearSlot(NONE);
+	WeakHerb.SetName("weakherb");
+	WeakHerb.SetDesc("An herb is growing here. It may have medicinal uses.");
+	WeakHerb.SetShort("a weak herb");
+	WeakHerb.SetSaveLocation(IN_ROOM);
+	WeakHerb.SetLocationId(1);
+	WeakHerb.SetItemId(itemId);
+	WeakHerb.SetUseAffect(HP);
+	WeakHerb.SetUseAffectAmount(5);
+	m_items.push_back(WeakHerb);
+	itemId++;
+	PC->AddItem(WeakHerb); //test code
+
 	//armor - basic cotton stuff
 	//HEAD, SHOULDERS, ARMS, HANDS, BODY, LEGS, FEET
 
