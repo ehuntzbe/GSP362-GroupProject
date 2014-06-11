@@ -37,6 +37,7 @@ void Kill(string p_target)
 		{
 		case DEAD:
 			cout << "Game over." << endl;
+			system("pause");
 			exit(0);
 			break;
 		case FLED:
@@ -65,6 +66,11 @@ void Kill(string p_target)
 
 void North()
 {
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		cout << "Enemies are blocking your path!" << endl;
+		return;
+	}
 	if (PC->GetCurrentRoom()->CheckExit(NORTH))
 	{
 		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetN());
@@ -76,6 +82,11 @@ void North()
 
 void South()
 {
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		cout << "Enemies are blocking your path!" << endl;
+		return;
+	}
 	if (PC->GetCurrentRoom()->CheckExit(SOUTH))
 	{
 		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetS());
@@ -87,6 +98,11 @@ void South()
 
 void East()
 {
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		cout << "Enemies are blocking your path!" << endl;
+		return;
+	}
 	if (PC->GetCurrentRoom()->CheckExit(EAST))
 	{
 		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetE());
@@ -98,6 +114,11 @@ void East()
 
 void West()
 {
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		cout << "Enemies are blocking your path!" << endl;
+		return;
+	}
 	if (PC->GetCurrentRoom()->CheckExit(WEST))
 	{
 		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetW());
@@ -109,6 +130,11 @@ void West()
 
 void Up()
 {
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		cout << "Enemies are blocking your path!" << endl;
+		return;
+	}
 	if (PC->GetCurrentRoom()->CheckExit(UP))
 	{
 		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetU());
@@ -120,6 +146,11 @@ void Up()
 
 void Down()
 {
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
+	{
+		cout << "Enemies are blocking your path!" << endl;
+		return;
+	}
 	if (PC->GetCurrentRoom()->CheckExit(DOWN))
 	{
 		PC->SetCurrentRoom(PC->GetCurrentRoom()->GetD());
