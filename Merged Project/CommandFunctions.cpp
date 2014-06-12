@@ -248,6 +248,7 @@ void Help()
 	cout << "'abilities' or 'ab' will show you all of your current abilities and what they do." << endl;
 	cout << "'growth' or 'grow' will allow you to choose your primary and secondary stat growths." << endl;
 	cout << "'inventory' or 'i' will show you all the items you are carrying." << endl;
+	cout << "'use' will let you activate an item for its affects. Ex: 'use weakherb' will use an herb in your inventory to restore your HP." << endl;
 	cout << "'equipment' or 'eq' will show you all the items you are wearing." << endl;
 	cout << "'examine <inventory/equipment/look>' or 'exa' will allow you to see the names of all valid targets. Ex: 'exa eq' will show you the names of all worn items." << endl;
 	cout << "'quit' or 'q' will quit the game." << endl;
@@ -289,8 +290,12 @@ void Wear(string p_target)
 	{
 		if (it->GetName() == p_target)
 		{
-			PC->EquipItem(*it);
-			return;
+			if (it->GetWearSlot() != NONE)
+			{
+				PC->EquipItem(*it);
+				return;
+			}
+			break;
 		}
 	}
 	cout << "That is not a valid item." << endl;
