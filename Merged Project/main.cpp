@@ -57,7 +57,11 @@ int main()
 			break;
 
 		case 2:
-			{cout << "\nYour game is loading\n";}
+			{cout << "\nYour game is loading\n";
+			Load();
+			/*ability::AddAbilities();
+			WorldItems::SpawnItems(); //test code
+			Interface::GetInstance()->MainGame();*/}
 			break;
 
 		case 3:

@@ -154,6 +154,7 @@ vector<string> World::ParseDescription(string p_desc)
 		else
 			buf += p_desc[i];
 	}
+	description.push_back(buf);
 	return description;
 }
 

@@ -39,84 +39,91 @@ void WorldItems::SpawnItems()
 	Item CottonCap;
 	CottonCap.SetAsBoost(2);
 	CottonCap.SetWearSlot(HEAD);
-	CottonCap.SetName("CottonCap");
+	CottonCap.SetName("cottoncap");
 	CottonCap.SetDesc("A cotton cap is here, battered and faded.");
 	CottonCap.SetShort("a cotton cap");
-	CottonCap.SetSaveLocation(IN_ROOM); //stored in a room
-	CottonCap.SetLocationId(1); //stored in room 1
+	CottonCap.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonCap.SetLocationId(2); //stored in room 1
 	CottonCap.SetItemId(itemId); //can be accessed with m_items[1]
 	m_items.push_back(CottonCap);
 	itemId++;
+	PC->AddItem(CottonCap);
 
 	Item CottonShoulder;
-	CottonCap.SetAsBoost(1);
-	CottonCap.SetWearSlot(SHOULDERS);
-	CottonCap.SetName("CottonSpaulders");
-	CottonCap.SetDesc("A set of cotton spaulders is here, battered and faded.");
-	CottonCap.SetShort("cotton spaulders");
-	CottonCap.SetSaveLocation(IN_ROOM); //stored in a room
-	CottonCap.SetLocationId(1); //stored in room 1
-	CottonCap.SetItemId(itemId); //can be accessed with m_items[2]
+	CottonShoulder.SetAsBoost(1);
+	CottonShoulder.SetWearSlot(SHOULDERS);
+	CottonShoulder.SetName("cottonspaulders");
+	CottonShoulder.SetDesc("A set of cotton spaulders is here, battered and faded.");
+	CottonShoulder.SetShort("cotton spaulders");
+	CottonShoulder.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonShoulder.SetLocationId(0); //stored in room 1
+	CottonShoulder.SetItemId(itemId); //can be accessed with m_items[2]
 	m_items.push_back(CottonShoulder);
 	itemId++;
+	PC->AddItem(CottonShoulder);
 
 	Item CottonArms;
-	CottonCap.SetAsBoost(2);
-	CottonCap.SetWearSlot(ARMS);
-	CottonCap.SetName("CottonElbowPads");
-	CottonCap.SetDesc("A set of cotton elbow pads is here, battered and faded.");
-	CottonCap.SetShort("cotton elbow pads");
-	CottonCap.SetSaveLocation(IN_ROOM); //stored in a room
-	CottonCap.SetLocationId(1); //stored in room 1
-	CottonCap.SetItemId(itemId); //can be accessed with m_items[3]
+	CottonArms.SetAsBoost(2);
+	CottonArms.SetWearSlot(ARMS);
+	CottonArms.SetName("cottonelbowpads");
+	CottonArms.SetDesc("A set of cotton elbow pads is here, battered and faded.");
+	CottonArms.SetShort("cotton elbow pads");
+	CottonArms.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonArms.SetLocationId(4); //stored in room 1
+	CottonArms.SetItemId(itemId); //can be accessed with m_items[3]
 	m_items.push_back(CottonArms);
 	itemId++;
+	PC->AddItem(CottonArms);
 
 	Item CottonHands; 
-	CottonCap.SetAsBoost(1);
-	CottonCap.SetWearSlot(HANDS);
-	CottonCap.SetName("CottonGloves");
-	CottonCap.SetDesc("A set of cotton gloves is here, battered and faded.");
-	CottonCap.SetShort("cotton gloves");
-	CottonCap.SetSaveLocation(IN_ROOM); //stored in a room
-	CottonCap.SetLocationId(1); //stored in room 1
-	CottonCap.SetItemId(itemId); //can be accessed with m_items[4]
+	CottonHands.SetAsBoost(1);
+	CottonHands.SetWearSlot(HANDS);
+	CottonHands.SetName("cottongloves");
+	CottonHands.SetDesc("A set of cotton gloves is here, battered and faded.");
+	CottonHands.SetShort("cotton gloves");
+	CottonHands.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonHands.SetLocationId(5); //stored in room 1
+	CottonHands.SetItemId(itemId); //can be accessed with m_items[4]
 	m_items.push_back(CottonHands);
 	itemId++;
+	PC->AddItem(CottonHands);
 
 	Item CottonBody; 
-	CottonCap.SetAsBoost(3);
-	CottonCap.SetWearSlot(BODY);
-	CottonCap.SetName("CottonShirt");
-	CottonCap.SetDesc("A cotton shirt is here, battered and faded.");
-	CottonCap.SetShort("a cotton shirt");
-	CottonCap.SetSaveLocation(IN_ROOM); //stored in a room
-	CottonCap.SetLocationId(1); //stored in room 1
-	CottonCap.SetItemId(itemId); //can be accessed with m_items[5]
+	CottonBody.SetAsBoost(3);
+	CottonBody.SetWearSlot(BODY);
+	CottonBody.SetName("cottonshirt");
+	CottonBody.SetDesc("A cotton shirt is here, battered and faded.");
+	CottonBody.SetShort("a cotton shirt");
+	CottonBody.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonBody.SetLocationId(6); //stored in room 1
+	CottonBody.SetItemId(itemId); //can be accessed with m_items[5]
 	m_items.push_back(CottonBody);
 	itemId++;
+	PC->AddItem(CottonBody);
 
 	Item CottonLegs; 
-	CottonCap.SetAsBoost(2);
-	CottonCap.SetWearSlot(LEGS);
-	CottonCap.SetName("CottonPants");
-	CottonCap.SetDesc("A pair of cotton pants is here, battered and faded.");
-	CottonCap.SetShort("cotton pants");
-	CottonCap.SetSaveLocation(IN_ROOM); //stored in a room
-	CottonCap.SetLocationId(1); //stored in room 1
-	CottonCap.SetItemId(itemId); //can be accessed with m_items[6]
+	CottonLegs.SetAsBoost(2);
+	CottonLegs.SetWearSlot(LEGS);
+	CottonLegs.SetName("cottonpants");
+	CottonLegs.SetDesc("A pair of cotton pants is here, battered and faded.");
+	CottonLegs.SetShort("cotton pants");
+	CottonLegs.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonLegs.SetLocationId(7); //stored in room 1
+	CottonLegs.SetItemId(itemId); //can be accessed with m_items[6]
 	m_items.push_back(CottonLegs);
 	itemId++;
+	PC->AddItem(CottonLegs);
 
 	Item CottonFeet;
-	CottonCap.SetAsBoost(3);
-	CottonCap.SetWearSlot(FEET);
-	CottonCap.SetName("CottonShoes");
-	CottonCap.SetDesc("A pair of cotton shoes is here, battered and faded.");
-	CottonCap.SetShort("cotton shoes");
-	CottonCap.SetSaveLocation(IN_ROOM); //stored in a room
-	CottonCap.SetLocationId(1); //stored in room 1
-	CottonCap.SetItemId(itemId); //can be accessed with m_items[7]
+	CottonFeet.SetAsBoost(3);
+	CottonFeet.SetWearSlot(FEET);
+	CottonFeet.SetName("cottonshoes");
+	CottonFeet.SetDesc("A pair of cotton shoes is here, battered and faded.");
+	CottonFeet.SetShort("cotton shoes");
+	CottonFeet.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonFeet.SetLocationId(8); //stored in room 1
+	CottonFeet.SetItemId(itemId); //can be accessed with m_items[7]
 	m_items.push_back(CottonFeet);
-	itemId++;		
+	itemId++;	
+	PC->AddItem(CottonFeet);
 }
