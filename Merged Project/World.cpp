@@ -115,8 +115,8 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 					temp.SetAgi(atoi(line.c_str()));
 					getline (myfile,line);
 					temp.SetAs(atoi(line.c_str()));
-					getline (myfile,line);
-					temp.SetExp(atoi(line.c_str()));
+					//getline (myfile,line);
+					//temp.SetExp(atoi(line.c_str()));
 
 					m_npc.SetStats(temp);
 

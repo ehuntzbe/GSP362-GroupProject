@@ -64,6 +64,7 @@ public:
 	void NpcResize(int size);
 	void NpcAdd(Character p_npc);
 	void RemoveNpc(string p_name);
+	int GetNpcCount() const {return m_npcs.size();}
 	void RemoveItem(string p_name);
 	vector<Character> NpcList() {return m_npcs;}
 	Character GetNPC(string p_name);

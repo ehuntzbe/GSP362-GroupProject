@@ -14,6 +14,16 @@ CommandControl::CommandControl()
 	AddCommandSyntax("exa", EXAMINE);
 	AddCommandSyntax("examine", EXAMINE);
 
+	AddCommandSyntax("at", ATTACK);
+	AddCommandSyntax("att", ATTACK);
+	AddCommandSyntax("attack", ATTACK);
+	
+	AddCommandSyntax("fl", FLEE);
+	AddCommandSyntax("flee", FLEE);
+
+	AddCommandSyntax("gu", GUARD);
+	AddCommandSyntax("guard", GUARD);
+
 	AddCommandSyntax("use", USE);
 
 	AddCommandSyntax("k", KILL);
@@ -44,10 +54,9 @@ CommandControl::CommandControl()
 
 	AddCommandSyntax("rem", REMOVE);
 	AddCommandSyntax("remove", REMOVE);
-
-	AddCommandSyntax("abil", ABILITIES);
-	AddCommandSyntax("a", ABILITIES);
+	
 	AddCommandSyntax("ab", ABILITIES);
+	AddCommandSyntax("abil", ABILITIES);
 	AddCommandSyntax("abilities", ABILITIES);
 
 	AddCommandSyntax("scre", SCORE);

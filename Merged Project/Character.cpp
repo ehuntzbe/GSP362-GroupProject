@@ -6,6 +6,7 @@ using namespace std;
 
 Character::Character()
 {
+	m_name = "none";
 	m_stats = new Combatant();
 }
 

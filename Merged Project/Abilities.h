@@ -7,6 +7,7 @@ enum type {HP, MP, AS, STR, AGI};
 
 struct ability
 {
+	ability() {m_name = "none"; m_desc = "none";}
 	int m_mpCost; //mp cost to use the ability
 	int m_hpCost; //hp cost to use the ability
 	int m_cooldown; //number of rounds before you can use this ability again
@@ -17,5 +18,5 @@ struct ability
 	string m_name; //name displayed in the ability list
 	string m_desc; //description given when ability is used
 	bool IsUnlocked() const; //returns whether or not the unlock level is lower than the player's level
-	static void AddAbilities();
+	static void UpdateAbilities();
 };

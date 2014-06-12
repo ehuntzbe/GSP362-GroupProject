@@ -7,9 +7,10 @@ bool ability::IsUnlocked() const
 	return (m_unlockLevel <= PC->GetLevel());
 }
 
-void ability::AddAbilities()
+void ability::UpdateAbilities()
 {
 	//Here are some sample abilities
+	PC->ResetAbilities();
 	ability abBuf;
 
 	abBuf.m_name = "Mana Bullet"; //simple ability that gives up mana for an increased damage shot (reduces ENEMY's HP)
