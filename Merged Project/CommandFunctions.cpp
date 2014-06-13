@@ -187,6 +187,7 @@ void Inventory()
 
 void Abilities()
 {
+	PC->UpdateAbilityEquations();
 	vector<ability> pcAbil = PC->GetAbilities();
 	string sInput;
 	int userInput; // Holds the key pressed by the user

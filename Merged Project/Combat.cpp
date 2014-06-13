@@ -14,6 +14,7 @@ unordered_map<string, int> cooldowns;
 
 ability ChooseAbility()
 {
+	PC->UpdateAbilityEquations();
 	vector<ability> pcAbil = PC->GetAbilities();
 	string sInput;
 	int userInput; // Holds the key pressed by the user
@@ -145,7 +146,6 @@ combat_outcome Combat(Combatant *player, Combatant *enemy)
 			cout << "You couldn't get away!" << endl;
 			break;
 		case ABILITIES:
-			ability::UpdateAbilities();
 			ability choice = ChooseAbility();
 			if (choice.m_name != "none")
 			{

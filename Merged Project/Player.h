@@ -43,6 +43,7 @@ public:
 	void AddAbility(ability p_ability);
 	void ResetAbilities() {m_abilities.clear();}
 	vector<ability> GetAbilities() const {return m_abilities;}
+	void UpdateAbilityEquations();
 	void GenderNamePrompt();
 	void UnequipItem(Item p_item);
 	void EquipItem(Item p_item);

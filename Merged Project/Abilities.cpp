@@ -24,7 +24,7 @@ string ability::GetType()
 	}
 }
 
-void ability::UpdateAbilities()
+void ability::AddAbilities()
 {
 	//Here are some sample abilities
 	PC->ResetAbilities();
@@ -38,7 +38,6 @@ void ability::UpdateAbilities()
 	abBuf.m_mpCost = 2;
 	abBuf.m_target = ENEMY;
 	abBuf.m_type = HP;
-	abBuf.m_amount = -(PC->GetStats()->GetStr() * 1.5);
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Beam"; //higher mana cost, higher damage, a 1-round cooldown
@@ -49,7 +48,6 @@ void ability::UpdateAbilities()
 	abBuf.m_mpCost = 4;
 	abBuf.m_target = ENEMY;
 	abBuf.m_type = HP;
-	abBuf.m_amount = -(PC->GetStats()->GetStr() * 2.25);
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Surge"; //buffs the players strength by 2 for 4 rounds at a 4 round cooldown
@@ -60,7 +58,6 @@ void ability::UpdateAbilities()
 	abBuf.m_mpCost = 2;
 	abBuf.m_target = SELF;
 	abBuf.m_type = STR;
-	abBuf.m_amount = 2;
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Synchronization"; //full heal
@@ -71,7 +68,6 @@ void ability::UpdateAbilities()
 	abBuf.m_mpCost = 20;
 	abBuf.m_target = SELF;
 	abBuf.m_type = HP;
-	abBuf.m_amount = PC->GetStats()->GetMaxHp() - PC->GetStats()->GetHp();
 	PC->AddAbility(abBuf);
 
 	abBuf.m_name = "Mana Bomb"; //higher mana cost, higher damage, a 3-round cooldown
@@ -82,6 +78,7 @@ void ability::UpdateAbilities()
 	abBuf.m_mpCost = 30;
 	abBuf.m_target = ENEMY;
 	abBuf.m_type = HP;
-	abBuf.m_amount = -(PC->GetStats()->GetStr() * 3);
 	PC->AddAbility(abBuf);
+
+	PC->UpdateAbilityEquations();
 }

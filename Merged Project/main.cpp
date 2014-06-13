@@ -51,7 +51,7 @@ int main()
 		case 1:
 			{cout << "\nNew game starting\n";
 			PC->GenderNamePrompt();
-			ability::UpdateAbilities();
+			ability::AddAbilities();
 			for (int i = 0; i < 0; i++)//Start level
 				PC->LevelUp();
 			WorldItems::SpawnItems(); //test code

@@ -232,3 +232,12 @@ void Player::ChangeStatFocus()
 	}
 	cout << "Okay! From now on, your " << m_primeStat << " will grow very quickly, and your " << m_secondStat << " will grow fairly quickly, while all your other stats will grow at a normal rate." << endl;
 }
+
+void Player::UpdateAbilityEquations()
+{
+	m_abilities[0].m_amount = -(PC->GetStats()->GetStr() * 1.5);
+	m_abilities[1].m_amount = -(PC->GetStats()->GetStr() * 2.25);
+	m_abilities[2].m_amount = 2;
+	m_abilities[3].m_amount = PC->GetStats()->GetMaxHp() - PC->GetStats()->GetHp();
+	m_abilities[4].m_amount = -(PC->GetStats()->GetStr() * 3);
+}
