@@ -117,7 +117,11 @@ void Player::GenderNamePrompt()
 		else
 			PC->SetDesc("female");
 		cout << "Your gender will be " << PC->GetDesc() << ". Is that okay? (y/n): ";
-		getline(cin, input);
+		getline(cin, input);		
+		if(input != "y")
+		{
+			input = "n";
+		}
 	} while (input == "n");
 	
 	input = "n";
@@ -128,6 +132,10 @@ void Player::GenderNamePrompt()
 		getline(cin, name);
 		cout << "Your name will be " << name << ". Please confirm this name (y/n): ";
 		getline(cin, input);
+		if(input != "y")
+		{
+			input = "n";
+		}
 	} while (input == "n");
 	PC->SetName(name);
 	cout << endl << "Welcome to Dark Gun, Apprentice.." << endl;
