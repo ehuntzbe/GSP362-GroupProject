@@ -7,6 +7,23 @@ bool ability::IsUnlocked() const
 	return (m_unlockLevel <= PC->GetLevel());
 }
 
+string ability::GetType()
+{
+	switch(m_type)
+	{
+	case HP:
+		return "HP";
+	case MP:
+		return "MP";
+	case AGI:
+		return "AGI";
+	case STR:
+		return "STR";
+	case AS:
+		return "AS";
+	}
+}
+
 void ability::UpdateAbilities()
 {
 	//Here are some sample abilities

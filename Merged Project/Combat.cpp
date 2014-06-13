@@ -24,7 +24,7 @@ ability ChooseAbility()
 		for (vector<ability>::iterator it = pcAbil.begin();	it != pcAbil.end();	++it)
 		{
 			i++;
-			if(PC->GetLevel() >= it->m_unlockLevel)// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
+			if(it->IsUnlocked())// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
 			{
 				cout << "Ability " << i+1 << ": " << it->m_name << endl;
 			}
@@ -46,7 +46,7 @@ ability ChooseAbility()
 		userInput--;
 		if (userInput == -1)
 			break;
-		if(PC->GetLevel() >= pcAbil[userInput].m_unlockLevel)// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
+		if(pcAbil[userInput].IsUnlocked())// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
 		{
 			int cd = cooldowns[pcAbil[userInput].m_name];
 			cout << "Name: " << pcAbil[userInput].m_name << endl;
@@ -56,7 +56,7 @@ ability ChooseAbility()
 			cout << "HP Cost: " << pcAbil[userInput].m_hpCost << endl;
 			cout << "MP Cost: " << pcAbil[userInput].m_mpCost << endl;
 			cout << "Target: " << pcAbil[userInput].m_target << endl;
-			cout << "Affects: " << pcAbil[userInput].m_type << endl;
+			cout << "Affects: " << pcAbil[userInput].GetType() << endl;
 			cout << "Amount: " << pcAbil[userInput].m_amount << endl;
 			if (cd == 0)
 			{
@@ -109,7 +109,7 @@ combat_outcome Combat(Combatant *player, Combatant *enemy)
 		// ask for command input from player, and execute it
 		do
 		{
-			cout << "Attack \tGuard \tAbilities \tFlee \n" //replace xxxxxxx with Ability when implemented
+			cout << "Attack \tGuard \tAbilities \tFlee \n"
 				"HP: " << player->GetHp() << "/" << player->GetMaxHp() << " | MP: " << player->GetMp() << "/" << player->GetMaxMp() << " |>" << endl;
 			getline(cin, userInput);
 			for (int i = 0; i < userInput.size(); i++)

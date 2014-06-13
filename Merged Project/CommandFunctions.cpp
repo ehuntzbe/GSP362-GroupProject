@@ -197,7 +197,7 @@ void Abilities()
 		for (vector<ability>::iterator it = pcAbil.begin();	it != pcAbil.end();	++it)
 		{
 			i++;
-			if(PC->GetLevel() >= it->m_unlockLevel)// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
+			if(it->IsUnlocked())// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
 			{
 				cout << "Ability " << i+1 << ": " << it->m_name << endl;
 			}
@@ -219,7 +219,7 @@ void Abilities()
 		userInput--;
 		if (userInput == -1)
 			break;
-		if(PC->GetLevel() >= pcAbil[userInput].m_unlockLevel)// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
+		if(pcAbil[userInput].IsUnlocked())// if PC->GetLevel() is greater than or equal to it->m_unlockedLevel
 		{
 			cout << "Name: " << pcAbil[userInput].m_name << endl;
 			cout << "Description: " << pcAbil[userInput].m_desc;
@@ -227,7 +227,7 @@ void Abilities()
 			cout << "HP Cost: " << pcAbil[userInput].m_hpCost << endl;
 			cout << "MP Cost: " << pcAbil[userInput].m_mpCost << endl;
 			cout << "Target: " << pcAbil[userInput].m_target << endl;
-			cout << "Affects: " << pcAbil[userInput].m_type << endl;
+			cout << "Affects: " << pcAbil[userInput].GetType() << endl;
 			cout << "Amount: " << pcAbil[userInput].m_amount << endl;
 		}
 		else
