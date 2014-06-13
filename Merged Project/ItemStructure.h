@@ -44,8 +44,8 @@ private:
 	int m_asBoost;
 	//Save and load data
 	save_location m_location;
-	int m_locationId;
-	int m_itemId;
+	int m_roomId;
+	string m_npcName;
 
 	type m_useItemAffect;
 	int m_useItemAmount;
@@ -63,8 +63,8 @@ public:
 	string GetDesc()	const	{ return m_desc; }
 	string GetShort()	const	{ return m_shortDesc; }
 	save_location GetSaveLocation() const {return m_location;}
-	int GetLocationId() const	{ return m_locationId; }
-	int GetItemId()		const	{ return m_itemId; }
+	int GetRoomId()		const	{ return m_roomId; }
+	string GetNpcName()		const	{ return m_npcName; }
 	type GetUseAffect()	const	{ return m_useItemAffect; }
 	int GetUseAffectAmount() const	{ return m_useItemAmount; }
 	//Setters
@@ -78,8 +78,8 @@ public:
 	void SetDesc(string p_desc)	{ m_desc = p_desc; }
 	void SetShort(string p_short)	{ m_shortDesc = p_short; }
 	void SetSaveLocation(save_location p_loc) {m_location = p_loc;}
-	void SetLocationId(int p_id) {m_locationId = p_id;}
-	void SetItemId(int p_id) {m_itemId = p_id;}
+	void SetRoomId(int p_id) {m_roomId = p_id;}
+	void SetNpcName(string p_name) {m_npcName = p_name;}
 	void SetUseAffect(type p_affect) {m_useItemAffect = p_affect;}
 	void SetUseAffectAmount(int p_amt) {m_useItemAmount = p_amt;}
 };

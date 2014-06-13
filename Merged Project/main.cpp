@@ -25,6 +25,7 @@ int main()
 	int nKeyPress; // Holds the key pressed by the user
 	bool bContinue = true;
 	srand(time(NULL));
+	Interface::GetInstance(); //create the instance of the interface, which loads in the world
 	while ( bContinue )
 	{
 		// read a key here into nKeypress
@@ -54,7 +55,7 @@ int main()
 			ability::AddAbilities();
 			for (int i = 0; i < 0; i++)//Start level
 				PC->LevelUp();
-			WorldItems::SpawnItems(); //test code
+			WorldItems::SpawnItems();
 			Interface::GetInstance()->MainGame();}
 			break;
 

@@ -32,4 +32,5 @@ public:
 	void DisplayRoom(int p_roomID);
 	int RoomCount();
 	static World* GetInstance();
+	Room** GetRooms() {return m_world;}
 };

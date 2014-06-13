@@ -28,9 +28,10 @@ Line 10: MP of npc
 Line 11: Str of npc			
 Line 12: Agi of npc			
 Line 13: As of npc
-Line 14: blank
-Repeat Lines 2-14 for every enemy in a room. 
-When you want a new room with enemies repeat Lines 1 - 14 and 2 - 14 for every enemy in the room
+Line 14: Exp rewarded for killing NPC
+Line 15: blank
+Repeat Lines 2-15 for every enemy in a room. 
+When you want a new room with enemies repeat Lines 1 - 15 and 2 - 15 for every enemy in the room
 
 
 -New Ability-
@@ -50,10 +51,22 @@ and will change the ENEMY's HP by negative twice the player's strength.
 -New Item-
 In Items.cpp, LoadItems()
 Item instanceName;
-instanceName.SetStrboost(1); //choose what stats you want changed while wearing this item. in this case, strength by positive 1.
+instanceName.SetWearSlot(HEAD); //This is where the item can be worn (if at all)
 instanceName.SetName("testitem"); //this is the name the player will type to target the item for wearing and such (wear testitem)
 instanceName.SetDesc("A test item floats before you."); //this is what is seen when the player types look
 instanceName.SetShort("a simple test item"); //this is what is seen when the player types inventory or equipment
+instanceName.SetStrboost(1); //choose what stats you want changed while wearing this item. in this case, strength by positive 1.
+instanceName.SetAsBoost(3); //you can boost multiple stats
+instanceName.SetAgiBoost(-2); //you can have negative boosts
+instanceName.SetSaveLocation(IN_NPC); //This is the location of the item when first spawned into the world.
+instanceName.SetRoomId(1); //**IF** the item spawns IN_NPC or IN_ROOM, you need to give the ID of the room it is in.
+instanceName.SetNpcName("soldier"); //**IF** the item spawns IN_NPC, you need to give the name of the NPC it is in.
+instanceName.SetUseAffect(HP); //**IF** the item has NONE as the wear slot, it can be a use item. This is what the use will affect.
+instanceName.SetUseAffectAmount(5); //**IF** the item is a use item, this is how much it will affect the chosen stat. (in this case, HP by 5)
+m_items.push_back(instanceName); //This adds the item to the final list of items
+//Certain functions are not necessary for certain items. You don't need to call SetRoomId() if the item is not IN_NPC or IN_ROOM.
+//You do not have to call SetNpcName() if the item is not IN_NPC.
+//You don't need to call SetUseAffect() or SetUseAFfectAmount() if the item does not have the wear slot of NONE (a use item)
 
 -New Command-
 Add the command value to the 'command' enumerator in Commands.h (Ex: SCORE)

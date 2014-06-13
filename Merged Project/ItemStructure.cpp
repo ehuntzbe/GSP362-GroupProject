@@ -5,8 +5,8 @@ Item::Item()
 {
 	m_itemName = "none";
 	m_location = NOWHERE;
-	m_locationId = -1;
-	m_itemId = -1;
+	m_roomId = -1;
+	m_npcName = "none";
 	m_hpBoost = 0;
 	m_mpBoost = 0;
 	m_strBoost = 0;
