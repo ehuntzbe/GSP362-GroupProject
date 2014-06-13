@@ -11,6 +11,7 @@ Unknown Soldier Sword {Sword}
 7
 15
 5
+25
 
 2B1
 Sword
@@ -25,6 +26,7 @@ Unknown Soldier Sword {Sword}
 7
 15
 5
+25
 
 2A4
 Spear
@@ -39,6 +41,7 @@ Unknown Soldier Spear {Spear}
 9
 7
 5
+25
 
 2A6
 Spear
@@ -53,6 +56,7 @@ Unknown Soldier Spear {Spear}
 9
 7
 5
+25
 
 2A8
 Magi
@@ -67,6 +71,7 @@ Mini Boss Unknown Soldier Magitech {Magi}
 12
 7
 5
+50
 
 2A10
 Boss 
@@ -81,6 +86,7 @@ Boss Unknown Leader {Leader}
 15
 10
 5
+55
 
 3A2
 Slime
@@ -95,6 +101,7 @@ Run Off Slime {Slime}
 11
 6
 5
+20
 
 3B1
 Imp
@@ -109,6 +116,7 @@ Short Imp {Imp}
 12
 9
 5
+23
 
 3A5
 Shrub
@@ -123,6 +131,7 @@ Evil Shrub {Shrub}
 14
 9
 5
+25
 
 4A4
 Rat
@@ -137,6 +146,7 @@ Rat
 12
 15
 5
+20
 
 Rat
 Rat
@@ -150,6 +160,7 @@ Rat
 12
 15
 5
+20
 
 Rat 
 Rat
@@ -163,6 +174,7 @@ Rat
 12
 15
 5
+20
 
 4B1
 Rat
@@ -177,6 +189,7 @@ Rat
 12
 15
 5
+20
 
 Rat
 Rat
@@ -190,6 +203,7 @@ Rat
 12
 15
 5
+20
 
 4A7
 Rat
@@ -204,6 +218,7 @@ Rat
 12
 15
 5
+20
 
 Rat
 Rat
@@ -217,6 +232,7 @@ Rat
 12
 15
 5
+20
 
 4A8
 Guard
@@ -231,6 +247,7 @@ Fedvel Guard {Guard}
 16
 11
 5
+25
 
 4A11
 Guard
@@ -245,6 +262,7 @@ Fedvel Guard {Guard}
 16
 11
 5
+25
 
 Rat
 Rat
@@ -258,6 +276,7 @@ Rat
 12
 15
 5
+20
 
 Rat
 Rat
@@ -271,6 +290,7 @@ Rat
 12
 15
 5
+20
 
 5A2
 Guard
@@ -285,6 +305,7 @@ Fedvel Guard {Guard}
 16
 11
 5
+25
 
 5A3
 Guard
@@ -299,6 +320,7 @@ Fedvel Guard {Guard}
 16
 11
 5
+25
 
 5B1
 Guard
@@ -313,6 +335,7 @@ Fedvel Guard {Guard}
 16
 11
 5
+25
 
 5C1
 Guard
@@ -327,6 +350,7 @@ Fedvel Guard {Guard}
 16
 11
 5
+25
 
 5A4
 Captain 
@@ -341,6 +365,7 @@ Mini Boss Fedvel Captain Guard {Captain}
 19
 15
 5
+50
 
 5A6
 Lopon
@@ -355,6 +380,7 @@ Boss Lopon {Lopon}
 23
 18
 5
+55
 
 6B2
 Turnip
@@ -369,6 +395,7 @@ Giant Ice Breathing Turnip {Turnip}
 17
 10
 5
+27
 
 Turnip
 Giant Ice Breathing Turnip {Turnip}
@@ -382,6 +409,7 @@ Giant Ice Breathing Turnip {Turnip}
 17
 10
 5
+27
 
 6B4
 Turnip
@@ -396,6 +424,7 @@ Giant Ice Breathing Turnip {Turnip}
 17
 10
 5
+27
 
 6B6
 Insane
@@ -410,6 +439,7 @@ Insane False Kingdom Soldier {Insane}
 19
 16
 5
+27
 
 Turnip
 Giant Ice Breathing Turnip {Turnip}
@@ -423,6 +453,7 @@ Giant Ice Breathing Turnip {Turnip}
 17
 10
 5
+27
 
 6B9
 Salmon
@@ -437,6 +468,7 @@ Demon Possessed Salmon {Salmon}
 15
 19
 5
+30
 
 6C2
 Insane
@@ -451,6 +483,7 @@ Insane False Kingdom Soldier {Insane}
 19
 16
 5
+25
 
 Insane
 Insane False Kingdom Soldier {Insane}
@@ -464,6 +497,7 @@ Insane False Kingdom Soldier {Insane}
 19
 16
 5
+25
 
 6C5
 Turnip
@@ -478,6 +512,7 @@ Giant Ice Breathing Turnip {Turnip}
 17
 10
 5
+27
 
 6A3
 Turnip
@@ -492,6 +527,7 @@ Giant Ice Breathing Turnip {Turnip}
 17
 10
 5
+27
 
 6A5
 Salmon
@@ -506,6 +542,7 @@ Demon Possessed Salmon {Salmon}
 15
 19
 5
+30
 
 6A8
 Mini Boss Bear Wearing a Tophat
@@ -520,6 +557,7 @@ Mini Boss Bear Wearing a Tophat
 20
 20
 5
+50
 
 6A9
 Insane B
@@ -534,6 +572,7 @@ Boss Insane False Kingdom Soldier {Insane B}
 26
 25
 5
+55
 
 7Inn2
 Pilp
@@ -548,6 +587,7 @@ Mini Boss Pilp {Pilp}
 23
 22
 5
+50
 
 7Inn3
 Trew
@@ -562,6 +602,7 @@ Boss Four Knights of Falsehood, Trew {Trew}
 27
 26
 5
+55
 
 8B1
 Gun
@@ -576,6 +617,7 @@ Mogan Kingdom Guard Gun {Gun}
 22
 18
 5
+29
 
 8A5
 Cannon
@@ -590,6 +632,7 @@ Mogan Kingdom Guard Cannon {Cannon}
 26
 15
 5
+28
 
 8A7
 Red
@@ -604,6 +647,7 @@ Mini Boss Magitech Cyclops Red {Red}
 29
 25
 5
+50
 
 Blue
 Mini Boss Magitech Cyclops Blue {Blue}
@@ -617,7 +661,7 @@ Mini Boss Magitech Cyclops Blue {Blue}
 32
 22
 5
-
+50
 
 8B2
 Gun
@@ -632,6 +676,7 @@ Mogan Kingdom Guard Gun {Gun}
 22
 18
 5
+29
 
 Gun
 Mogan Kingdom Guard Gun {Gun}
@@ -645,6 +690,7 @@ Mogan Kingdom Guard Gun {Gun}
 22
 18
 5
+29
 
 8A9
 Cannon
@@ -659,6 +705,7 @@ Mogan Kingdom Guard Cannon {Cannon}
 26
 15
 5
+28
 
 9A3
 Red
@@ -673,6 +720,7 @@ Mini Boss Magitech Cyclops Red {Red}
 29
 25
 5
+50
 
 9A5
 Gun
@@ -687,6 +735,7 @@ Mogan Kingdom Guard Gun {Gun}
 22
 18
 5
+29
 
 Cannon
 Mogan Kingdom Guard Cannon {Cannon}
@@ -700,6 +749,7 @@ Mogan Kingdom Guard Cannon {Cannon}
 26
 15
 5
+29
 
 9A8
 Blue
@@ -714,6 +764,7 @@ Mini Boss Magitech Cyclops Blue {Blue}
 32
 22
 5
+50
 
 9A11
 Shade
@@ -728,6 +779,7 @@ Mini Boss Four Knights of Falsehood, Shade {Shade}
 38
 32
 5
+50
 
 9A15
 False
@@ -742,6 +794,7 @@ Boss The False {False}
 42
 35
 5
+75
 
 0A3
 Truth
@@ -756,6 +809,7 @@ Boss The Truth {Truth}
 45
 39
 5
+100
 
 0A4
 Darklight 
@@ -770,3 +824,4 @@ Boss The Dragon of the False Kingdom, Darklight Truth {Darklight}
 50
 45
 5
+100
