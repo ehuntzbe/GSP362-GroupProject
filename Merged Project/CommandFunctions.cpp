@@ -244,6 +244,7 @@ void Help()
 	cout << "'look' or 'l' will show you the contents of the room you are in." << endl;
 	cout << "'north' or 'n' will move you north if it is a valid exit for the room you are in. The other directions have similar commands." << endl;
 	cout << "'kill <target>' or 'k <target>' will attempt battle with an npc. Note this command requires a target. Ex: 'kill ogre' would attempt battle with the ogre in the room." << endl;
+	cout << "The name you must enter to kill an enemy is in the brackets. Ex. Unknown Soldier Sword {Sword}. You would type 'kill Sword'. Unless there is no brackets. Ex. Rat, Type 'kill Rat'." << endl;
 	cout << "'score' or 'sc' will show you your current stats." << endl;
 	cout << "'abilities' or 'ab' will show you all of your current abilities and what they do." << endl;
 	cout << "'growth' or 'grow' will allow you to choose your primary and secondary stat growths." << endl;

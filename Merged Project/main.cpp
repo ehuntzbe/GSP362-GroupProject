@@ -52,7 +52,7 @@ int main()
 			{cout << "\nNew game starting\n";
 			PC->GenderNamePrompt();
 			ability::UpdateAbilities();
-			for (int i = 0; i < 50; i++)
+			for (int i = 0; i < 0; i++)//Start level
 				PC->LevelUp();
 			WorldItems::SpawnItems(); //test code
 			Interface::GetInstance()->MainGame();}

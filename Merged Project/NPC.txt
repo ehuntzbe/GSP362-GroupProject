@@ -1,771 +1,772 @@
 A6
-Unknown Soldier Sword
-Unknown Soldier Sword
-400
-700
-200
-500
-50
-460
-230
-200
-500
-50
+Sword
+Unknown Soldier Sword {Sword}
+25
+5
+7
+15
+5
+25
+5
+7
+15
+5
 
 2B1
-Unknown Soldier Sword
-Unknown Soldier Sword
-400
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Sword
+Unknown Soldier Sword {Sword}
+25
+5
+7
+15
+5
+25
+5
+7
+15
+5
 
 2A4
-Unknown Soldier Spear
-Unknown Soldier Spear
-400
-200
-200
-500
-30
-460
-230
-200
-600
-50
+Spear
+Unknown Soldier Spear {Spear}
+25
+5
+9
+7
+5
+25
+5
+9
+7
+5
 
 2A6
-Unknown Soldier Spear
-Unknown Soldier Spear
-400
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Spear
+Unknown Soldier Spear {Spear}
+25
+5
+9
+7
+5
+25
+5
+9
+7
+5
 
 2A8
-Mini Boss Unknown Soldier Magitech
-Mini Boss Unknown Soldier Magitech
-400
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Magi
+Mini Boss Unknown Soldier Magitech {Magi}
+33
+10
+12
+7
+5
+33
+5
+12
+7
+5
 
 2A10
-Boss Unknown Leader
-Boss Unknown Leader
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Boss 
+Boss Unknown Leader {Leader}
+40
+15
+15
+10
+5
+40
+15
+15
+10
+5
 
 3A2
-Run off Slime
-Run Off Slime
-300
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Slime
+Run Off Slime {Slime}
+30
+10
+11
+6
+5
+30
+10
+11
+6
+5
 
 3B1
-Short Imp
-Short Imp
-450
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Imp
+Short Imp {Imp}
+32
+10
+12
+9
+5
+32
+10
+12
+9
+5
 
 3A5
-Evil Shrub
-Evil Shrub
-400
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Shrub
+Evil Shrub {Shrub}
+28
+13
+14
+9
+5
+28
+13
+14
+9
+5
 
 4A4
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 Rat 
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 4B1
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 4A7
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 4A8
-Fedvel Guard
-Fedvel Guard
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Guard
+Fedvel Guard {Guard}
+37
+10
+16
+11
+5
+37
+10
+16
+11
+5
 
 4A11
-Fedvel Guard
-Fedvel Guard
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Guard
+Fedvel Guard {Guard}
+37
+10
+16
+11
+5
+37
+10
+16
+11
+5
 
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 Rat
 Rat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+30
+7
+12
+15
+5
+30
+7
+12
+15
+5
 
 5A2
-Fedvel Guard
-Fedvel Guard
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Guard
+Fedvel Guard {Guard}
+37
+10
+16
+11
+5
+37
+10
+16
+11
+5
 
 5A3
-Fedvel Guard
-Fedvel Guard
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Guard
+Fedvel Guard {Guard}
+37
+10
+16
+11
+5
+37
+10
+16
+11
+5
 
 5B1
-Fedvel Guard
-Fedvel Guard
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Guard
+Fedvel Guard {Guard}
+37
+10
+16
+11
+5
+37
+10
+16
+11
+5
 
 5C1
-Fedvel Guard
-Fedvel Guard
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Guard
+Fedvel Guard {Guard}
+37
+10
+16
+11
+5
+37
+10
+16
+11
+5
 
 5A4
-Mini Boss Fedvel Captain Guard
-Mini Boss Fedvel Captain Guard
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Captain 
+Mini Boss Fedvel Captain Guard {Captain}
+46
+18
+19
+15
+5
+46
+18
+19
+15
+5
 
 5A6
-Boss Lopon
-Boss Lopon
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Lopon
+Boss Lopon {Lopon}
+52
+25
+23
+18
+5
+52
+25
+23
+18
+5
 
 6B2
-Giant Ice Breathing Turnip
-Giant Ice Breathing Turnip
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Turnip
+Giant Ice Breathing Turnip {Turnip}
+44
+16
+17
+10
+5
+44
+16
+17
+10
+5
 
-Giant Ice Breathing Turnip
-Giant Ice Breathing Turnip
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Turnip
+Giant Ice Breathing Turnip {Turnip}
+44
+16
+17
+10
+5
+44
+16
+17
+10
+5
 
 6B4
-Giant Ice Breathing Turnip
-Giant Ice Breathing Turnip
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Turnip
+Giant Ice Breathing Turnip {Turnip}
+44
+16
+17
+10
+5
+44
+16
+17
+10
+5
 
 6B6
-Insane False Kingdom Soldier
-Insane False Kingdom Soldier
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Insane
+Insane False Kingdom Soldier {Insane}
+40
+12
+19
+16
+5
+40
+12
+19
+16
+5
 
-Giant Ice Breathing Turnip
-Giant Ice Breathing Turnip
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Turnip
+Giant Ice Breathing Turnip {Turnip}
+44
+16
+17
+10
+5
+44
+16
+17
+10
+5
 
 6B9
-Demon Possessed Salmon
-Demon Possessed Salmon
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Salmon
+Demon Possessed Salmon {Salmon}
+46
+18
+15
+19
+5
+46
+18
+15
+19
+5
 
 6C2
-Insane False Kingdom Soldier
-Insane False Kingdom Soldier
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Insane
+Insane False Kingdom Soldier {Insane}
+40
+12
+19
+16
+5
+40
+12
+19
+16
+5
 
-Insane False Kingdom Soldier
-Insane False Kingdom Soldier
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Insane
+Insane False Kingdom Soldier {Insane}
+40
+12
+19
+16
+5
+40
+12
+19
+16
+5
 
 6C5
-Giant Ice Breathing Turnip
-Giant Ice Breathing Turnip
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Turnip
+Giant Ice Breathing Turnip {Turnip}
+44
+16
+17
+10
+5
+44
+16
+17
+10
+5
 
 6A3
-Giant Ice Breathing Turnip
-Giant Ice Breathing Turnip
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Turnip
+Giant Ice Breathing Turnip {Turnip}
+44
+16
+17
+10
+5
+44
+16
+17
+10
+5
 
 6A5
-Possessed Salmon
-Possessed Salmon
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Salmon
+Demon Possessed Salmon {Salmon}
+46
+18
+15
+19
+5
+46
+18
+15
+19
+5
 
 6A8
 Mini Boss Bear Wearing a Tophat
 Mini Boss Bear Wearing a Tophat
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+52
+23
+20
+20
+5
+52
+23
+20
+20
+5
 
 6A9
-Boss Insane False Kingdom Soldier
-Boss Insane False Kingdom Soldier
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Insane B
+Boss Insane False Kingdom Soldier {Insane B}
+58
+27
+26
+25
+5
+58
+27
+26
+25
+5
 
 7Inn2
-Mini Boss Pilp
-Mini Boss Pilp
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Pilp
+Mini Boss Pilp {Pilp}
+55
+24
+23
+22
+5
+55
+24
+23
+22
+5
 
 7Inn3
-Boss Four Knights of Falsehood, Trew
-Boss Four Knights of Falsehood, Trew
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Trew
+Boss Four Knights of Falsehood, Trew {Trew}
+63
+29
+27
+26
+5
+63
+29
+27
+26
+5
 
 8B1
-Mogan Kingdom Guard Gun
-Mogan Kingdom Guard Gun
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Gun
+Mogan Kingdom Guard Gun {Gun}
+53
+20
+22
+18
+5
+53
+20
+22
+18
+5
 
 8A5
-Mogan Kingdom Guard Cannon
-Mogan Kingdom Guard Cannon
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Cannon
+Mogan Kingdom Guard Cannon {Cannon}
+53
+20
+26
+15
+5
+53
+20
+26
+15
+5
 
 8A7
-Mini Boss Magitech Cyclops Red
-Mini Boss Magitech Cyclops Red
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Red
+Mini Boss Magitech Cyclops Red {Red}
+65
+27
+29
+25
+5
+65
+27
+29
+25
+5
 
-Mini Boss Magitech Cyclops Blue
-Mini Boss Magitech Cyclops Blue
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Blue
+Mini Boss Magitech Cyclops Blue {Blue}
+65
+27
+32
+22
+5
+65
+27
+32
+22
+5
+
 
 8B2
-Mogan Kingdom Guard Gun
-Mogan Kingdom Guard Gun
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Gun
+Mogan Kingdom Guard Gun {Gun}
+53
+20
+22
+18
+5
+53
+20
+22
+18
+5
 
-Mogan Kingdom Guard Gun
-Mogan Kingdom Guard Gun
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Gun
+Mogan Kingdom Guard Gun {Gun}
+53
+20
+22
+18
+5
+53
+20
+22
+18
+5
 
 8A9
-Mogan Kingdom Guard Cannon
-Mogan Kingdom Guard Cannon
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Cannon
+Mogan Kingdom Guard Cannon {Cannon}
+53
+20
+26
+15
+5
+53
+20
+26
+15
+5
 
 9A3
-Mini Boss Magitech Cyclops Red
-Mini Boss Magitech Cyclops Red
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Red
+Mini Boss Magitech Cyclops Red {Red}
+65
+27
+29
+25
+5
+65
+27
+29
+25
+5
 
 9A5
-Mogan Kingdom Guard Gun
-Mogan Kingdom Guard Gun
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Gun
+Mogan Kingdom Guard Gun {Gun}
+53
+20
+22
+18
+5
+53
+20
+22
+18
+5
 
-Mogan Kingdom Guard Cannon
-Mogan Kingdom Guard Cannon
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Cannon
+Mogan Kingdom Guard Cannon {Cannon}
+53
+20
+26
+15
+5
+53
+20
+26
+15
+5
 
 9A8
-Mini Boss Magitech Cyclops Blue
-Mini Boss Magitech Cyclops Blue
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Blue
+Mini Boss Magitech Cyclops Blue {Blue}
+65
+27
+32
+22
+5
+65
+27
+32
+22
+5
 
 9A11
-Mini Boss Four Knights of Falsehood, Shade
-Mini Boss Four Knights of Falsehood, Shade
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Shade
+Mini Boss Four Knights of Falsehood, Shade {Shade}
+73
+34
+38
+32
+5
+73
+34
+38
+32
+5
 
 9A15
-Boss The False
-Boss The False
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+False
+Boss The False {False}
+79
+40
+42
+35
+5
+79
+40
+42
+35
+5
 
 0A3
-Boss The Truth
-Boss The Truth
-600
-700
-200
-800
-50
-460
-320
-300
-400
-60
+Truth
+Boss The Truth {Truth}
+87
+44
+45
+39
+5
+87
+44
+45
+39
+5
 
 0A4
-Boss The Dragon of the False Kingdom, Darklight Truth
-Boss The Dragon of the False Kingdom, Darklight Truth
-600
-700
-200
-800
+Darklight 
+Boss The Dragon of the False Kingdom, Darklight Truth {Darklight}
+92
+47
 50
-460
-320
-300
-400
-60
+45
+5
+92
+47
+50
+45
+5
