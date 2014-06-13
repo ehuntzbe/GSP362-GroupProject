@@ -56,15 +56,18 @@ int main()
 			for (int i = 0; i < 0; i++)//Start level
 				PC->LevelUp();
 			WorldItems::SpawnItems();
+			WorldItems::PlaceItems();
 			Interface::GetInstance()->MainGame();}
 			break;
 
 		case 2:
 			{cout << "\nYour game is loading\n";
 			Load();
-			/*ability::AddAbilities();
-			WorldItems::SpawnItems(); //test code
-			Interface::GetInstance()->MainGame();*/}
+			ability::AddAbilities();
+			WorldItems::SpawnItems();
+			WorldItems::LoadItems();
+			WorldItems::PlaceItems();
+			Interface::GetInstance()->MainGame();}
 			break;
 
 		case 3:

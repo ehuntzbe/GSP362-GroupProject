@@ -6,6 +6,7 @@
 #include "Room.h"
 #include "Combat.h"
 #include "Abilities.h"
+#include "Items.h"
 #include <unordered_map>
 using namespace std;
 

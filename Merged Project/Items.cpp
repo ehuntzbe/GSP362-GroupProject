@@ -4,6 +4,8 @@ vector<Item> WorldItems::m_items (0);
 
 void WorldItems::SpawnItems()
 {
+	int itemId = 0;
+
 	Item WoodenSword;
 	WoodenSword.SetStrBoost(1); //boost to strenth while worn
 	WoodenSword.SetWearSlot(OFFHAND); //worn in the mainhand
@@ -11,6 +13,8 @@ void WorldItems::SpawnItems()
 	WoodenSword.SetDesc("A wooden sword lies here, covered with splinters."); //this is what the player sees when the item is in the room
 	WoodenSword.SetShort("a wooden sword"); //this is what the player sees when the item is worn or in their inventory
 	WoodenSword.SetSaveLocation(IN_INVENTORY); //stored in the player's inventory
+	WoodenSword.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(WoodenSword);
 
 	Item WeakHerb;
@@ -22,6 +26,8 @@ void WorldItems::SpawnItems()
 	WeakHerb.SetRoomId(1);
 	WeakHerb.SetUseAffect(HP);
 	WeakHerb.SetUseAffectAmount(5);
+	WeakHerb.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(WeakHerb);
 
 	//armor - basic cotton stuff
@@ -34,6 +40,8 @@ void WorldItems::SpawnItems()
 	CottonCap.SetDesc("A cotton cap is here, battered and faded.");
 	CottonCap.SetShort("a cotton cap");
 	CottonCap.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonCap.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(CottonCap);
 
 	Item CottonShoulder;
@@ -43,6 +51,8 @@ void WorldItems::SpawnItems()
 	CottonShoulder.SetDesc("A set of cotton spaulders is here, battered and faded.");
 	CottonShoulder.SetShort("cotton spaulders");
 	CottonShoulder.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonShoulder.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(CottonShoulder);
 
 	Item CottonArms;
@@ -52,6 +62,8 @@ void WorldItems::SpawnItems()
 	CottonArms.SetDesc("A set of cotton elbow pads is here, battered and faded.");
 	CottonArms.SetShort("cotton elbow pads");
 	CottonArms.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonArms.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(CottonArms);
 
 	Item CottonHands; 
@@ -61,6 +73,8 @@ void WorldItems::SpawnItems()
 	CottonHands.SetDesc("A set of cotton gloves is here, battered and faded.");
 	CottonHands.SetShort("cotton gloves");
 	CottonHands.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonHands.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(CottonHands);
 
 	Item CottonBody; 
@@ -70,6 +84,8 @@ void WorldItems::SpawnItems()
 	CottonBody.SetDesc("A cotton shirt is here, battered and faded.");
 	CottonBody.SetShort("a cotton shirt");
 	CottonBody.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonBody.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(CottonBody);
 
 	Item CottonLegs; 
@@ -79,6 +95,8 @@ void WorldItems::SpawnItems()
 	CottonLegs.SetDesc("A pair of cotton pants is here, battered and faded.");
 	CottonLegs.SetShort("cotton pants");
 	CottonLegs.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonLegs.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(CottonLegs);
 
 	Item CottonFeet;
@@ -88,14 +106,48 @@ void WorldItems::SpawnItems()
 	CottonFeet.SetDesc("A pair of cotton shoes is here, battered and faded.");
 	CottonFeet.SetShort("cotton shoes");
 	CottonFeet.SetSaveLocation(IN_INVENTORY); //stored in inventory
+	CottonFeet.SetItemId(itemId);
+	itemId++;
 	m_items.push_back(CottonFeet);
+}
 
-	PlaceItems();
+void WorldItems::SaveItems()
+{
+	ofstream itemSave("ItemLocations.txt");
+	if (itemSave.is_open())
+	{
+		for (vector<Item>::iterator it = m_items.begin(); it != m_items.end(); ++it)
+		{
+			itemSave << it->GetSaveLocation() << endl;
+			itemSave << it->GetRoomId() << endl;
+			itemSave << it->GetNpcName() << endl;
+		}
+		itemSave.close();
+	}
+	else
+		cout << "Unable to open save file for saving." << endl;
 }
 
 void WorldItems::LoadItems()
 {
-
+	string line;
+	int num;
+	ifstream itemLoad("ItemLocations.txt");
+	if (itemLoad.is_open())
+	{
+		for (vector<Item>::iterator it = m_items.begin(); it != m_items.end(); ++it)
+		{
+			getline(itemLoad, line);
+			it->SetSaveLocation((save_location)atoi(line.c_str()));
+			getline(itemLoad, line);
+			it->SetRoomId(atoi(line.c_str()));
+			getline(itemLoad, line);
+			it->SetNpcName(line);
+		}
+		itemLoad.close();
+	}
+	else
+		cout << "Unable to open save file for loading." << endl;
 }
 
 void WorldItems::PlaceItems()

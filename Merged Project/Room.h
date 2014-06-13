@@ -38,6 +38,10 @@ private:
 	int m_Numnpcs;
 	//Stores items
 	vector<Item> m_items;
+	//For saving/loading purposes
+	int m_roomId;
+	//For labeling purposes
+	static int m_roomCount;
 
 public:
 	//These need to add to the exit list
@@ -72,6 +76,7 @@ public:
 	void AddItem(Item p_item) {m_items.push_back(p_item);}
 	Item GetItem(string p_name);
 	bool CheckExit(EXIT p_exit) const {if (m_exits[p_exit] == true) return true; return false;}
+	int GetRoomId() const {return m_roomId;}
 	Room();
 	~Room();
 };

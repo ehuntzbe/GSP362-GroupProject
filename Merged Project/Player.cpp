@@ -137,6 +137,7 @@ void Player::UnequipItem(Item p_item)
 {
 	AddItem(m_equipment[p_item.GetWearSlot()]);
 	m_equipment[p_item.GetWearSlot()] = Item();
+	WorldItems::m_items[p_item.GetItemId()].SetSaveLocation(IN_INVENTORY);
 	Combatant statsGained;
 	int agi = -p_item.GetAgiBoost();
 	int as = -p_item.GetAsBoost();
@@ -165,6 +166,7 @@ void Player::EquipItem(Item p_item)
 	if (m_equipment[p_item.GetWearSlot()].GetName() != "none")
 		UnequipItem(p_item);
 	m_equipment[p_item.GetWearSlot()] = p_item;
+	WorldItems::m_items[p_item.GetItemId()].SetSaveLocation(IN_EQUIPMENT);
 	RemoveItem(p_item.GetName());
 	Combatant statsGained;
 	int agi = p_item.GetAgiBoost();

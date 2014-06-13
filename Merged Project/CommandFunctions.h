@@ -4,6 +4,7 @@
 #include "Combat.h"
 #include "Abilities.h"
 #include "Interface.h"
+#include "Items.h"
 #include <sstream>
 
 void Look();

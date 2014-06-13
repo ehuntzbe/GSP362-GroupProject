@@ -52,6 +52,8 @@ void Kill(string p_target)
 				for (list<Item>::iterator it = loot.begin(); it != loot.end(); ++it)
 				{
 					room->AddItem(*it);
+					WorldItems::m_items[it->GetItemId()].SetSaveLocation(IN_ROOM);
+					WorldItems::m_items[it->GetItemId()].SetRoomId(room->GetRoomId());
 				}
 			}
 			PC->AwardExperience(opponent.GetStats()->GetExp());
@@ -377,6 +379,7 @@ void Get(string p_target)
 		cout << "You get " << gotItem.GetShort() << "." << endl;
 		PC->AddItem(gotItem);
 		room->RemoveItem(p_target);
+		WorldItems::m_items[gotItem.GetItemId()].SetSaveLocation(IN_INVENTORY);
 	}
 	else
 		cout << "You do not see that item here." << endl;
@@ -393,6 +396,8 @@ void Drop(string p_target)
 			cout << "You drop " << it->GetShort() << "." << endl;
 			room->AddItem(*it);
 			PC->RemoveItem(p_target);
+			WorldItems::m_items[it->GetItemId()].SetSaveLocation(IN_ROOM);
+			WorldItems::m_items[it->GetItemId()].SetRoomId(room->GetRoomId());
 			return;
 		}
 	}
@@ -436,6 +441,7 @@ void Use(string p_target)
 					break;
 				}
 				PC->RemoveItem(p_target);
+				WorldItems::m_items[it->GetItemId()].SetSaveLocation(NOWHERE);
 			}
 			else
 				cout << "You cannot use this item." << endl;

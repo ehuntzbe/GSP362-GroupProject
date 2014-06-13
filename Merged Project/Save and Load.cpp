@@ -44,7 +44,6 @@ void Save()
 void Load()
 {
 	string line;
-	int m_stat = 0;
 	ifstream myfile ("PlayerCharacter.txt");
 	if (myfile.is_open())
 	{

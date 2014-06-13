@@ -46,6 +46,7 @@ private:
 	save_location m_location;
 	int m_roomId;
 	string m_npcName;
+	int m_itemId;
 
 	type m_useItemAffect;
 	int m_useItemAmount;
@@ -67,6 +68,7 @@ public:
 	string GetNpcName()		const	{ return m_npcName; }
 	type GetUseAffect()	const	{ return m_useItemAffect; }
 	int GetUseAffectAmount() const	{ return m_useItemAmount; }
+	int GetItemId() const {return m_itemId;}
 	//Setters
 	void SetWearSlot(wear_slot p_wearSlot) { m_wearSlot = p_wearSlot; }
 	void SetHpBoost(int hp)		{ m_hpBoost = hp; }
@@ -82,4 +84,5 @@ public:
 	void SetNpcName(string p_name) {m_npcName = p_name;}
 	void SetUseAffect(type p_affect) {m_useItemAffect = p_affect;}
 	void SetUseAffectAmount(int p_amt) {m_useItemAmount = p_amt;}
+	void SetItemId(int p_id) {m_itemId = p_id;}
 };
