@@ -63,6 +63,7 @@ void World::DisplayRoom(int p_roomID)
 			cout << "Str: "<< tempStats->GetStr() <<endl;			
 			cout << "Agi: "<< tempStats->GetAgi() <<endl;			
 			cout << "As: "<< tempStats->GetAs() <<endl;
+			cout << "EXP: "<< tempStats->GetExp() <<endl;
 		}
 	}
 	cout << "EXITS:"; m_world[p_roomID]->DisplayExits(); cout << endl;
@@ -115,8 +116,8 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 					temp.SetAgi(atoi(line.c_str()));
 					getline (myfile,line);
 					temp.SetAs(atoi(line.c_str()));
-					//getline (myfile,line);
-					//temp.SetExp(atoi(line.c_str()));
+					getline (myfile,line);
+					temp.SetExp(atoi(line.c_str()));
 
 					m_npc.SetStats(temp);
 

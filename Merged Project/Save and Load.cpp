@@ -12,6 +12,8 @@ void Save()
 		myfile << "\n";
 		myfile << PC->GetDesc();
 		myfile << "\n";
+		myfile << PC->GetLevel();
+		myfile << "\n";
 		myfile << temp->GetMaxHp();
 		myfile << "\n";
 		myfile << temp->GetMaxMp();
@@ -55,6 +57,8 @@ void Load()
 			PC->SetName(line);
 			getline (myfile,line);
 			PC->SetDesc(line);
+			getline (myfile,line);
+			PC->SetLevel(atoi(line.c_str()));
 			getline (myfile,line);
 			temp.SetMaxHp(atoi(line.c_str()));
 			getline (myfile,line);
