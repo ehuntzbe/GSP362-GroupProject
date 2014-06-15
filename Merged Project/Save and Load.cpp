@@ -7,12 +7,19 @@ void Save()
 	{
 		Combatant *temp;
 		temp = PC->GetStats();
+		temp->SetExp(PC->GetExperience());
 		
 		myfile << PC->GetName();
 		myfile << "\n";
 		myfile << PC->GetDesc();
 		myfile << "\n";
 		myfile << PC->GetLevel();
+		myfile << "\n";
+		myfile << PC->GetPrimeStat();
+		myfile << "\n";
+		myfile << PC->GetSecondStat();
+		myfile << "\n";
+		myfile << PC->GetCurrentRoom()->GetName();
 		myfile << "\n";
 		myfile << temp->GetMaxHp();
 		myfile << "\n";
@@ -53,12 +60,29 @@ void Load()
 		if (line != "")
 		{
 			Combatant temp;
-			
+			int roomNum = 0;
+						
 			PC->SetName(line);
 			getline (myfile,line);
 			PC->SetDesc(line);
 			getline (myfile,line);
 			PC->SetLevel(atoi(line.c_str()));
+			getline (myfile,line);
+			PC->SetPrimeStat(line);
+			getline (myfile,line);
+			PC->SetSecondStat(line);
+			getline (myfile,line);
+
+			for (int a = 0; a < World::GetInstance()->RoomCount(); a++)
+			{
+				if(line == World::GetInstance()->GetRooms()[a]->GetName())
+				{
+					roomNum = a;
+					break;
+				}
+			}
+
+			PC->SetCurrentRoom(World::GetInstance()->GetRooms()[roomNum]);
 			getline (myfile,line);
 			temp.SetMaxHp(atoi(line.c_str()));
 			getline (myfile,line);

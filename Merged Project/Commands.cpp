@@ -83,6 +83,8 @@ CommandControl::CommandControl()
 
 	AddCommandSyntax("q", QUIT);
 	AddCommandSyntax("quit", QUIT);
+
+	AddCommandSyntax("save", SAVE);
 }
 
 CommandControl::~CommandControl()

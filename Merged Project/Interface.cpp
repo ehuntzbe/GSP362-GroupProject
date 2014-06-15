@@ -95,5 +95,7 @@ void Interface::MainGame()
 			Drop(parsedInput.back());
 		if (cmd == USE)
 			Use(parsedInput.back());
+		if (cmd == SAVE)
+			SavePlayer();
 	}
 }

@@ -256,6 +256,7 @@ void Help()
 	cout << "'equipment' or 'eq' will show you all the items you are wearing." << endl;
 	cout << "'examine <inventory/equipment/look>' or 'exa' will allow you to see the names of all valid targets. Ex: 'exa eq' will show you the names of all worn items." << endl;
 	cout << "'quit' or 'q' will quit the game." << endl;
+	cout << "'save' will save the game." << endl;
 }
 
 void Growth()
@@ -449,4 +450,9 @@ void Use(string p_target)
 		}
 	}
 	cout << "You do not have that item." << endl;
+}
+
+void SavePlayer()
+{
+	Save();
 }

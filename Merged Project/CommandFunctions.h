@@ -5,8 +5,10 @@
 #include "Abilities.h"
 #include "Interface.h"
 #include "Items.h"
+#include "Save and Load.h"
 #include <sstream>
 
+void SavePlayer();
 void Look();
 void Kill(string p_target);
 void North();

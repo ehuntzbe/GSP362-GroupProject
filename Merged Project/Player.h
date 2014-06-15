@@ -49,5 +49,9 @@ public:
 	void UnequipItem(Item p_item);
 	void EquipItem(Item p_item);
 	void ChangeStatFocus();
+	string GetPrimeStat() {return m_primeStat;}
+	string GetSecondStat() {return m_secondStat;}
+	void SetPrimeStat(string p_primeStat) {m_primeStat = p_primeStat;}
+	void SetSecondStat(string p_secondStat) {m_secondStat = p_secondStat;}
 	unordered_map<wear_slot, Item> GetEquipment() const {return m_equipment;}
 };
