@@ -62,6 +62,7 @@ int main()
 
 		case 2:
 			{cout << "\nYour game is loading\n";
+			WORLD->LoadRoomsFromFile("WorldTest.txt", "NPCload.txt");
 			Load();
 			ability::AddAbilities();
 			WorldItems::SpawnItems();

@@ -75,6 +75,7 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 	ifstream myfile (p_npcFileName);
 	string line;
 	int tempcount = 0;
+	int t_npcCount = 0;
 
 	if (myfile.is_open())
 	{
@@ -96,6 +97,8 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 					m_npc.SetName(line);
 					getline (myfile,line);
 					m_npc.SetDesc(line);
+					getline (myfile,line);
+					m_npc.SetLife(line);
 					getline (myfile,line);
 					temp.SetMaxHp(atoi(line.c_str()));
 					getline (myfile,line);
@@ -119,9 +122,17 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 					getline (myfile,line);
 					temp.SetExp(atoi(line.c_str()));
 
-					m_npc.SetStats(temp);
+					if(m_npc.GetLife() == "A")
+					{
+						m_npc.SetStats(temp);
 
-					p_room->NpcAdd(m_npc);
+						p_room->NpcAdd(m_npc);
+					}
+
+					else
+					{
+						t_npcCount++;
+					}
 
 					tempcount++;
 				}
@@ -133,6 +144,10 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 			}*/
 			if(tempcount == p_room->GetNumNpc())
 			{
+				int tempNumNpc = 0;
+				tempNumNpc = p_room->GetNumNpc() - t_npcCount;
+				string npcLine = static_cast<ostringstream*>( &(ostringstream() << tempNumNpc) )->str();
+				p_room->SetNumNpc(npcLine);
 				myfile.close();
 			}
 		}

@@ -14,6 +14,7 @@ class Character
 private:
 	string m_name;
 	string m_desc;
+	string m_life;
 	list<Item> m_inventory;
 protected:
 	Combatant* m_stats;
@@ -28,4 +29,6 @@ public:
 	list<Item> GetInventory() const {return m_inventory;}
 	void AddItem(Item p_item) {m_inventory.push_back(p_item);}
 	void RemoveItem(string p_itemName);
+	string GetLife() {return m_life;}
+	void SetLife(string p_value) {m_life = p_value;}
 };

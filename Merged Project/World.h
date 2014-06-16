@@ -4,6 +4,7 @@
 #include <fstream>
 #include "Room.h"
 #include "Player.h"
+#include <sstream> 
 
 using namespace std;
 

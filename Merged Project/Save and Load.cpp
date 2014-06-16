@@ -19,7 +19,7 @@ void Save()
 		myfile << "\n";
 		myfile << PC->GetSecondStat();
 		myfile << "\n";
-		myfile << PC->GetCurrentRoom()->GetName();
+		myfile << PC->GetCurrentRoom()->GetRoomId();
 		myfile << "\n";
 		myfile << temp->GetMaxHp();
 		myfile << "\n";
@@ -72,17 +72,7 @@ void Load()
 			getline (myfile,line);
 			PC->SetSecondStat(line);
 			getline (myfile,line);
-
-			for (int a = 0; a < World::GetInstance()->RoomCount(); a++)
-			{
-				if(line == World::GetInstance()->GetRooms()[a]->GetName())
-				{
-					roomNum = a;
-					break;
-				}
-			}
-
-			PC->SetCurrentRoom(World::GetInstance()->GetRooms()[roomNum]);
+			PC->SetCurrentRoom(World::GetInstance()->GetRooms()[atoi(line.c_str())]);
 			getline (myfile,line);
 			temp.SetMaxHp(atoi(line.c_str()));
 			getline (myfile,line);

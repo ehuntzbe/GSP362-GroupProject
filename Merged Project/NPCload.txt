@@ -17,7 +17,7 @@ A
 2B1
 Sword
 Unknown Soldier Sword {Sword}
-A
+DA
 25
 5
 7
