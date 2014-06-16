@@ -24,6 +24,11 @@ private:
 	Room* m_currentRoom;
 	vector<ability> m_abilities; //all abilities (not just unlocked ones)
 	unordered_map<wear_slot, Item> m_equipment; //equipment slots
+	int m_eqHp;
+	int m_eqMp;
+	int m_eqAgi;
+	int m_eqStr;
+	int m_eqAs;
 	//Constructor is private for singleton implementation
 	Player();
 	static Player* m_Player;
@@ -54,4 +59,14 @@ public:
 	void SetPrimeStat(string p_primeStat) {m_primeStat = p_primeStat;}
 	void SetSecondStat(string p_secondStat) {m_secondStat = p_secondStat;}
 	unordered_map<wear_slot, Item> GetEquipment() const {return m_equipment;}
+	int GetEqHp() const {return m_eqHp;}
+	int GetEqMp() const {return m_eqMp;}
+	int GetEqAgi() const {return m_eqAgi;}
+	int GetEqStr() const {return m_eqStr;}
+	int GetEqAs() const {return m_eqAs;}
+	void SetEqHp(int p_hp) {m_eqHp = p_hp;}
+	void SetEqMp(int p_mp) {m_eqMp = p_mp;}
+	void SetEqAgi(int p_agi) {m_eqAgi = p_agi;}
+	void SetEqStr(int p_str) {m_eqStr = p_str;}
+	void SetEqAs(int p_as) {m_eqAs = p_as;}
 };

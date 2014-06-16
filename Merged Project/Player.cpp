@@ -28,6 +28,11 @@ Player::Player()
 	m_stats->SetMaxHp(50);
 	m_stats->SetMaxMp(30);
 	m_stats->SetMaxStr(15);
+	m_eqHp = 0;
+	m_eqMp = 0;
+	m_eqStr = 0;
+	m_eqAgi = 0;
+	m_eqAs = 0;
 }
 
 Player* Player::GetInstance()
@@ -152,6 +157,11 @@ void Player::UnequipItem(Item p_item)
 	int str = -p_item.GetStrBoost();
 	int hp = -p_item.GetHpBoost();
 	int mp = -p_item.GetMpBoost();
+	m_eqHp += hp;
+	m_eqMp += mp;
+	m_eqAgi += agi;
+	m_eqStr += str;
+	m_eqAs += as;
 	statsGained.SetAgi(agi);	statsGained.SetMaxAgi(agi);
 	statsGained.SetAs(as);		statsGained.SetMaxAs(agi);
 	statsGained.SetStr(str);	statsGained.SetMaxStr(str);
@@ -182,6 +192,11 @@ void Player::EquipItem(Item p_item)
 	int str = p_item.GetStrBoost();
 	int hp = p_item.GetHpBoost();
 	int mp = p_item.GetMpBoost();
+	m_eqHp += hp;
+	m_eqMp += mp;
+	m_eqAgi += agi;
+	m_eqStr += str;
+	m_eqAs += as;
 	statsGained.SetAgi(agi);	statsGained.SetMaxAgi(agi);
 	statsGained.SetAs(as);		statsGained.SetMaxAs(agi);
 	statsGained.SetStr(str);	statsGained.SetMaxStr(str);

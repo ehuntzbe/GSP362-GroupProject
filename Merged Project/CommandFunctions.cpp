@@ -497,4 +497,5 @@ void Use(string p_target)
 void SavePlayer()
 {
 	Save();
+	WorldItems::SaveItems();
 }

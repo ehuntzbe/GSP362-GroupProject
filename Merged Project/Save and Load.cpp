@@ -43,6 +43,15 @@ void Save()
 		myfile << "\n";
 		myfile << temp->GetExp();
 		myfile << "\n";
+		myfile << PC->GetEqHp();
+		myfile << "\n";
+		myfile << PC->GetEqMp();
+		myfile << "\n";
+		myfile << PC->GetEqAgi();
+		myfile << "\n";
+		myfile << PC->GetEqStr();
+		myfile << "\n";
+		myfile << PC->GetEqAs();
 		myfile.close();
 
 		cout << endl << "Save Completed" << endl << endl;
@@ -95,6 +104,16 @@ void Load()
 			temp.SetAs(atoi(line.c_str()));
 			getline (myfile,line);
 			temp.SetExp(atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetHp(temp.GetHp()-atoi(line.c_str())); //reduce the player's stats by the equipment boost so that it isn't doubled when items are loaded
+			getline (myfile,line);
+			temp.SetMp(temp.GetMp()-atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetAgi(temp.GetAgi()-atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetStr(temp.GetStr()-atoi(line.c_str()));
+			getline (myfile,line);
+			temp.SetAs(temp.GetAs()-atoi(line.c_str()));
 
 			PC->SetStats(temp);
 
