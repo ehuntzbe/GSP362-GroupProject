@@ -40,8 +40,6 @@ private:
 	vector<Item> m_items;
 	//For saving/loading purposes
 	int m_roomId;
-	//For labeling purposes
-	static int m_roomCount;
 
 public:
 	//These need to add to the exit list
@@ -77,6 +75,7 @@ public:
 	Item GetItem(string p_name);
 	bool CheckExit(EXIT p_exit) const {if (m_exits[p_exit] == true) return true; return false;}
 	int GetRoomId() const {return m_roomId;}
+	void SetRoomId(int p_id) {m_roomId = p_id;}
 	Room();
 	~Room();
 };

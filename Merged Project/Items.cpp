@@ -152,7 +152,6 @@ void WorldItems::LoadItems()
 
 void WorldItems::PlaceItems()
 {
-	Room* *worldCopy = World::GetInstance()->GetRooms();
 	for (vector<Item>::iterator it = m_items.begin(); it != m_items.end(); ++it)
 	{
 		switch(it->GetSaveLocation())
@@ -170,7 +169,7 @@ void WorldItems::PlaceItems()
 			World::GetInstance()->GetRooms()[it->GetRoomId()]->AddItem(*it);
 			break;
 		case IN_NPC:
-			worldCopy[it->GetRoomId()]->GetNPC(it->GetNpcName()).AddItem(*it);
+			World::GetInstance()->GetRooms()[it->GetRoomId()]->GetNPC(it->GetNpcName()).AddItem(*it);
 			break;
 		}
 	}

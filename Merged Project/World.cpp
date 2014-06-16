@@ -197,6 +197,7 @@ void World::LoadRoomsFromFile(string p_fileName, string p_npcFileName)
 			}
 			else
 			{
+				m_world[counter]->SetRoomId(counter);
 				m_world[counter]->SetName(line);
 				getline (myfile, line);
 				vector<string> desc = ParseDescription(line);

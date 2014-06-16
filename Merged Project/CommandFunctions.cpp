@@ -3,7 +3,7 @@
 
 void Look()
 {
-	cout << endl << PC->GetCurrentRoom()->GetName() << endl;
+	cout << endl << Player::GetInstance()->GetCurrentRoom()->GetName() << endl;
 	cout << PC->GetCurrentRoom()->GetDesc() << endl;
 	cout << "EXITS:"; PC->GetCurrentRoom()->DisplayExits(); cout << endl;	
 	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
@@ -27,8 +27,7 @@ void Look()
 void Kill(string p_target)
 {
 	combat_outcome battle;
-	Room* room = PC->GetCurrentRoom();
-	Character opponent = room->GetNPC(p_target);
+	Character opponent = PC->GetCurrentRoom()->GetNPC(p_target);
 	if (opponent.GetName() != "none")
 	{
 		cout << "You have entered combat with " << opponent.GetName() << "!" << endl;
@@ -51,55 +50,13 @@ void Kill(string p_target)
 				list<Item> loot = opponent.GetInventory();
 				for (list<Item>::iterator it = loot.begin(); it != loot.end(); ++it)
 				{
-					room->AddItem(*it);
+					PC->GetCurrentRoom()->AddItem(*it);
 					WorldItems::m_items[it->GetItemId()].SetSaveLocation(IN_ROOM);
-					WorldItems::m_items[it->GetItemId()].SetRoomId(room->GetRoomId());
+					WorldItems::m_items[it->GetItemId()].SetRoomId(PC->GetCurrentRoom()->GetRoomId());
 				}
 			}
-			PC->AwardExperience(opponent.GetStats()->GetExp());			
-			
-			ifstream myfile ("NPC.txt");
-			ofstream loadfile ("NPCload.txt");
-			string line;
-			long t_pos = 0;
-
-			if (loadfile.is_open())
-			{				
-				if (myfile.is_open())
-				{
-					while ( getline (myfile,line) )
-					{
-						loadfile << line << "\n";
-						if(line == PC->GetCurrentRoom()->GetName())
-						{
-							for(int a = 0; a < PC->GetCurrentRoom()->GetNumNpc(); a++)
-							{
-								getline (myfile,line);
-								loadfile << line << "\n";
-								if(line == "")
-								{
-									getline (myfile,line);
-								}
-								if(line == opponent.GetName())
-								{
-									getline (myfile,line);
-									loadfile << line << "\n";
-									loadfile << "D";
-								}							
-							}
-						}
-					}
-					myfile.close();
-				}				
-				loadfile.close();
-			}
-
-			int tempNum = 0;
-			tempNum = PC->GetCurrentRoom()->GetNumNpc() - 1;
-			string npcLine = static_cast<ostringstream*>( &(ostringstream() << tempNum) )->str();
-			PC->GetCurrentRoom()->SetNumNpc(npcLine);
-
-			room->RemoveNpc(opponent.GetName());
+			PC->AwardExperience(opponent.GetStats()->GetExp());
+			PC->GetCurrentRoom()->RemoveNpc(opponent.GetName());
 			break;
 		}
 		Look();
@@ -415,13 +372,12 @@ void ExaLook()
 
 void Get(string p_target)
 {
-	Room* room = PC->GetCurrentRoom();
-	Item gotItem = room->GetItem(p_target);
+	Item gotItem = PC->GetCurrentRoom()->GetItem(p_target);
 	if (gotItem.GetName() != "none")
 	{
 		cout << "You get " << gotItem.GetShort() << "." << endl;
 		PC->AddItem(gotItem);
-		room->RemoveItem(p_target);
+		PC->GetCurrentRoom()->RemoveItem(p_target);
 		WorldItems::m_items[gotItem.GetItemId()].SetSaveLocation(IN_INVENTORY);
 	}
 	else
@@ -430,17 +386,16 @@ void Get(string p_target)
 
 void Drop(string p_target)
 {
-	Room* room = PC->GetCurrentRoom();
 	list<Item> items = PC->GetInventory();
 	for (list<Item>::iterator it = items.begin(); it != items.end(); ++it)
 	{
 		if (it->GetName() == p_target)
 		{
 			cout << "You drop " << it->GetShort() << "." << endl;
-			room->AddItem(*it);
+			PC->GetCurrentRoom()->AddItem(*it);
 			PC->RemoveItem(p_target);
 			WorldItems::m_items[it->GetItemId()].SetSaveLocation(IN_ROOM);
-			WorldItems::m_items[it->GetItemId()].SetRoomId(room->GetRoomId());
+			WorldItems::m_items[it->GetItemId()].SetRoomId(PC->GetCurrentRoom()->GetRoomId());
 			return;
 		}
 	}
@@ -449,7 +404,6 @@ void Drop(string p_target)
 
 void Use(string p_target)
 {
-	Room* room = PC->GetCurrentRoom();
 	list<Item> items = PC->GetInventory();
 	for (list<Item>::iterator it = items.begin(); it != items.end(); ++it)
 	{

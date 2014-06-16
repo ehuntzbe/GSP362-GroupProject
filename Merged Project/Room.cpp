@@ -1,7 +1,5 @@
 #include "Room.h"
 
-int Room::m_roomCount = 0;
-
 Room::Room()
 {
 	//Initialize all pointers to NULL
@@ -14,8 +12,7 @@ Room::Room()
 
 	for (int i = 0; i < 6; i++)
 		m_exits[i] = false;
-	m_roomId = m_roomCount;
-	m_roomCount++;
+	m_roomId = 0;
 }
 
 Room::~Room()
