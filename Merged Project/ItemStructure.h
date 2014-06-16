@@ -74,8 +74,8 @@ public:
 	void SetHpBoost(int hp)		{ m_hpBoost = hp; }
 	void SetMpBoost(int mp)		{ m_mpBoost = mp; }
 	void SetStrBoost(int str)	{ m_strBoost = str; }
-	void SetAgiBoost(int agi)	{ m_hpBoost = agi; }
-	void SetAsBoost(int as)		{ m_hpBoost = as; }
+	void SetAgiBoost(int agi)	{ m_agiBoost = agi; }
+	void SetAsBoost(int as)		{ m_asBoost = as; }
 	void SetName(string p_name)	{ m_itemName = p_name; }
 	void SetDesc(string p_desc)	{ m_desc = p_desc; }
 	void SetShort(string p_short)	{ m_shortDesc = p_short; }
