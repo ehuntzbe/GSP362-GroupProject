@@ -98,7 +98,7 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 					getline (myfile,line);
 					m_npc.SetDesc(line);
 					getline (myfile,line);
-					m_npc.SetLife(line);
+					temp.SetLife(line);
 					getline (myfile,line);
 					temp.SetMaxHp(atoi(line.c_str()));
 					getline (myfile,line);
@@ -122,7 +122,7 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 					getline (myfile,line);
 					temp.SetExp(atoi(line.c_str()));
 
-					if(m_npc.GetLife() == "A")
+					if(temp.GetLife() == "A")
 					{
 						m_npc.SetStats(temp);
 

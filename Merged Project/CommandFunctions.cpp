@@ -12,7 +12,10 @@ void Look()
 		vector<Character> others = PC->GetCurrentRoom()->NpcList();
 		for (vector<Character>::iterator it = others.begin(); it != others.end(); ++it)
 		{
-			cout << it->GetDesc() << endl;
+			if(it->GetStats()->GetLife() != "D")
+			{
+				cout << it->GetDesc() << " {" << it->GetName() << "}" << endl;
+			}
 		}
 	}
 	vector<Item> roomItems = PC->GetCurrentRoom()->ItemList();
@@ -56,48 +59,13 @@ void Kill(string p_target)
 				}
 			}
 			PC->AwardExperience(opponent.GetStats()->GetExp());			
+			//opponent.SetLife("D");
 			
-			ifstream myfile ("NPC.txt");
-			ofstream loadfile ("NPCload.txt");
-			string line;
-			long t_pos = 0;
-
-			if (loadfile.is_open())
-			{				
-				if (myfile.is_open())
-				{
-					while ( getline (myfile,line) )
-					{
-						loadfile << line << "\n";
-						if(line == PC->GetCurrentRoom()->GetName())
-						{
-							for(int a = 0; a < PC->GetCurrentRoom()->GetNumNpc(); a++)
-							{
-								getline (myfile,line);
-								loadfile << line << "\n";
-								if(line == "")
-								{
-									getline (myfile,line);
-								}
-								if(line == opponent.GetName())
-								{
-									getline (myfile,line);
-									loadfile << line << "\n";
-									loadfile << "D";
-								}							
-							}
-						}
-					}
-					myfile.close();
-				}				
-				loadfile.close();
-			}
-
 			int tempNum = 0;
 			tempNum = PC->GetCurrentRoom()->GetNumNpc() - 1;
 			string npcLine = static_cast<ostringstream*>( &(ostringstream() << tempNum) )->str();
 			PC->GetCurrentRoom()->SetNumNpc(npcLine);
-			PC->GetCurrentRoom()->RemoveNpc(opponent.GetName());
+			//PC->GetCurrentRoom()->RemoveNpc(opponent.GetName());
 			break;
 		}
 		Look();

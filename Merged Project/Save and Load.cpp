@@ -54,6 +54,42 @@ void Save()
 		myfile << PC->GetEqAs();
 		myfile.close();
 
+
+		//ifstream myfile ("NPC.txt");
+		ofstream loadfile ("NPCload.txt");
+		string line;
+
+		if (loadfile.is_open())
+		{	
+			for(int a = 0; a < World::GetInstance()->RoomCount(); a++)
+			{
+				if(World::GetInstance()->GetRooms()[a]->NpcList().size() > 0)
+				{
+					loadfile << World::GetInstance()->GetRooms()[a]->GetName() << "\n";
+
+					for(int b = 0; b < World::GetInstance()->GetRooms()[a]->NpcList().size(); b++)
+					{
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetName() << "\n";					
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetDesc() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetLife() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxHp() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxMp() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxStr() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxAgi() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxAs() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetHp() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMp() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetStr() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetAgi() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetAs() << "\n";
+						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetExp() << "\n" << "\n";
+					}
+				}
+			}
+			
+			loadfile.close();
+		}		
+
 		cout << endl << "Save Completed" << endl << endl;
 	}
 	else cout << "Unable to open file Save fialed";

@@ -21,6 +21,8 @@ class Combatant
 	int m_currentStr; //player's current strength (can be modified by buffs and debuffs)
 	int m_currentAgi; //current agility
 	int m_currentAs; //current armor score (defense)
+	
+	string m_life; //is the combatant alive?
 
 	int m_Exp;	// Experience
 
@@ -41,6 +43,8 @@ public:
 
 	int GetExp()				{ return m_Exp; }	// Getter for experience
 
+	string GetLife() {return m_life;}
+
 	//Setters for Max stats
 	void SetMaxHp(int p_hp)		{ m_maxHp = p_hp; }
 	void SetMaxMp(int p_mp)		{ m_maxMp = p_mp; }
@@ -57,8 +61,10 @@ public:
 
 	void SetExp(int p_exp)		{ m_Exp = p_exp; }	// Setter for experience
 
+	void SetLife(string p_value) {m_life = p_value;}
+
 	Combatant operator+(Combatant p_other);
-};
+};	
 
 // Combat function prototype
 combat_outcome Combat(Combatant *player, Combatant *enemy);	// combat function prototype

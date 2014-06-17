@@ -1,10 +1,7 @@
+1
+-1
+none
 3
-2
-none
-1
-1
-none
-2
 1
 none
 1
@@ -13,8 +10,11 @@ none
 1
 -1
 none
-3
 1
+-1
+none
+1
+-1
 none
 1
 -1

@@ -201,6 +201,7 @@ combat_outcome Combat(Combatant *player, Combatant *enemy)
 		// if enemy's hp is 0 or less, kill enemy and return true
 		if(enemy->GetHp() <= 0) {
 			cout << "You strike the finishing blow!" << endl;
+			enemy->SetLife("D");
 			return KILLED;
 		}
 		if (valid == true)
