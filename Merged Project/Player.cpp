@@ -20,7 +20,7 @@ Player::Player()
 	m_stats->SetAgi(10);
 	m_stats->SetAs(5);
 	m_stats->SetExp(0);
-	m_stats->SetHp(46);
+	m_stats->SetHp(50);
 	m_stats->SetMp(30);
 	m_stats->SetStr(15);
 	m_stats->SetMaxAgi(10);
