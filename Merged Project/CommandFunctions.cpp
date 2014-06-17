@@ -14,7 +14,7 @@ void Look()
 		{
 			if(it->GetStats()->GetLife() != "D")
 			{
-				cout << it->GetDesc() << " {" << it->GetName() << "}" << endl;
+				cout << it->GetDesc() << endl;
 			}
 		}
 	}
@@ -31,7 +31,7 @@ void Kill(string p_target)
 {
 	combat_outcome battle;
 	Character opponent = PC->GetCurrentRoom()->GetNPC(p_target);
-	if (opponent.GetName() != "none")
+	if (opponent.GetName() != "none" && opponent.GetStats()->GetLife() != "D")
 	{
 		cout << "You have entered combat with " << opponent.GetName() << "!" << endl;
 		battle = Combat(PC->GetStats(), opponent.GetStats());
@@ -76,7 +76,7 @@ void Kill(string p_target)
 
 void North()
 {
-	if (PC->GetCurrentRoom()->GetNpcCount() > 0)
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
 	{
 		cout << "Enemies are blocking your path!" << endl;
 		return;
@@ -92,7 +92,7 @@ void North()
 
 void South()
 {
-	if (PC->GetCurrentRoom()->GetNpcCount() > 0)
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
 	{
 		cout << "Enemies are blocking your path!" << endl;
 		return;
@@ -108,7 +108,7 @@ void South()
 
 void East()
 {
-	if (PC->GetCurrentRoom()->GetNpcCount() > 0)
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
 	{
 		cout << "Enemies are blocking your path!" << endl;
 		return;
@@ -124,7 +124,7 @@ void East()
 
 void West()
 {
-	if (PC->GetCurrentRoom()->GetNpcCount() > 0)
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
 	{
 		cout << "Enemies are blocking your path!" << endl;
 		return;
@@ -140,7 +140,7 @@ void West()
 
 void Up()
 {
-	if (PC->GetCurrentRoom()->GetNpcCount() > 0)
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
 	{
 		cout << "Enemies are blocking your path!" << endl;
 		return;
@@ -156,7 +156,7 @@ void Up()
 
 void Down()
 {
-	if (PC->GetCurrentRoom()->GetNpcCount() > 0)
+	if (PC->GetCurrentRoom()->GetNumNpc() > 0)
 	{
 		cout << "Enemies are blocking your path!" << endl;
 		return;
