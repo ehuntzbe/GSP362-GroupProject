@@ -142,14 +142,19 @@ void Load()
 			temp.SetExp(atoi(line.c_str()));
 			getline (myfile,line);
 			temp.SetHp(temp.GetHp()-atoi(line.c_str())); //reduce the player's stats by the equipment boost so that it isn't doubled when items are loaded
+			temp.SetMaxHp(temp.GetMaxHp()-atoi(line.c_str()));
 			getline (myfile,line);
 			temp.SetMp(temp.GetMp()-atoi(line.c_str()));
+			temp.SetMaxMp(temp.GetMaxMp()-atoi(line.c_str()));
 			getline (myfile,line);
 			temp.SetAgi(temp.GetAgi()-atoi(line.c_str()));
+			temp.SetMaxAgi(temp.GetMaxAgi()-atoi(line.c_str()));
 			getline (myfile,line);
 			temp.SetStr(temp.GetStr()-atoi(line.c_str()));
+			temp.SetMaxStr(temp.GetMaxStr()-atoi(line.c_str()));
 			getline (myfile,line);
 			temp.SetAs(temp.GetAs()-atoi(line.c_str()));
+			temp.SetMaxAs(temp.GetMaxAs()-atoi(line.c_str()));
 
 			PC->SetStats(temp);
 
