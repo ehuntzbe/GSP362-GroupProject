@@ -56,38 +56,44 @@ void Save()
 
 
 		//ifstream myfile ("NPC.txt");
-		ofstream loadfile ("NPCload.txt");
+		ofstream savefile ("NPCload.txt");
 		string line;
 
-		if (loadfile.is_open())
+		if (savefile.is_open())
 		{	
 			for(int a = 0; a < World::GetInstance()->RoomCount(); a++)
 			{
 				if(World::GetInstance()->GetRooms()[a]->NpcList().size() > 0)
 				{
-					loadfile << World::GetInstance()->GetRooms()[a]->GetName() << "\n";
+					savefile << World::GetInstance()->GetRooms()[a]->GetName() << "\n";
 
 					for(int b = 0; b < World::GetInstance()->GetRooms()[a]->NpcList().size(); b++)
 					{
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetName() << "\n";					
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetDesc() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetLife() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxHp() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxMp() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxStr() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxAgi() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxAs() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetHp() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMp() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetStr() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetAgi() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetAs() << "\n";
-						loadfile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetExp() << "\n" << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetName() << "\n";					
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetDesc() << "\n";
+
+						if(World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetLife() == "")
+						{
+							World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetLife("A");
+						}
+
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetLife() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxHp() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxMp() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxStr() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxAgi() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxAs() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetHp() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMp() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetStr() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetAgi() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetAs() << "\n";
+						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetExp() << "\n" << "\n";
 					}
 				}
 			}
 			
-			loadfile.close();
+			savefile.close();
 		}		
 
 		cout << endl << "Save Completed" << endl << endl;
