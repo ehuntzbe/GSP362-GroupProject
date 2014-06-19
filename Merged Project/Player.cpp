@@ -33,6 +33,20 @@ Player::Player()
 	m_eqStr = 0;
 	m_eqAgi = 0;
 	m_eqAs = 0;
+	m_bgmusic = true;
+}
+
+void Player::SetMusic(int p_value)
+{
+	if(p_value == 0)
+	{
+		m_bgmusic = true;
+	}
+
+	else
+	{
+		m_bgmusic = false;
+	}
 }
 
 Player* Player::GetInstance()

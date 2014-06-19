@@ -3,6 +3,65 @@
 
 void Look()
 {
+	/*
+	
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId())
+	{
+		BackgroundSound(L".wav");
+	}
+
+	*/
+	
 	cout << endl << Player::GetInstance()->GetCurrentRoom()->GetName() << endl;
 	cout << PC->GetCurrentRoom()->GetDesc() << endl;
 	cout << "EXITS:"; PC->GetCurrentRoom()->DisplayExits(); cout << endl;	
@@ -34,6 +93,8 @@ void Kill(string p_target)
 	if (opponent.GetName() != "none" && opponent.GetStats()->GetLife() != "D")
 	{
 		cout << "You have entered combat with " << opponent.GetName() << "!" << endl;
+		PC->SetMusic(1);
+		//BackgroundSound(L".wav");
 		battle = Combat(PC->GetStats(), opponent.GetStats());
 		switch (battle)
 		{

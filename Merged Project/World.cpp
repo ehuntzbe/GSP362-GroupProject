@@ -39,7 +39,7 @@ void World::DisplayRoom(int p_roomID)
 	if (DISPLAY_ROOM_ID)
 		cout << "ID: " << p_roomID << endl;
 	cout << m_world[p_roomID]->GetName() << endl;
-	cout << m_world[p_roomID]->GetDesc() << endl;	
+	/*cout << m_world[p_roomID]->GetDesc() << endl;	
 	if(m_world[p_roomID]->GetNumNpc() > 0)
 	{
 		cout << m_world[p_roomID]->GetNumNpc() << endl;
@@ -66,7 +66,7 @@ void World::DisplayRoom(int p_roomID)
 			cout << "EXP: "<< tempStats->GetExp() <<endl;
 		}
 	}
-	cout << "EXITS:"; m_world[p_roomID]->DisplayExits(); cout << endl;
+	cout << "EXITS:"; m_world[p_roomID]->DisplayExits(); cout << endl;*/
 }
 
 void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)

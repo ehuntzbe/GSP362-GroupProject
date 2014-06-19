@@ -29,6 +29,7 @@ private:
 	int m_eqAgi;
 	int m_eqStr;
 	int m_eqAs;
+	bool m_bgmusic;
 	//Constructor is private for singleton implementation
 	Player();
 	static Player* m_Player;
@@ -69,4 +70,6 @@ public:
 	void SetEqAgi(int p_agi) {m_eqAgi = p_agi;}
 	void SetEqStr(int p_str) {m_eqStr = p_str;}
 	void SetEqAs(int p_as) {m_eqAs = p_as;}
+	bool GetMusic() {return m_bgmusic;}
+	void SetMusic(int p_value);
 };

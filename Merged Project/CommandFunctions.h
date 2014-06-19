@@ -1,5 +1,6 @@
 //Cory J. 6/5
 #include "Room.h"
+#include "Sound.h"
 #include "Player.h"
 #include "Combat.h"
 #include "Abilities.h"
