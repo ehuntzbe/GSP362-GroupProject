@@ -71,11 +71,18 @@ int main()
 			break;
 
 		case 3:
-			{cout << "\nCredits Screen\n";}
+			cout << "\nCredits\n";
+			cout << "Storywriting: Joshua Silvers" << endl;
+			cout << "World Design: Joshua Silvers" << endl;
+			cout << "Level Design: Joshua Silvers" << endl;
+			cout << "Engine Framework: Eric Huntzberry, Ashton Carr, & Cory Jacobs" << endl;
+			cout << "Game Mechanics: Eric Huntzberry" << endl;
+			cout << "Sound Framework: Ashton Carr" << endl;
+			cout << "Combat: Walker Tatum & Eric Huntzberry" << endl;
 			break;
 
 		case 4:
-			{cout << "\n To exit the game ";}
+			{exit(0);}
 			break;
 
 			//Other than 1, 2, 3, 4
