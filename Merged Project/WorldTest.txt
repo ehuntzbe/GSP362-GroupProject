@@ -4,499 +4,499 @@ Room1
 Desc \n line2 \n line3 \n line 4
 0
 
-A1
+Dartosk Forest A1
 Melonos: Hey, wake up kid. Today is the day. Melonos smacks you with an \n object to wake you up.\n Apprentice: Im up, Im up. Stop whacking me with that. IS THAT A SWORD! Who wakes somebody up with a sword. \n Melonos: Somebody that needs his apprentice up to make the most important \n delivery in an old man's life.\n Apprentice: You mean that it's ready. The ultimate weapon you made for the king.\n Melonos: Yes my boy, the Dark Gun is complete. Now put some pants on and deliver it before we both die of old age. You put on your clothes, pick up your personal magitech sword and head out the door.\n Melonos: Good luck my boy, say hi to the king and queen for me. Try not to look stupid in front of the princess. Apprentice: Thanks, try not to fall asleep while working and accidentally set your beard ablaze. Melonos: That only happened once. Also you must remember to never use the Dark Gun. Don't even play with it. It is meant to bond to its first user until they die. 
 0
 
-A2
+Dartosk Forest A2
 The forest is teeming with life. The forest that surrounds most of the\n five kingdoms looks like this. Many different trees and cute little animals.\n Apprentice: Man, it has been only 60 years since Melonos and the king of Dartosk started the Magitechnological Revolution. I can't even remember a time when any kingdom didn't have magitechnology.\n Apprentice: Maybe I should stop talking to myself, the animals are starting to look at me funny. Nah.
 0
 
-A3
+Dartosk Forest A3
 The forest is teeming with life. The forest that surrounds most of the\n five kingdoms looks like this. Many different trees and cute little animals.\n You get to a fork in the road. One way continuing forward and one that goes west.\n Apprentice: I remember the last time I came this way I went west and got lost. But I did leave some extra items there in case I needed them.
 0
 
-B1
+Dartosk Forest B1
 The turn has led you to a slightly darker patch of the forest. The cute animals are there but are much quieter. The trees rustle in the wind as you walk.\n Apprentice: Ok, this place is as creepy as I remember. I hope nothing attacks me. Which would be odd because everything in this forest is usually cute and tame.
 0
 
-B2
+Dartosk Forest B2
 The forest seems to be getting creepy as you go. Getting darker and more damp. You see several animals that seem to be scared. The tree line has blocked your path westward and you are left with the option of going north through a small opening.\n Apprentice: Alright, this was not so freaky last time. Maybe I should just get back on the path before I get eaten or beaten to death.
-0
+0 
 
-B3
+Dartosk Forest B3
 The trees here are vibrant and wonderful. Greener then anyplace else in the forest. A delightful meadow filled with beautiful flowers and cute bunny's all run around a small hole.\n Apprentice: Why was the path here so creepy. This place is great. I would take a nap but I do have a job to do. Lets see what I left for myself in that hole.
 0
 
-A4
+Dartosk Forest A4
 It is starting to get dark but the forest is still teeming with life. The forest that surrounds most of the five kingdoms looks like this. Many different trees and cute little animals. You can see the exit to the forest. Just a little bit more to go.
 0
 
-A5
+Dartosk Forest A5
 The exit to the forest is close, but something is off. The sky through the tree's is dark, but the exit seems to have an odd glow.\n Apprentice: That's odd. I should hurry up and see whats happening. Maybe there is some kind of show going on. I loved that circus troupe that was at Dartosk last time me and Master Melones were there. Really hope thats what is happening.
 0
 
-A6
+Dartosk Forest A6
 The tree's here arch as if they are welcoming you to the entrance to Dartosk. But instead of the usual view of a beautiful kingdom at night. The city burns. The glow was that of the flames that are engulfing Dartosk. In front of you is a man in black armor.\n Apprentice: Who are you. What's happening to Dartosk.\n Unknown Soldier Sword: We are the ones who will stand tall against the five betrayers. All shall no our pain and suffer.\n Apprentice: Get out of my way.\n You draw your magitech blade and prepare for battle.
 1
 
-2A1
+Dartosk Kingdom 2A1
 The usual kingdom that is usually full of life even at night is ruined by the flames of death and screams of pain and death. All around you can see mighty structures that were once beautiful to behold, filled with people and magitech now burn. \n You know if your head east after continuing a bit farther north you can get to the castle and give the Dark Gun to the king. Hopefully before it is to late, but in the far distance to the north you see a family being attacked by another man like the one you met at then exit to the forest.
 0
 
-2A2
+Dartosk Kingdom 2A2
 The usual kingdom that is usually full of life even at night is ruined by the flames of death and screams of pain and death. All around you can see mighty structures that were once beautiful to behold, filled with people and magitech now burn. \n You can now easily see the family being attacked by another strange man. But the path east towards the castle looks clear.
 0
 
-2B1
+Dartosk Kingdom 2B1
 In front of you is a man like the one you met at the forest exit. He has trapped a family between him and a building that is on fire. The family consists of a mother, father and a baby. The baby cries along with his mother as the father attempts to fight off the strange man. Ashes rain from the sky as you draw closer.\n Unknown Soldier Sword: The people of the 5 betrayers shall suffer as they do. All shall fall before the .....\n You throw a rock at the man's head before he can finish.\n Apprentice: Leave them be. Why don't you pick on somebody who can actually fight.\n Unknown Soldier Sword: Then I shall destroy you and then the worshippers of the 5 betrayers.\n Apprentice: I have no idea what you are talking about but I will stop you.\n You draw your magitech blade and prepare for battle.
 1
 
-2A3
+Dartosk Kingdom 2A3
 The usual kingdom that is usually full of life even at night is ruined by the flames of death and screams of pain and death. All around you can see mighty structures that were once beautiful to behold, filled with people and magitech now burn. \n The path east has been clear, but in front of you you see another of the strange men that are attacking the city. You must continue though to deliver the gun
 0
 
-2A4
+Dartosk Kingdom 2A4
 The usual kingdom that is usually full of life even at night is ruined by the flames of death and screams of pain and death. All around you can see mighty structures that were once beautiful to behold, filled with people and magitech now burn. \n Another strange man stands before you, spear drawn and drenched in blood. He is surrounded by many of the kingdom's soldiers.\n Unknown Soldier Spear: We who follow shall destroy all who stand in our way. There is nothing you can do to stop this boy/girl. Nothing can stop what has been planned.\n Apprentice: Can any of you just talk like your not all super villains. It's really just getting weird.\n You draw your magitech blade and prepare for battle.
 1
 
-2A5
+Dartosk Kingdom 2A5
 The usual kingdom that is usually full of life even at night is ruined by the flames of death and screams of pain and death. All around you can see mighty structures that were once beautiful to behold, filled with people and magitech now burn. \n You see an overturned cart used for trading. After searching through it you find a few items that may help you.\n Apprentice: If whoever owns this cart is alive after all this I will definitely pay him for these items. Unless they are expensive, then I was never here.
 0
 
-2A6
+Dartosk Kingdom 2A6
 You are now in front of the castle of Dartosk. Even in the flames you can see that the castle is a wondrous sight. Large spires that reach to the clouds. A gorgeous lake in front of the gates. Covered in beautiful arrays of art and magitech that should be protecting the castle but seems to have failed as it to burns. \n Another strange man jumps out from the flames and attacks you.\n Unknown Soldier Spear: You who have come at the crucible shall be laid to rest with all those who do not believe.\n Apprentice: Can any of you just say something normal. I will even take threats like, I will kill you or die. Just no more weird stuff.\n You draw your magitech blade and prepare for battle.
 1
 
-2A7
+Dartosk Kingdom 2A7
 You are now on the bridge to the castle. Below you is the usually beautiful Lake Dartosk. But tonight it is covered by blood and flames. \n You see a man who appears to be wielding a magitech weapon in front of the castle main entrance.\n Apprentice: God I hope this guy at the very least doesn't talk like the rest of these guys. It really is driving me nuts. Doing all these horrible things and being confusing at the same time should never be done.
 0
 
-2A8
+Dartosk Kingdom Castle Gate 2A8
 You stand before the main entrance to Dartosk Castle. The doors are large and azure blue. Covered in artistic runes that would normally bring a tear to an artists eye, but are now drenched in blood. \n In front of you stands another of the strange men who have been attacking Dartosk. Unlike the others he appears to have a magitech sword and shield. He will be more of a challenge then the strange men before him.\n Unknown Soldier Magitech: I shall not allow any to pass. The judgement of the 5 betrayers has begun and it cannot be stopped. Know that judgement shall also fall upon you.\n Apprentice: Damn it, you guys are infuriating. Can you just say normal things. Just once. Not asking for to much. You can keep killing everybody and burning stuff. Not that I want any of that, but can you please just talk normally.\n You draw your magitech blade and prepare for battle.
 1
 
-2A9
+Dartosk Castle 2A9
 The inside of the castle looks like it has taken some damage but still looks ok. The walls are covered in portraits of royalty past and present. There are many busts of royalty and heroes of the kingdom. Many of which have been broken and destroyed. Only some remain. The two staircases that lead away from the throne room have collapsed so the only path left is the doors to the throne room. Under one of the collapsed staircases is the captain of the soldiers of Dartosk.\n Captain: You are the apprentice that was to deliver the ultimate weapon to our king. You must hurry, the leader of the attacking force is in there. Let me heal you in case you need to help him fight. \n You are fully healed.\n Apprentice: Do you know why this is happening. I really have no idea what any of these guys have been talking about.\n Captain: Neither do I, I am just as confused as you are by the things they say. Now go before it is to late.
 0
 
-2A10
+Dartosk Castle Thrown Room 2A10
 The king stands impaled upon a large magitech sword. Around him is the corpse of queen, the princess sits in front of her mother weeping. The man who has done this rips his blade from the now dead King. \nThe man is clad in black armor that is covered in opals. He stands powerful and is much taller then you and emits a strong aura of power. He wears a flowing black cloak that wraps around him. Everything about this man can only be described as majestic. His blade, covered in blood seems to be a powerful magitech weapon similar to the man outside the castle, but more advanced.\nApprentice: Princess get back. I don't know who youare, but I will make you pay for what you have done here today.\nYou draw your blade and prepare for battle, but before you can even fully draw your blade he is before you. With a single slash he destroys your sword and knocks you back. He says nothing as he walks towards you, ready to end your life.\nApprentice:I won't be done in by you. I still have the Dark Gun. Get Ready
 1
 
-2A11
+Dartosk Castle 2A11
 Unknown Leader: Know that I shall return to take what I need from Dartosk. The 5 betrayers will pay and the cost will be blood.\n You awaken in a large room within the castle. Around you are many wounded people. You hear the cries of many people around you as you look around.\nSoldier: Good, you are awake. The princ... I mean Queen wishes to speak to you.\nYou enter the throne room and see the Kingdom of Dartosks new Queen, Celine Dartosk sitting on her throne.\nCeline: Thank you for saving my life and kingdom apprentice to Melonos.\nApprentice: Thank you my lady, I am sorry that I could not save the king and queen.\n Celine: It is not your fault, but there is now something I must ask of you.\n Celine: My father told me of the weapon you now wield, the Dark Gun. Of its power and the fact that it bonds until death with its user.\nYou must travel to the four kingdoms of Fedvel,Helot,Grandhole and Mogan and find the truth and the people who did this.\nApprentice: Yes my lady. I will do as you have told.
 0
 
-3A1
+Fedvel Forest 3A1
 You begin your journey to the kingdom of Fedvel. Known throughout the land as the Kingdom of Vermillion. Known for its beauty and the fashion based magitech it produces. You are to go to the castle and meet with the ruler of Fedvel, Stefan Vermilos.  Who calls himself the Duke of Vermillion. Mostly because he likes the name.\nDesc: The forest that surrounds the kingdom of Fedvel is mostly the same as the forest that surrounds Dartosk. The trees are the same and you can see the same types of cute creatures roaming the forest. The only real difference is that all the leaves in the forest are different shades of red.\nApprentice: I must make it to see the Duke. Last I heard he was a good ruler, so I hope he has nothing to do with what happened to Dartosk. I wonder what kind of magitech they used to make all the leaves here red. It is very beautiful.
 0
 
-3A2
+Fedvel Forest 3A2
 The forest that surrounds the kingdom of Fedvel is mostly the same as the forest that surrounds Dartosk. The trees are the same and you can see the same types of cute creatures roaming the forest. The only real difference is that all the leaves in the forest are different shades of red.\n As you walk along the path a small green blob pops out at you. It is about two feet tall, a murky swamp green and has one creepy floating eye which may or may not be used to see. As somebody who works with magitech you immediately recognize it as a Run off Slime. A creature created from the run off created when somebody who is not a professional builds magitech.\n Apprentice: I remember these guys from when I first started building magitech. I always hated them and there creepy eye. Does it see through it or not, why the hell does it even have it. Hate these things.\n You draw the Dark Gun and prepare for battle.
 1
 
-3A3
+Fedvel Forest 3A3
 The forest that surrounds the kingdom of Fedvel is mostly the same as the forest that surrounds Dartosk. The trees are the same and you can see the same types of cute creatures roaming the forest. The only real difference is that all the leaves in the forest are different shades of red.\n Apprentice: Man, maybe when this is all over I can come to Fedvel to learn to make magitech that can change leaves colors like this. That would be awesome.
 0
 
-3A4
+Fedvel Forest 3A4
 The forest that surrounds the kingdom of Fedvel is mostly the same as the forest that surrounds Dartosk. The trees are the same and you can see the same types of cute creatures roaming the forest. The only real difference is that all the leaves in the forest are different shades of red. There is a fork in the road with a sign next to it. It says; North to Fedvel and West to Fedvel inn.\n Apprentice: I should continue on my journey, but it has been a long one. A nice inn to rest in and maybe get some items could be nice. But I shouldn't stay to long, I am on an important mission.
 0
 
-3B1
+Fedvel Forest 3B1
 The path to the inn is the same as the rest of the forest. Red leaves on many different types of trees with many cute little creatures within. You can see the inn in the distance as you walk. It is a nice building with one floor. It is made out of wood but the wood is a beautiful shade of vermillion. You can see a large sign that says. Welcome to the Fedvel Inn, The Inn of Vermillion.\n Just then a small black creature flies in front of you. It shoots some fireballs at your feet and giggles as you dodge them. Looking closely you see it is a small black furred creature. It has tiny little arms, legs and wings. And a little head with tiny horns.\n Apprentice: Awwwwwww. Aren't you an adorable little scamp. I will forgive you if you stop shooting fireballs at me. But if you don't I will slay you.\n Short Imp: Shoots a fireball.\n Apprentice: I will slay you, you adorable monster.\n You draw the Dark Gun and prepare for battle.
 1
 
-3Inn
+Fedvel Inn
 It is a nice building with one floor. The wood is a beautiful shade of vermillion. A large sign that says. Welcome to the Fedvel Inn, The Inn of Vermillion. The inside looks more normal and the wood isn't red. Just everything else. Anything that has any material or isn't a wall is a shade of red.\n An old man pops up from behind the desk. He is 5'8, balding and old looking and wears a white shirt, trousers and a vest. He introduces himself as Fred.\n Fred:I am the owner of this inn. Would you like a room.\n Apprentice: Nice to meet you Fred, I would like to stay at your fine inn.\n Fred: Okay, your room options are normal and the Room of Vermillion.\n Apprentice: The one that sounds awesome Fred, I will take the room of Vermillion.\n Fred: It's actually just a very red suite.\n Apprentice: I will take a normal room, are you ok Fred.\n Fred: I get a little sad when people say my name to much. It's so boring, it's like when I was born I was an afterthought that nobody wanted to take the time to name.
 0
 
-3A5
+Fedvel Forest 3A5
 The forest that surrounds the kingdom of Fedvel is mostly the same as the forest that surrounds Dartosk. The trees are the same and you can see the same types of cute creatures roaming the forest. The only real difference is that all the leaves in the forest are different shades of red.\n As you walk through the forest you feel a light scraping on your leg. A shrub seems to be attacking you. You look down and see that the shrub has a tiny evil face and is screaming Ni as it attacks you.\n Apprentice: I am being attacked by a shrub. I guess I will fight the shrub.\n You draw the Dark Gun and prepare for battle.
 1
 
-3A6
+Fedvel Forest Exit 3A6
 As you walk up to the exit of the forest several men appear. One of the seems to be the leader. It is Stefan Vermilios himself. He stands tall at 5'7 and has beautiful long flowing blond hair. He wears bright Vermillion armor and has a blade made of rubies.\n Stefan: I have heard about what has happened in Dartosk. The princess sent word that you would be coming young apprentice. We are glad to say that we will aid you in your quest to find the people who slayed your king.\n Apprentice: Thank you your highness.\n Stefan:You will stay at the castle. \n Apprentice: Thank you milord. I have a question, what type of magitech do you use to change the color of the leaves, it is very beautiful. \n Stefan: Oh, we just have a bunch of people paint the leaves. Keeps with the whole vermillion thing.\n Stefan: It is. You look thirsty my young friend. Before we head to the castle, would you like a drink. \n You instantly collapse as you take a sip.\n Stefan: Put him in the dungeon with the other one.
 0
 
-4A1
+Fedvel Dungeon 4A1
 You awaken several hours later to find that you are no longer talking to the Duke, but instead locked in a prison cell.\n The cell is cold and dank.There is a bunk bed and a toilet, a toilet that needs to be cleaned.\n A man jumps down from the top bunk. He is about the same height as the Duke. He is wearing some brown, dirty rags, and has a scruffy beard and long dirty blond hair. Not dirty blond the hair color, but blond hair that is dirty and needs to be cleaned.\n Dirty Prisoner: Welcome to the prison of the Castle of Vermillion. I know, you thought it would be nicer.\n Apprentice: Who are you, and why am I here.\n Dirty Prisoner: I am just another prisoner, so you may call me what you will. You are here because the Duke put you here.\n Apprentice: But he said that he was going to help me in my quest.\n Dirty Prisoner: Well, he lied. It's not like you can do anything here. So you should get used to this place. And no, the toilet will not work. What's that on your back.
 0
 
-4A2
+Fedvel Dungeon 4A2
 Apprentice: Ah, that is my way out. This is the Dark Gun. It must have been cloaked in Darkness when  was knocked out so it would not be taken.\n Dirty Prisoner: Well, how about this then. Since you seem to have a weapon, how about you get me out of here.\n Apprentice: Well, I am blowing a hole in the cell. So you can just leave through that.\n Dirty Prisoner: No, there is a better way that will make it so that we are at least not noticed for now.\n The Dirty Prisoner reaches under the bottom bunk and pushes a button. The wall next to the cell door opens.\n Dirty Prisoner: I needed somebody who could help me escape before I did that.Apprentice: When we are free you will have to tell me how you knew about that.\nApprentice: I feel like this place needs more color after seeing the forest.\nDirty Prisoner: Well, being here is a punishment. Wouldn't want to much color in  punishment.
 0
 
-4A3
+Fedvel Dungeon 4A3
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though. You find a desk that is covered in items that have been taken from past prisoners.\n Apprentice: I'll take these. I may need some extra items if we have to fight to get out.
 0
 
-4A4
+Fedvel Dungeon 4A4
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though.\n As you run you feel your legs being nipped at. You look down to find that you are being eaten by rats. They are just normal rats though.\n Apprentice: First I had to fight a shrub and now some rats. Never thought that this would be how my quest went. Killer of shrubs and rats.\n Dirty Prisoner: You fought a shrub?\n You draw the Dark Gun and prepare for battle.
 3
 
-4A5
+Fedvel Dungeon 4A5
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though. The path here splits, you are unsure which way to go as it is hard to see far down each path.\n Apprentice: Do you know which way we should go?\n Dirty Prisoner: Why would I know?\n Apprentice: You knew how to get out of the cell.\n Dirty Prisoner: Well I can't know everything, just pick a path and hope we don't die.
 0
 
-4B1
+Fedvel Dungeon 4B1
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though. Now that you are down the hall you can see that this just leads to another cell. But it looks like there is some armor you could use.\n Some more rats come from the wall and attack.\n You draw the Dark Gun and prepare for battle.
 2
 
-4B2
+Fedvel Dungeon 4B2
 The cell is cold and dank. It is pretty much the same as yours. It has none of the colors you have seen while in the forest. It is as grey as any other prison cell. There is a bunk bed and a toilet, a toilet that needs to be cleaned. You see the armor and decide to take it.\n Dirty Prisoner: Why is there just armor and nobody wearing it.\n Apprentice: If I had to guess I would say that the rats ate him.\n Dirty Prisoner: Thats horrible.\n Apprentice: Not for the rats
 0
 
-4A6
+Fedvel Dungeon 4A6
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though.\n Apprentice: So why were you put in the dungeon?\n Dirty Prisoner: The “Duke” decided that I was against him and threw me down here a couple of months ago. I have been living off rat and the gruel the guards have been giving me. I hate the gruel.\n Apprentice: What about the rats?\n Dirty Prisoner: Better then the gruel.
 0
 
-4A7
+Fedvel Dungeon 4A7
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though.\n Some more rats come from the wall and attack.\n You draw the Dark Gun and prepare for battle
 2
 
-4A8
+Fedvel Dungeon 4A8
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though.\n You see a guard with his back turned to you. He is clad in large red armor and has a magitech lance.\n Dirty Prisoner: Attack before he can alert any other guards. The lance can shoot energy bolts so watch out.\n Apprentice: Good plan. Are you ever going to help fight.\n Dirty Prisoner: With what, my hands. I will just go over there and break my hands on his armor for you then.\n Apprentice: Point taken.\n You draw the Dark Gun and prepare for battle.
 1
 
-4A9
+Fedvel Dungeon 4A9
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though. The path now diverges to the east and west. You can see that the west path isn't right, but it also has some more armor. East seems to be the correct path, as you can see a glimmer of light down the path.
 0
 
-4B3
+Fedvel Dungeon Guard Barracks 4B3
 A small, dank and cramped room that is probably for the guards. It has a few beds, some books to read and some armor. In the corner is a clean bathroom.\n As you put on the armor you see the Dirty Prisoner looking at the clean bathroom.\n Apprentice: Just go, I know you need it.\n Dirty Prisoner: Thank you for understanding.\n He runs into the nice, clean little guard bathroom.
 0
 
-4A10
+Fedvel Dungeon 4A10
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though.\n Apprentice: This seems like the right way, right.\n Dirty Prisoner: I hope so, I want out of this stupid little dungeon. Plus I owe the “Duke” a punch.\n Apprentice: Why do you keep saying “Duke” like that.\n Dirty Prisoner: Reasons.
 0
 
-4A11
+Fedvel Dungeon 4A11
 The Dungeon is very cold and Dank. The celing is dripping with what may or may not be water. There are cells lining the halls. None seem to be filled at the moment though. A guard with two rats on his shoulder appears from the darkness.\n Guard: I am the Vermillion Rat Knight. The most powerful knight in the kingdom of Fedvel.\n Dirty Prisoner: He is a normal knight who has some pet rats and hit his head a while back. Shouldn't be to much trouble.\n Apprentice: I really hope that this place doesn't have anybody else like him.\n Guard: Feel the power of The Two Rats of Vermillion.\n Apprentice: Normal Rats?\n Dirty Prisoner: Normal Rats.\n You draw the Dark Gun and prepare for battle.
 3
 
-4A12
+Fedvel Dungeon Stairs 4A12
 The stairs up out of the prison are as grey and gross as the rest of the dungeon as you start. But as you go they get nicer and nicer until you get to the beautiful vermillion door at the top of the steps.\n Dirty Prisoner: After this is the castle, there will be more guards there so be ready.
 0
 
-5A1
+Fedvel Castle 5A1
 Most things in the castle are vermillion and somewhat gaudy. You can see pictures of past rulers along with a large bust of the Duke. The carpet is a dazzling red while the walls are bright vermillion. All sided with gold and rubies.\n Dirty Prisoner: We are close to the thrown room. Just go straight from here.\n Apprentice: Why is the dungeon so close to the thrown room.\n Dirty Prisoner: The thrown room is guarded by the kingdoms most powerful knight.\n Apprentice: The rat guy?\n Dirty Prisoner: No, he is the captain of the guard and a powerful man. You should be wary of him.
 0
 
-5A2
+Fedvel Castle 5A2
 Most things in the castle are vermillion and somewhat gaudy. You can see pictures of past rulers along with a large bust of the Duke. The carpet is a dazzling red while the walls are bright vermillion. All sided with gold and rubies.\n A guard that is patrolling the hall notices you.\n You draw the Dark Gun and prepare for battle.
 1
 
-5A3
+Fedvel Castle 5A3
 Most things in the castle are vermillion and somewhat gaudy. You can see pictures of past rulers along with a large bust of the Duke. The carpet is a dazzling red while the walls are bright vermillion. All sided with gold and rubies. The path here splits off four ways. You can go south, back to the dungeon. North, towards the thrown room, East and West.\n Dirty Prisoner: To the West is another room for the guards and to the East is a room for brewing potions. Both may be a good place to get some new equipment and items.\n Apprentice: Did you used to be a knight or something?\n Dirty Prisoner: Or something.
 1
 
-5B1
+Fedvel Castle 5B1
 Most things in the castle are vermillion and somewhat gaudy. You can see pictures of past rulers along with a large bust of the Duke. The carpet is a dazzling red while the walls are bright vermillion. All sided with gold and rubies.\n A guard comes from the room and attacks.\n You draw the Dark Gun and prepare for battle
 1
 
-5B2
+Fedvel Castle Guard Barracks 5B2
 This room is basically the same as the guard room from the dungeon. Just a lot cleaner and better in every way. It has a chandelier and some books neatly arranged on a shelf. You see some nice armor on the rack next to a very nice toilet.\n The Dirty Prisoner looks at the bathroom eyes watering.\n Apprentice: Again. Man just go.\n Dirty Prisoner: Back in a minute.
 0
 
-5C1
+Fedvel Castle 5C1
 Most things in the castle are vermillion and somewhat gaudy. You can see pictures of past rulers along with a large bust of the Duke. The carpet is a dazzling red while the walls are bright vermillion. All sided with gold and rubies.\n A guard comes from the room and attacks.\n You draw the Dark Gun and prepare for battle.
 1
 
-5C2
+Fedvel Castle Potions Room 5C2
 The potion brewing room is a mess. Everything is spilled and all of the cauldrons are bubbling over. There are several bottles of potions just on the floor. There is also another bathroom.\n Apprentice: What happened here. Why is it like this.\n Dirty Prisoner: It's actually always like this. Potion making is messy work. Now if you excuse me.\n Apprentice: Man, rat really goes right through you.\n You pick up the potions and wait until the Dirty Prisoner finishes
 0
 
-5A4
+Fedvel Castle 5A4
 Most things in the castle are vermillion and somewhat gaudy. You can see pictures of past rulers along with a large bust of the Duke. The carpet is a dazzling red while the walls are bright vermillion. All sided with gold and rubies.\n A guard comes out from behind a statue. He stands at 6'4 and wears similar armor to the normal guards. His armor is crimson but the helmet seems more ornamental. He wears two magitech gauntlets.\n Fedvel Captain Guard: None shall see the King. I will stop all that attempt to without his permission.\n Dirty Prisoner: He is strong, his gauntlets can shoot energy and create shields. be careful.\n Apprentice: Thanks for the info.\n You draw the Dark Gun and prepare for battle.
 1
 
-5A5
+Fedvel Castle Thrown Room 5A5
 Most things in the castle are vermillion and somewhat gaudy. You can see pictures of past rulers along with a large bust of the Duke. The carpet is a dazzling red while the walls are bright vermillion. All sided with gold and rubies. There is a large vermillion door. Covered in intricate designs and laced with gold. Beside it on each side are two normal fountains.\n Dirty Prisoner: The fountains have holy water that will heal all wounds. They are hear so that any that stand before the Duke are able to say what they must say.\n Apprentice: Well, guess I should get some then. Want to be nice and heathy to see the Duke.
 0
 
-5A6
+Fedvel Castle 5A6
 The walls are lined with gold and rubies. Large statues of the Duke made of rubies are next to the large ornamental thrown. The Duke sits on his thrown and stairs down at you.\n Stefan: How dare you enter my thrown room. I will hav..\n Dirty Prisoner: Silence impostor. I will not have you sully my name any longer.\n Apprentice: What?\n The Dirty Prisoner rips off his rags and shows the vermillion armor that was hidden under it. He looks exactly like the duke, just dirtier. \n Real Stefan: I am the true Duke of Vermillion, Stefan Vermilos. \n Apprentice: You are, then who the hell is that guy?\n Fake Stefan: So you escaped with the boy, good job Duke.\n His vermillion armor turns pitch black and he draws a sword that is similar to the one that the man who led the attack on Dartosk had.\n Apprentice: So you are with the man from Dartosk.\n Fake Stefan: Yes, I am one of his vassals, you may call me by my true name before I destroy you boy. I am Lopon.\n Stefan: I have no weapon, you must fight him alone.
 1
 
-5A7
+Fedvel Castle 5A7
 After Lopon's defeat he is sent to the dungeon to be interrogated. The Duke retakes his thrown and announces to the kingdom that the last couple of months an imposter has sat on his thrown. After a good rest you are called by the Duke to join him in a “I am no longer in the Dungeon” party.The whole kingdom has been invited and you and the Duke spend several hours having a blast. Near the end the Duke calls you to his thrown room so he can talk.\n Stefan: I have had Lopon interrogated. He has not revealed much, but I hope that this can help you in your quest.\n Stefan: Lopon and the man that attacked your kingdom belong to an organization known as The Falsebound Kingdom.\n Stefan: The leader of the falsebound kingdom is known as The False.\n Apprentice: Catchy, did you get anything else out of Lopon.\n Stefan: No,he died and don't know why.\n Apprentice: Thank you for your help milord.\n Stefan: No need to stand on ceremony my friend. You may call me Stefan. Stay at the castle as long as you need.
 0
 
-6A1
+Helot Forest 6A1
 You have left Fedvel Castle and begun your journey to the second kingdom on your path. This next kingdom is known as Helot, known as the kingdom of a thousand very unexpected things that you may not have really expected but kinda did. You are not happy.\n Desc: You are at the entrance of Helot Forest, which will lead you to Helot Castle. Unlike the rest of the kingdoms Helot's forest is very different. The trees at the entrance to the forest appear to be made out of different types of candy. That tree is butterscotch, that ones a candy cane and that one is actually wrapped in a large bow.\n Apprentice: I hate this place so much. After the last time I was here I vowed I would never return. Now that I think about it, that was when I started saying all the things I think out loud.
 0
 
-6A2
+Helot Forest 6A2
 The forest now splits into three separate paths. There is a sign in front of you that says, “Helot Inn and then the castle, this way” and points in all directions. To the North, the tree's are all large hands that are giving thumbs up signs. To the West, giant beach umbrellas that seem to be growing beach balls like fruit. To the East, everything appears to be made entirely out of stacked up comic book boxes.\n Apprentice: This sign is useless. And what the hell is up with this place. It wasn't like this last time. Everything was made out of pool floats last time. Maybe this time the monsters will be less terrible.
 0
 
-6B1
+Helot Forest Umbrella Area 6B1
 You are surrounded by trees that look like giant beach umbrellas. They even have there own designs. One has ducks, another has polka dots and some of them have pictures of other beach umbrellas. Many of them have matching beach ball fruits growing from them.\n Apprentice: I don't think I want to try any fruit.
 0
 
-6B2
+Helot Forest Umbrella Area 6B2
 You are surrounded by trees that look like giant beach umbrellas. They even have there own designs. One has ducks, another has polka dots and some of them have pictures of other beach umbrellas. Many of them have matching beach ball fruits growing from them.\n You are suddenly surrounded by two large flying turnips. they each have very large mouths and you can feel an icy wind from there mouths when they open.\n Apprentice: What the hell. Are you turnips, why, why are you floating. Why is this happening. I hate this place.\n Turnip A: Blaaaaaaaa\n Apprentice: Oh my god you have ice breath. I have to fight to Giant Ice Breathing Turnips. I thought that crazy rat night was annoying.\n You draw the Dark Gun and reluctantly prepare to fight.
 2
 
-6B3
+Helot Forest Umbrella Area 6B3
 You are surrounded by trees that look like giant beach umbrellas. They even have there own designs. One has ducks, another has polka dots and some of them have pictures of other beach umbrellas. Many of them have matching beach ball fruits growing from them. There is a sign that says, “ Go North by order of the bear”.\n Apprentice: I really hope its not the same bear from last time. It was so weird, a bear in a top hat. Wait, did it right this sign or make somebody else do it.
 0
 
-6B4
+Helot Forest Umbrella Area 6B4
 You are surrounded by trees that look like giant beach umbrellas. They even have there own designs. One has ducks, another has polka dots and some of them have pictures of other beach umbrellas. Many of them have matching beach ball fruits growing from them.\n Another giant turnip pops out from beneath a beach umbrella.\n Turnip: Blaaaaaaa, cough, cough, aaaaaaa.\n Apprentice: Did you catch a cold from your own breath. Can a turnip catch a cold.\n You draw the Dark Gun and reluctantly prepare to fight.
 1
 
-6B5
+Helot Forest Umbrella Area 6B5
 The beach umbrellas in this area have begun to wilt. By that it means that the umbrellas are in tatters and unusable. But on the ground you can see that some of the beach balls have begun to sprout into new beach umbrellas.\n Apprentice: Ah, the circle of life. I think, not totally sure if these are trees or just really weird umbrellas.
 0
 
-6B6
+Helot Forest Umbrella Area 6B6
 The beach umbrellas in this area have begun to wilt. By that it means that the umbrellas are in tatters and unusable. But on the ground you can see that some of the beach balls have begun to sprout into new beach umbrellas.\n From behind a tattered beach umbrella runs a man in very familiar armor. It is a False Kingdom Soldier. From behind him floats another turnip.\n Apprentice: So, the False Kingdom is here to.\n Insane Soldier: What do you want, you can't have my pants.\n Apprentice: I don't want them, I want to know what you are all up to.\n Turnip: Blaaaaaaaaa.\n Insane Soldier: Screw you grandma Turniphead. It's been six months in this hell, I want to go home.\n Apprentice: From that sentence I can tell that you have been here far to long to be sane. I spent a week here once and now I talk out loud way to much.\n Insane Soldier: You will never take my pants.\n You draw the Dark Gun and reluctantly prepare to fight
 2
 
-6B7
+Helot Forest Umbrella Area 6B7
 The beach umbrellas in this area have begun to wilt. By that it means that the umbrellas are in tatters and unusable. But on the ground you can see that some of the beach balls have begun to sprout into new beach umbrellas.\n You see that some of the beach balls have popped. Within them there are some various items and potions.\n Apprentice: At this point I just don't care. I'll just take whatever seems useful and hope it wont explode.
 0
 
-6B8
+Helot Forest Umbrella Area 6B8
 You are surrounded by trees that look like giant beach umbrellas. They even have there own designs. One has ducks, another has polka dots and some of them have pictures of other beach umbrellas. Many of them have matching beach ball fruits growing from them.\n Apprentice: Nothing here but the same amounts of pure insanity that is the rest of this extremely odd circle of hell.
 0
 
-6B9
+Helot Forest Umbrella Area 6B9
 You are surrounded by trees that look like giant beach umbrellas. They even have there own designs. One has ducks, another has polka dots and some of them have pictures of other beach umbrellas. Many of them have matching beach ball fruits growing from them.\n From the sky something attempts to attack you. Dodging its surprise attack, you are very surprised by what you see.\n Apprentice: A demon salmon.\n Possessed Salmon: I am not a demon salmon. I am a demon that has possessed a salmon.\n Apprentice: Why in the world would you do that.\n Possessed Salmon: I didn't do it on purpose, it was an accident. Sniffle, Sniffle.\n Apprentice: Ok, no need to cry.\n The salmon starts to weep and jumps at you.\n You draw the Dark Gun and reluctantly prepare to fight.
 1
 
-6C1
+Helot Forest Comic Book Area 6C1
 As far as the eye can see everything is made out of comic book boxes. Parts of them are ripped or opened and comics are jutting out. Making the appearance of leaves. There are many different comics popping out, you can see the Z-Men and Zavengers from Zarvel. Others have ones from BC like Hatman and Green Lamp Post.\n Apprentice: Well at least this part of the forest will be a bit entertaining.\n As you try to rip a comic from one of the boxes you get a shock through your body.\n Apprentice: Of course. Why should this forest be anything but painful and full of things mocking me.
 0
 
-6C2
+Helot Forest Comic Book Area 6C2
 As far as the eye can see everything is made out of comic book boxes. Parts of them are ripped or opened and comics are jutting out. Making the appearance of leaves. There are many different comics popping out, you can see the Z-Men and Zavengers from Zarvel. Others have ones from BC like Hatman and Green Lamp Post.\n From within one of the boxes bursts to men. Both in the armor worn by soldiers of the Falsebound Kingdom. They are screaming wildly and flailing there arms around.\n Insane Soldier A: I hate that stupid bear.\n Insane Soldier B: I as well despise that atrocious bear.\n Apprentice: You guys have met that bear to. Maybe we can work something out and fight him together.\n Insane Soldier A: Everybody that isn't false is the bear, all that is bear must die.\n Insane Soldier B: That detestable bear and all that follow him must be purged from this world in the name of the False.\n Apprentice: Hey, are you really insane. The one that is speaking so well.\n Insane Soldier B: I am insane. Attack.
 2
 
-6C3
+Helot Forest Comic Book Area 6C3
 As far as the eye can see everything is made out of comic book boxes. Parts of them are ripped or opened and comics are jutting out. Making the appearance of leaves. There are many different comics popping out, you can see the Zefenders and Zpiderman from Zarvel. Others have ones from BC like Hatman and Beanie Cap and The Juice League of Fedvel.\n You find what appears to be bottles of potions inside of different soda bottles and cheese snack bags.\n Apprentice: Escelsior. Why did I say that. I need to leave before the next convention. Wait, what convention. Convention for what. I need to get out of here soon true believers. Why did I say that?
 0
 
-6C4
+Helot Forest Comic Book Area 6C4
 As far as the eye can see everything is made out of comic book boxes. Parts of them are ripped or opened and comics are jutting out. Making the appearance of leaves. There are many different comics popping out, you can see the The Incorrigible Zulk and The Zubmariner from Zarvel. Others have ones from BC like Aquamarine Arrow and The Juice League of Dartosk.\n Apprentice: Why do I suddenly have an opinion of which year was the best year to buy comics?
 0
 
-6C5
+Helot Forest Comic Book Area 6C5
 As far as the eye can see everything is made out of comic book boxes. Parts of them are ripped or opened and comics are jutting out. Making the appearance of leaves. There are many different comics popping out, you can see the Z-Men and Zavengers from Zarvel. Others have ones from BC like Hatman and Green Lamp Post.\n From within another box bursts a large turnip. Freezing everything it breaths on.\n Apprentice: I'll defeat you just like Hatman defeated Mr. Chilly in issue 247 of Hatman, The Plaid Night. Which I have never read so nothing about what I said makes any sense to me.\n You draw the Dark Gun and reluctantly prepare to fight.
 1
 
-6A3
+Helot Forest Thumbs Up Area 6A3
 Everything around you is just large arms with hands giving thumbs up. Just thumbs up. The arms are also different, some are white, black, tan, green and some are made up of tinier hands giving thumbs up. Some are old man arms, showing that these are old thumbs up arm trees.\n A turnip gently floats up to you in the breeze. Then screams very loudly in your face.\n Turnip: Blaaaaaaaaaaa.\n Apprentice: At least the trees are giving me a thumbs up.\n You draw the Dark Gun and reluctantly prepare to fight.
 1
 
-6A4
+Helot Forest Thumbs Up Area 6A4
 Everything around you is just large arms with hands giving thumbs up. Just thumbs up. The arms are also different, some are white, black, tan, green and some are made up of tinier hands giving thumbs up. Some are old man arms, showing that these are old thumbs up arm trees.\n On some of the smaller thumbs up are gauntlets that look like they may fit you.\n Apprentice: I really hope that these don't make me give a thumbs up forever.
 0
 
-6A5
+Helot Forest Thumbs Up Area 6A5
 Everything around you is just large arms with hands giving thumbs up. Just thumbs up. The arms are also different, some are white, black, tan, green and some are made up of tinier hands giving thumbs up. Some are old man arms, showing that these are old thumbs up arm trees. One of the trees is different from the rest, this one is giving you the finger.\n Apprentice: And I was really starting to feel like this part of the forest really liked me.\n As you wipe away your tears a monster attacks you.\n Possessed Salmon: I will kill you and then possess your corpse. Then find another human for my brother to possess so we can be out of these stupid salmon.\n Apprentice: You both possessed salmon.\n Possessed Salmon: Shut up\n You draw the Dark Gun and reluctantly prepare to fight.
 1
 
-6A6
+Helot Forest Thumbs Up Area 6A6
 Everything around you is just large arms with hands giving thumbs up. Just thumbs up. The arms are also different, some are white, black, tan, green and some are made up of tinier hands giving thumbs up. Some are old man arms, showing that these are old thumbs up arm trees. In front of you is an odd little hut. It is made entirely out of tiki statues. Some of them are colored and spell out Helot Inn.\n Apprentice: My god, I made it to the inn. I never thought that I would make it here without losing my mind. This place is so big and confusing.\n Voice in your head: This place is pretty big, you can still go down the other paths if you feel like you missed anything. Who knows if you will be able to return.\n Apprentice: What was that, who said that.\n Voice in your head: Nothing, your fine.\n Apprentice: Your right, I'm fine.
 0
 
-6Inn/A7
+Helot Inn
 The Inside of the Inn looks fairly normal. It just has a few chairs, a desk and a stairway leading to the rooms upstairs. Yes, everything is purple and brown but thats about it. Behind the desk is a woman. She is somewhat short and a bit pudgy but still very pretty with rainbow hair and silver eyes. She wears a purple one piece swimsuit and a large hat with a weasel wrapped around it. She introduces herself as Paul.\n Paul: My name is Paul. Would you like a room or a trained therapist.\n Apprentice: As much as I would love to take you up on that therapist offer I think I will be completing my mission and leaving.\n Weasel: Poot.\n Paul: He asked what your mission is.\n Apprentice: I need to get to Helot castle and speak to the queen.\n Paul: All you have to do is go out the back door and follow the path.\n Weasel: Poot.\n Paul: You are now legally married to the weasel. To divorce you must fart as well.\n Apprentice: Poot.\n Paul: Happy divorce. The front door is now closed because my weasel is sad.
 0
 
-6A8
+Helot Castle Path 6A8
 The path is fairly normal except that the path itself is made out of gummy bears. \n As you walk down the path you see it, not the castle, but the monster of the forest that you met while a child. The Bear in a Top Hat. He stands at 7'3 and is covered in brown fur. On his back is a stick he can somehow use as a blade.\n Apprentice: Today I will make this terrible place a bit better by beating you.\n The Bear shrugs like he doesn't care.\n Apprentice: Then I will take your hat.\n The Bear roars in anger.
 1
 
-6A9
+Helot, Where the Castle Should Be 6A9
 You are now in front of Helot Castle. It is a giant pink bounce castle. With lightning bolts on the sides hitting flaming skulls.\n As you go to enter the castle you notice something. The entire castle is actually just a giant backdrop.\n Apprentice: I HAAAAAATTTTTTEEEE THIS ENTIRE PLACE SO MUCH.\n As you scream in anger you notice something running towards you. It appears to be a mostly naked man. He is at least wearing underpants. Tighty whiteys to be specific. At a very imposing 6'7 he exudes power and strength from his body.\n Insane Commander: The False has come, so that the truth may be pandas. Man I love pandas. Kill the panda hater.\n Apprentice: Is that me, what have I done to any pandas.\n Insane Commander: The false panda will reveal all.
 1
 
-6A10
+Helot Castle 6A10
 After defeating what appears to be the leader of the insane men back at the forest you sit down and begin to weep in the fetal position. Paul comes up from the road.\n Paul: Whats wrong best bud.\n Weasel: Poot.\n Apprentice: I came all this way though that forest and the castle was a backdrop.\n Paul: Don't worry, you got rid of all those annoying men. So I will show you the real castle and queen.\n Paul then snaps her fingers and the ground shakes. The real castle rips up from the ground. It looks just like the backdrop, but upside down. The weasel then transforms into a regal crown, encrusted in jewels and gold. While her hat turns into another weasel.\n Paul: I am the Queen of Helot Paul Paul Steve and this is my chief of state, Greg the Weasel.\n Greg: Why hello there.\n Apprentice: At least this weasel doesn't speak in fart. Any chance either of you know what these False Kingdom guys.\n Paul: Why yes, yes Greg does.
 0
 
-6A11
+Helot Castle 6A11
 Apprentice: Ok then, Greg, please tell me whatever you know.\n Greg: I don't know very much, I believe that they may have some a hold on both Grandhole and Mogan. As the soldiers would often scream where they were from.\n Apprentice: Well, I guess it's something.\n Greg: I think this naked guy may have been important. He looked a lot less like a lunatic when he first got here.\n Paul: Well, thats what he gets for trying to wreck my kingdom. You are welcome to stay at the castle and rest. The closest road to Grandhole is just over there.\n Voice in Your Head: Lets sleep.\n Apprentice: I think I should get going before that voice gets any louder.\n Paul: Huh.\n Greg: Huh.\n Crown: Poot.
 0
 
-7A1
+GrandHole Forest 7A1
 After a couple of hours you have finally reached the outskirts of the Kingdom of Grandhole. Known as the Kingdom of Holes. As they have highly developed drilling based magitech they use for mining. Happy that you have finally left the confusing hell that was Helot.\n Desc: The more familiar forest has many different types of trees but does not really seem that different wherever you are in it. As it is the same tree line that surrounds most of the 5 kingdoms. Except Helot.\n Apprentice: I should find a place to rest. After all of that I really need to sleep off that whole voice in my head thing.\n Voice in your head: I agree.\n Apprentice: Lalalalala, I heard nothing.
 0
 
-7A2
+GrandHole Forest 7A2
 The more familiar forest has many different types of trees but does not really seem that different wherever you are in it. As it is the same tree line that surrounds most of the 5 kingdoms. Except Helot.\n You hear what sounds like screams in the distance.\n Apprentice: What was that.\n Voice in your head: Don't know, you go check it out. I'll stay here.\n Apprentice: I agree, you stay here. I'll go check it out.
 0
 
-7A3
+GrandHole Forest 7A3
 The more familiar forest has many different types of trees but does not really seem that different wherever you are in it. As it is the same tree line that surrounds most of the 5 kingdoms. Except Helot.\n Apprentice: Maybe that's where the screams are coming from. I should hurry in case it's some kind of monster. Although I have heard that there really aren't that many monsters in Grandhole.\n The screams are now deafening. You know that there must be somebody in trouble. You push through your weariness and brush with insanity so that you may save whoever is screaming.
 0
 
-7A4
+GrandHole Forest 7A4
 The more familiar forest has many different types of trees but does not really seem that different wherever you are in it. As it is the same tree line that surrounds most of the 5 kingdoms. Except Helot.\n The path now takes a turn east. You look to see where the screams are coming from and find that there is an inn. A very large, very nice looking place called the Grandhole Inn.  The moment you look and see the inn the screams suddenly stop.\n Apprentice: Wow, that is the most suspicious thing I have ever seen. I'm either going to get trapped in some dungeon or at least get something weird in my food.\n The inn is very nice on the inside. Made completely of wood and stained glass. A high class looking establishment. Everything looks like it came right from a palace.The front Desk is made out of marble and has many beautiful designs. Behind the Desk is a fairly short man who appears to be balding. He has murky brown eyes and what little hair he has is grey. He wears a nice little tuxedo.
 0
 
-7A5
+GrandHole Forest 7A5
 The man introduces himself as Trew.\n Trew: My name is Trew, I am the owner of this fine establishment. Would you like a room.\n Apprentice: What the hell was all of that screaming. Is somebody in some sort of trouble.\n Looking a little hurt. Trew replies.\n Trew: Why no, that was my daughter. She had a mental break at the death of her poor, departed mother. I am so sorry that you heard her cries.\n Apprentice: She sounded like she was in pain.\n Trew: She may be, I have had to lock her in her room so she won't harm anybody. Oh, how I wish she could be well.\n Apprentice: So, everybody is fine...ish.\n Trew: Yes, and thank you for the concern. Now I ask that if you stay here you keep clear of my daughters room on the third floor. She is as dangerous as she is beautiful.\n Apprentice: Ok, I guess thats ok. I have had a very long day. At least I think it was a day. I really don't know.
 0
 
-7Inn1
+GrandHole Inn1
 The inn is very nice on the inside. Made completely of wood and stained glass. A high class looking establishment. Everything looks like it came right from a palace. The hall has several portraits.\n Apprentice: Maybe I will just go and see if this girl is really alright. Just to be sure.\n With a somewhat dirty glimmer in your eyes you continue on.\n In front of you is a large metal door with a small window and a slot for food. On a nameplate on the door it says Pilp. Looking inside the first thing you see an incredibly beautiful woman sleeping on the bed. She is wearing a white slip. She is a little shorter then you, pale skin and pitch black hair. \n Apprentice: Wow, she is one of the most beautiful women I have ever seen.\n You say as the dark glimmer in your eyes gets brighter, and then goes out when you notice two things. The blood on her hands and what is written on the wall. You say out loud what you see written in blood on the walls of her room.
 0
 
-7Inn2
+GrandHole Inn2
 Apprentice: The False kingdom that was once true, will rise again and rule anew.\n Without you noticing the girl wakes up as you say those words.\n Apprentice: Maybe she knows about the False Kingdom. Is it possible that they drove this girl insane. I should look inside for some more clues.\n The room is small with just a bed and a bathroom. On the wall written in blood are the words. The False kingdom that was once true, will rise again and rule anew.\n As you enter the room Pilp jumps up, eyes glowing red.\n Pilp: Get out, my room, my kingdom. The false shall never be true.\n Apprentice: Calm down, I don't want to hurt you.\n Pilp: Graaaaagh,\n Her hands seem to glow with an odd glow, and then both od her hands turn into large drills.\n Pilp: Defend, False, destroy.\n You draw the Dark Gun and Prepare far battle.
 1
 
-7Inn3
+GrandHole Inn3
 After you defeat and knock out Pilp you notice the ring on her finger. It is a magitech ring that allowed her to make her hands into drills. It also has the royal seal of Grandhole. You goto find Trew to get an explanation and find him outside, attempting to burn down the inn.\n Trew: Well I see you and Pilp have met. It's not nice to kidnap a loving fathers only child in the dead of night.\n Apprentice: This girl isn't your daughter, is she Trew. She knew about the False Kingdom. Which I'm guessing you know about as well.\n Trew: Why yes, for I am Trew, on of the Four Nights of Falsehood.\n He rips off his tuxedo to reveal jet black armor similar to Lopons and a large Magitech hammer.\n Trew: I believe you met that fool Lopon and Cruve. Those two fools couldn't even take over two little kingdoms. especially Cruve.\n Apprentice: Cruve was in Helot.\n Trew: Yes.\n Apprentice: He died, naked, crazy and nameless until now.\n Trew: Who cares, I shall be the one to destroy you for the False.
 1
 
-7Inn4
+GrandHole Inn4
 After you defeat Trew you notice Pilp begin to stir and prepare to ward off another attack by crazy drill hands.\n Pilp: Wait, I'm good. No more attacks. Trew's magitech was what was driving me crazy. Now that he's gone I should be ok.\n Apprentice: Who are you really.\n Pilp: I am Pilp Grand, Queen of Grandhole. I ask only for one more favor good hero. Please take me to my castle so I may rest. \n Apprentice: Glad to your majesty. I ask only that I also be aloud to rest. As I just arrived here from Helot before all of this.\n Pilp: I understand completely.\n You bring Pilp to Grandhole Castle and both of you take several hour to rest and recover. The castle is made from quartz and many precious stones. Shaped by Grandhole's magitech. You are then called to the thrown room of Grandhole Castle to meet with Pilp. \n After being freed she now wears a tight military uniform. It is green and has many medals. On her head is a tiara. Her eyes still red due to the aftereffects of Trew's insanity magitech.
 0
 
-7A6
+GrandHole Catle 7A6
 Pilp: I have brought you here to tell you all that I know of the False Kingdom. It was due to this knowledge that I was taken. So please use it to stop these monsters.\n Apprentice: Yes, thank you milady.\n Pilp: No need to call me milady. Pilp is fine for the hero that saved me.\n Apprentice: Thank you mila....Pilp.\n Pilp: Now, according to my spies the False Kingdom believes that they are the one true kingdom in this land. They want to take over the five kingdoms and make all the lands theres.\n Apprentice: How, they may be able to trick some people but they can't take 5 whole kingdoms that way.\n Pilp: They plan to use some sort of spell. But it seems they need at least one of each of the royal bloodlines.\n Apprentice: Thank you Pilp. You has given me much more information then the other kingdoms. \n Pilp: I hope that I can give you whatever you need.\n Apprentice: Th-Thanks. \n Pilp: I have a warning that I want you to hear though. I believe that Mogan is where the leader of the false Kingdom is. 
 0
 
-8A1
+Mogan Mountain 8A1
 After a large feast and some pleasnt conversation with Pilp. Along with what seems like some somewhat heavy flirting from the Queen. You set off for the Kingdom of Mogan, known as the Kingdom of Light. They specialize in magitech weapons and architecture. Knowing that the possibility that you may meet the False again is high, you were given a new set of armor by Pilp.\n Desc: You are now at the edge of the Kingdom of Mogan. Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain.\n Apprentice: I have never really been on the mountain path before. I hope that it's not to dangerous. Really don't want to die by falling off a mountain after all the people that could have killed me.
 0
 
-8A2
+Mogan Mountain 8A2
 Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain.\n A goat runs up and starts to randomly lick you for some reason. Unable to stop it you let it continue as you travel. After a few minutes the goat runs off and returns with a high level potion.\n Apprentice: I guess the goat thought I needed to be rescued. Who's a good goat, you are, you are.\n Goat: Baaaaaah
 0
 
-8A3
+Mogan Mountain 8A3
 Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain. The path splits off in two directions. \n Apprentice: Ok, I wonder which way I should go. Maybe I can find a guide goat.\n You do not find a guide goat. You feel stupid for thinking you would.
 0
 
-8B1
+Mogan Mountain 8B1
 Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain. You see that the path here ends at a cliff.\n A man that must have been hanging from the cliff pulls himself up. He is wearing armor made from light barrier magitech. He appears to be part of the Mogan guard corp. \n Mogan Guard: I have been waiting for you to show up.\n Apprentice: You have been hanging off a cliff waiting for me.\n Mogan Guard: Yes, that is where I have been waiting. On purpose.\n Apprentice: You freaked when I started coming over and fell off the cliff.\n Mogan Guard: Ok, fine. Thats what happened. Well nobody will know after I kill you.\n You draw the Dark Gun and prepare for battle.
 1
 
-8A4
+Mogan Mountain 8A4
 Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain.\n Apprentice: I wonder what is going on in Mogan. Has the False taken over the kingdom.
 0
 
-8A5
+Mogan Mountain 8A5
 Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain. You see that the path here ends at a cliff.\n As you walk down the path you hear a large boom. Then feel and see a large fireball fly by.\n Mogan Guard: Damn it, missed.\n Apprentice: The hell. Why are you trying to kill me. Aren't you just a guard from Mogan.\n Mogan Guard: The king has ordered that the wielder of the Dark Gun bee killed.\n Apprentice: Why, what did I do to Mogan or its king.\n Mogan Guard. I don't know. When the king says kill a guy you kill him.\n You draw the Dark Gun and prepare for battle.
 1
 
-8A6
+Mogan Mountain 8A6
 Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain. You see that the path here ends at a cliff.\n You can see the end of the mountain path coming up. In the distance you can see a faint glow from the buildings in Mogan. All made from barriers of light.\n Apprentice: It takes a while to get used to sleeping in Mogan. Especially when you are near a window. I remember Mogan Castle being gorgeous.
 0
 
-8A7
+Mogan Mountain 8A7
 Unlike the rest of the kingdoms, parts of Mogan are surrounded by mountains. They are very large, the path you take is not steep, but there are cliffs all around. There are several mountain goats grazing in random places around the mountain. You see that the path here ends at a cliff. \n You are at the end of the path and can plainly see many of the buildings in Mogan and the castle. As you look two large beasts pop up from the mountain. A large red cyclops and a blue cyclops that seem to be merged with magitech weapons. The red ones right hand has been merged with a large magitech sword. The blue ones left hand has been merged with a magitech gun.\n Apprentice: Oh my god, these things are huge. It looks like they have magitech attached to them.\n Red Cyclops: Rooooooooooooo\n Blue Cyclops: Rooooooooooooo\n Apprentice: Ok, I guess cyclops don't speak.\n The red one swings his sword arm and attempts to hit you, while the blue one aims his gun at you.
 2
 
-8A8
+Mogan Kingdom 8A8
 You are now at the kingdom of Mogan. The building glistening with light. The streets are empty as it is night. You can still see Mogan Castle in the distance. A glowing jewel of light surrounded by smaller lights. At a distance it's like it was forged from gold. But like everything else it is light barrier magitech.\n Apprentice: Wish I had time to get a good look around. This place is great. The magitech here is almost as good as Dartosks. Plus the food is cooked in special magitech light barrier pans and tastes great.
 0
 
-8B2
+Mogan Kingdom 8B2
 The building glistening with light. The streets are empty as it is night. You can still see Mogan Castle in the distance. A glowing jewel of light surrounded by smaller lights. At a distance it's like it was forged from gold. But like everything else it is light barrier magitech.\n You walk down the street that leads to the castle. Looking at the buildings and wondering why a kingdom like this would let the False take it.\n Apprentice: This place should have a weapon that is almost as powerful as the dark Gun. It may even be just as powerful. Last I heard it was called the Sword of Light.\n Just as the word light escapes your lips two men come from an alley and attack.\n Mogan Guard A: In the name of the king you will fall boy.\n Apprentice: Our kingdoms are friends, why is your king trying to kill me.\n Mogan Guard B: We don't know, although he did say we would be allying with some new kingdom.\n Mogan Guard A: Carl, shut up.\n Mogan Guard B: Dude, dont tell him my name.\n Mogan Guard A: Sorry, Carl.
 2
 
-8A9
+Mogan Kingdom 8A9
 The building glistening with light. The streets are empty as it is night. You can still see Mogan Castle in the distance. A glowing jewel of light surrounded by smaller lights. At a distance it's like it was forged from gold. But like everything else it is light barrier magitech.\n A guard wielding a cannon walks out and aims it right at you.\n Mogan Guard: For king and country.\n Apprentice: You guys just do whatever he says.\n Mogan Guard: Last year we all had to wear top hats for some reason.\n Apprentice: You guys are kind of idiots.
 1
 
-8A10
+Mogan Kingdom Sewers 8A10
 After being attacked several times you have decided to go into the sewers. They are not as nice as the kingdom itself.  A dank gross sewer. It is filled with sewage as it should be. As gross as any other sewer.\n Apprentice: This place kind of makes me miss that dungeon in Fedvel. In smelled a lot better there. I kind of really hate this place. It smells so bad.\n You puke before continuing.\n You seem to have entered what looks like a home built into the sewers. The smell is muffled by some scent magitech. Looking around it seems that the place is filled with various treasure. You now see a man laying on the bed. He is 5'6, dark skin and brown hair. With brown eyes as well. Wears a black shirt and pants and be seen wearing a fedora. He is looking right at you. He introduces himself as Gilvan.\n Gilven: I am Gilven, known throughout the kingdom of Mogan as the King of Thieves.Welcome to the Thieves Den.\n If you are here for refuge from the guards then you are welcome.
 0
 
-8A11
+Mogan Theives Den 8A11
 Gilven: If you are here for refuge from the guards then you are welcome. If you are part of the guards then prepare to be silenced.\n Apprentice: Nope, not a guard, just hiding from them.\n Looking at the many empty beds.\n Apprentice: Are the other thieves out stealing things.\n Gilven: No. Things here in Mogan have changed. The king used to be kinder, even to thieves. He knew that some had to steal to survive. He would let us go after a few weeks. Even offer jobs to those willing.\n Apprentice: And now?\n Gilven: Now he has them killed. The man we all respected has been replaced by a monster.\n Apprentice: I may be able to help. Your kingdom seems to have been taken under the influence of something called the False Kingdom. Led by a man know as The False. It is possible your king may have been replaced or imprisoned.\n Gilven: You think you can stop what has been happening.\n Apprentice: Yes, if I can reach the castle.\n Gilven: Then I, Gilven, King of Thieves shall help you. Follow me.
 0
 
-8A12
+Mogan Theives Den Exit 8A12
 A dank gross sewer. It is filled with sewage as it should be. As gross as any other sewer. In front of you is what appears to be a very nice door. Which is for some reason in the sewer.\n Gilven: Welcome to the King of Thieves personal entrance into Mogan Castle.\n Apprentice: Why do you have a castle entrance.\n Gilven: It is actually just an old secret escape route for the king. I'm not even sure the king knows about it.\n Apprentice: So you just got lucky and found this.\n Gilven: Yup.
 0
 
-9A1
+Mogan Castle 9A1
 You are now inside the castle. You have entered from behind a large statue of Mogan's first King. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Apprentice: How does anybody sleep?\n Gilven: The rooms are lined with light blocking paint. There are switches that block the light holes so you can sleep in the dark.\n Apprentice: Not a lot of guards.\n Gilven: Most of them are probably in the city looking for you. Not many people can just get in the castle, so they probably don't think you are here.
 0
 
-9A2
+Mogan Castle 9A2
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Gilven: Wait, I left some potions behind this statue in case I ever needed them while escaping.\n He reaches behind a statue and pulls out some potions.\n Apprentice: Been planning something big.\n Gilven: Stealing anything from the castle would be considered big. So I do something big once or twice a week. King of Thieves, remember.
 0
 
-9A3
+Mogan Castle 9A3
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n From a different hallway a large red monster appears. It is the cyclops from the mountains. It seems you had just knocked it out.\n Gilven: What the hell is that thing.\n Apprentice: It's a cyclops with a big magitech blade attached.\n Gilven: Why is it here?\n Apprentice: It must have been built here, so I guess repairs.\n You draw the Dark Gun and prepare for battle.
 1
 
-9A4
+Mogan Castle 9A4
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Gilven: Wow, you are strong. I can't believe that you beat that monster.\n Apprentice: Actually, I beat it twice. I beat it and it friend outside of Mogan.\n Gilven: Good thing I didn't just attack when we met then.
 0
 
-9A5
+Mogan Castle 9A5
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Several guards pop out from a different hallway. Shocked that you and Gilven are there they ready there weapons.\n Gilven: I will just let you handle this then.\n Apprentice: You could help a little bit.\n Gilven: Need to save my strength to help the king when we find him.\n Apprentice: Yeah, sure. Riiiiight.\n You draw the Dark Gun and prepare for battle.
 2
 
-9A6
+Mogan Castle 9A6
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Gilven: Wait, I stashed some armor in this vase.\n Apprentice: Why would you put it in a vase.\n Gilven: Needed to lose some weight while I escaped the guards.\n Gilven pulls some gauntlets from the vase.
 0
 
-9A7
+Mogan Castle 9A7
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Gilven: I have some more potions stashed  in this plant if you need.\n Apprentice: Is everything in the castle filled with things you have stolen and then had to hide.\n Gilven: Not all of it, just parts of it.
 0
 
-9A8
+Mogan Castle 9A8
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n In front of you is the Blue cyclops you met outside. It was sleeping until Gilven poked it to make sure it was dead.\n Apprentice: Why would you do that?\n Gilven: Well, if it was dead then it wouldn't wake up.\n Apprentice: Well it wasn't dead and now it wants to kill us.\n You draw the Dark Gun and prepare for battle.
 1
 
-9A9
+Mogan Castle 9A9
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Gilven: Did you beat that one outside as well?\n Apprentice: Yes, and it would have been nice if didn't have to do it again.\n Gilven: I said I was sorry. Are we going to dwell on it all night? Or go and save the king?\n Apprentice: Save the King I guess.
 0
 
-9A10
+Mogan Castle 9A10
 You are now inside the castle. The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold.\n Gilven: I have a lot hidden in this drape over here. For some reason nobody seems to look behind it.\n Apprentice: Probably the lack of windows. Why are there windowless drapes?\n Gilven: Decoration.\n Gilven pulls out some potions and a helmet form the windowless drape.
 0
 
-9A11
+Mogan Castle 9A11
 As you cross the hall you are confronted by a single man standing in the hallway. He is about as tall as you and he wears black robes and a black helmet that covers his face. He appears to have a magitech rapier. He introduces himself as Shade.\n Shade: Welcome young apprentice, and if it isn't the little weasel who calls himself the King of Thieves. I am Shade of the Four Nights of Falsehood.\n Apprentice: Well, I guess this will be one of those, you won't get to my lord without defeating me things then.\n Shade: Yes it shall. It seems you have become accustomed to all of this.\n Gilven: What have you done with the King?\n Shade: Why should I tell anything to some thieving brat that is about to die?\n Apprentice: When I'm done with you we will just go and fine the King ourselves.\n Shade: I don't think that will end up the way you want it to. The False shall take these kingdoms and return them to what they once were. The lies will melt away and all the falsehoods of this world will be destroyed.
 1
 
-9A12
+Mogan Castle 9A12
 After a hard fought battle Shade is still going strong. As if he didn't care if his body was destroyed. His Helmet cracks open to reveal the face of the man called Shade.\n Gilven: That, thats the king. Thats Freed Mogan, the King of Mogan.\n Apprentice: The king is one of the Four Knights of Falsehood.\n Shade: Not exactly you little punks. I am a creation of the False himself. Shade is not just my name, it is what I am. I am the Shade, my power is to steal that which I don't have. A body.\n Gilven: And I call myself the King of Thieves.\n Shade: I am a creature of pure darkness. No force beyond death will free your king.\n Apprentice: If you are a creature of darkness, then I know how to get rid of you.\n Holding up the Dark Gun it begins to glow with a Dark Light. Suddenly,Shade begins to scream. Shade: What is happening, what are you doing?\n Apprentice: The Dark Gun feeds off of Darkness. That is what powers it. If all you are is darkness then all I have to do is allow it to devour you. 
 0
 
-9A13
+Mogan Castle 9A13
 Shade: What, please no. I don't want to die.\n Apprentice: Don't worry, you will become part of the dark Gun. Giving it new strength.\n Shade: Nooooooooooooooooo.\n You and Gilven run up to the King to see if he is alright.\n Gilven: King Mogan, are you ok.\n Freed: Ah, if it isn't the young King of Thieves. I am alright. Just a bit hurt from the battle with your young friend.\n Apprentice: I apologize my lord.\n Freed: There is no need to apologize. Now hurry, the man known as the False is in my thrown room. If you would do me the favor of kicking him out.\n Apprentice: Gladly, my lord.
 0
 
-9A14
+Mogan Castle Thrown Room Entrance 9A14
 The castle is filled with large statues and paintings. The walls are made of light, making it look as if the castle is made entirely of gold. You are in front of the large door. Adorned in light with many symbols to keep out evil.\n Apprentice: Guess that did not work. I should probably make sure I'm ready before I go and fight the False.\n The thrown room is at the epicenter of the castle made of light. It glows with power and is a beautiful sight to behold. The thrown in the middle is made of light barrier magitech. Covered in jewels and glowing with beauty. Sitting on the thrown is The False. The man who killed your king and is the leader of the False Kingdom.\n The False: Well, if it isn't the boy who forced me out of Dartosk, and I believe you have destroyed most of my forces.\n Apprentice: I did do all of that. Now I'm here to put an end to this. To whatever plans that you have for the 5 kingdoms.\n The False: The 5 kingdoms are a lie. They are the true falsehood in this world.
 0
 
-9A15
+Mogan Castle Thrown Room 9A15
 Apprentice: What do you mean?\n The False: The 5 kingdoms were all once one kingdom. Ruled by one king and protected by 5 knights. They were loyal to the king, until they decided they wanted to be kings. They killed the king and split the one kingdom into 5. They are the ancestors of the 5 kingdoms royalty.\n Apprentice: And why do you care about this so much.\n The False: I am the ancestor of the fallen king. These kingdoms are my birthright. And everything within them. Including this sword.\n The False draws a different blade then before.\n Apprentice: Is that?\n The False: Yes, Mogan Kingdoms most powerful weapon. The Sword of Light.\n You draw the Dark Gun and prepare for the final battle.
 1
 
-9A16
+Mogan Castle 9A16
 After you defeat the False he lays before you dying. In his last breath he says.\n The False: The truth will come, and it will destroy everything.\n You collapse to the ground in exhaustion after a long hard battle. Before you pass out you see Gilven running up to you.\n You awaken the next day and you are called to the thrown room. Still in shambles after a long battle with the False many are happy and the true king of Mogan sits on his thrown once more. You take your place as a savior of Mogan along with Gilven.\n Freed: Thank you for what you have done. As a reward to the one who destroyed The False. The strongest armor made in our kingdom. May it protect you from all that may harm you.\n Apprentice: Thank you my lord.\n Freed: And to the young King of Thieves, an offer. I would like you to lead my royal guard. You may take on anyone who you believe needs a place and work.\n Gilven: Thank you my King. \n Freed: Also if you can return some of the things you stole.\n Gilven: No promises.
 0
 
-0A1
+Dartosk Castle Secret Path 0A1
 After you return to Dartosk you are hailed as a hero. You spend a week going to parties and telling of your adventures. The princess could only thank you when you first returned, as she was still in mourning for her parents. Once the celebrations died down you receive a message that calls you to the castle to speak to the Princess.\n The castle has many portraits of past royalty. Rare pieces of art. Very pretty. The thrown room has a long hallway and three thrown.\n The princess now sits on the main thrown.\n Celine: Thank you for all you have done for Dartosk. Not only did you avenge my parents but you stopped this man known as The False and saved the 5 Kingdoms.\n Apprentice: You are welcome milady. But I must ask you about this kingdom that the False spoke of. Is it true.\n Before answering the princess presses a small button on her thrown. Opening a secret passage behind her.\n Celine: Follow me and I shall answer all your questions for your fine service to Dartosk.
 0
 
-0A2
+Dartosk Castle Secret Path 0A2
 The secret passage leads to a long dark hallway. Empty as far as the eye can see.\n Celine: You see, this ancient kingdom that once encompassed the 5 Kingdoms was know as Ravelt, The Kingdom of Truth. It was able to use many of the great magics that were precursors to magitech.\n Apprentice: So the False was telling the truth?\n Celine: Yes he was. After many years of loyal service the 5 Head Knights of Ravelt wanted more. They betrayed the royal family, killing the king and banishing the rest of the royal family. Keeping them out with a powerful barrier.\n Apprentice: But how did the False get here?\n Celine: After many centuries the royal family managed to breach the barrier. They used there power to create a shade. He entered the 5 Kingdoms and stole the plans for there two most powerful weapons. The Dark Gun and the Sword of Light. \n Apprentice: What did they do that for?\n Ceine: They used the plans to create a weapon more powerful then either. It is a gun blade known as The Darklight.
 0
 
-0A3
+Dartosk Castle Secret Room 0A3
 You enter a large room, in the room is a large box shape covered by a sheet.\n Apprentice: Why didn't the False use The Darklight? Why do you even know all of this.\n The princess walks over to the sheet and pulls it off. Revealing another princess. But a lot dirtier. \n The cleaner princess then reveals that she is not the real princess. Before you stands a beautiful woman who wears armor of white and black. She is 5'4 and has black hair with pure white lines through it. On her side is a gun blade.\n The Truth: I am the only one worthy to wield such a weapon. I am The Truth. True ruler of the False Kingdom and all that lie within it.\n Apprentice: How long have you been pretending to be the princess?\n The Truth: Since I had the False kill her parents. He was the first shade we created to steal the plans to make Darklight.\n Apprentice: Didn't you need a member of each royal family to cast your big spell.\n The Truth: A lie, I just needed one of them and the blood of the others. So I have all I need.
 1
 
-0A4
+Destroyed Forest 0A4
 After a long battle you manage to defeat the Truth.\n The Truth: I will not fail, I will take what is mine. Even if I have to reduce it to rubble first.\n She then takes Darklight and stabs it into her chest.\n Her body rips and morphs until The Truth becomes a large dragon. With Darklight on its head like a horn. She reaches down and grabs you. Busting through the castle and flying off with you in tow. You shoot her with the dark Gun and she drops you. \n Desc: She lands and the surrounding area is destroyed. A destroyed mountain. Is surrounded by powerful winds. You can see the wreckage of the mountains and surrounding forests. 
 1
 
