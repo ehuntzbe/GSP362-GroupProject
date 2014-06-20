@@ -417,7 +417,7 @@ void Kill(string p_target)
 			int tempNum = 0;
 			tempNum = PC->GetCurrentRoom()->GetNumNpc() - 1;
 			string npcLine = static_cast<ostringstream*>( &(ostringstream() << tempNum) )->str();
-			PC->GetCurrentRoom()->SetNumNpc(npcLine);
+			PC->GetCurrentRoom()->SetNumNpc(atoi(npcLine.c_str()));
 			//PC->GetCurrentRoom()->RemoveNpc(opponent.GetName());
 			break;
 		}

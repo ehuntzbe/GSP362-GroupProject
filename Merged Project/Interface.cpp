@@ -33,7 +33,7 @@ void Interface::MainGame()
 	bool quitGame = false;
 	Look();
 	cout << "Type 'help' (no ' marks) for a short explanation of basic commands." << endl;
-	cout << "Make sure to use the 'growth' commad before gaining experience!" << endl;
+	cout << "Make sure to use the 'growth' command before gaining experience!" << endl;
 	while(!quitGame)
 	{
 		Prompt();

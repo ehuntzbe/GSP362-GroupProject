@@ -1,38 +1,32 @@
-A6
-Sword
-Unknown Soldier Sword {Sword}
+0
 D
 25
 5
 7
 15
 5
-0
+-23
 5
 7
 15
 5
 25
 
-2B1
-Sword
-Unknown Soldier Sword {Sword}
-D
+1
+A
 25
 5
 7
 15
 5
-0
+25
 5
 7
 15
 5
 25
 
-2A4
-Spear
-Unknown Soldier Spear {Spear}
+1
 A
 25
 5
@@ -46,9 +40,7 @@ A
 5
 25
 
-2A6
-Spear
-Unknown Soldier Spear {Spear}
+1
 A
 25
 5
@@ -62,9 +54,7 @@ A
 5
 25
 
-2A8
-Magi
-Mini Boss Unknown Soldier Magitech {Magi}
+1
 A
 33
 10
@@ -78,9 +68,7 @@ A
 5
 50
 
-2A10
-Boss 
-Boss Unknown Leader {Leader}
+1
 A
 40
 15
@@ -94,9 +82,7 @@ A
 5
 55
 
-3A2
-Slime
-Run Off Slime {Slime}
+1
 A
 30
 10
@@ -110,9 +96,7 @@ A
 5
 20
 
-3B1
-Imp
-Short Imp {Imp}
+1
 A
 32
 10
@@ -126,9 +110,7 @@ A
 5
 23
 
-3A5
-Shrub
-Evil Shrub {Shrub}
+1
 A
 28
 13
@@ -142,9 +124,7 @@ A
 5
 25
 
-4A4
-Rat
-Rat
+3
 A
 30
 7
@@ -158,8 +138,7 @@ A
 5
 20
 
-Rat
-Rat
+3
 A
 30
 7
@@ -173,8 +152,7 @@ A
 5
 20
 
-Rat 
-Rat
+3
 A
 30
 7
@@ -188,9 +166,7 @@ A
 5
 20
 
-4B1
-Rat
-Rat
+2
 A
 30
 7
@@ -204,8 +180,7 @@ A
 5
 20
 
-Rat
-Rat
+2
 A
 30
 7
@@ -219,9 +194,7 @@ A
 5
 20
 
-4A7
-Rat
-Rat
+2
 A
 30
 7
@@ -235,8 +208,7 @@ A
 5
 20
 
-Rat
-Rat
+2
 A
 30
 7
@@ -250,9 +222,7 @@ A
 5
 20
 
-4A8
-Guard
-Fedvel Guard {Guard}
+1
 A
 37
 10
@@ -266,9 +236,7 @@ A
 5
 25
 
-4A11
-Guard
-Fedvel Guard {Guard}
+3
 A
 37
 10
@@ -282,8 +250,7 @@ A
 5
 25
 
-Rat
-Rat
+3
 A
 30
 7
@@ -297,8 +264,7 @@ A
 5
 20
 
-Rat
-Rat
+3
 A
 30
 7
@@ -312,9 +278,7 @@ A
 5
 20
 
-5A2
-Guard
-Fedvel Guard {Guard}
+1
 A
 37
 10
@@ -328,9 +292,7 @@ A
 5
 25
 
-5A3
-Guard
-Fedvel Guard {Guard}
+1
 A
 37
 10
@@ -344,9 +306,7 @@ A
 5
 25
 
-5B1
-Guard
-Fedvel Guard {Guard}
+1
 A
 37
 10
@@ -360,9 +320,7 @@ A
 5
 25
 
-5C1
-Guard
-Fedvel Guard {Guard}
+1
 A
 37
 10
@@ -376,9 +334,7 @@ A
 5
 25
 
-5A4
-Captain 
-Mini Boss Fedvel Captain Guard {Captain}
+1
 A
 46
 18
@@ -392,9 +348,7 @@ A
 5
 50
 
-5A6
-Lopon
-Boss Lopon {Lopon}
+1
 A
 52
 25
@@ -408,9 +362,7 @@ A
 5
 55
 
-6B2
-Turnip
-Giant Ice Breathing Turnip {Turnip}
+2
 A
 44
 16
@@ -424,8 +376,7 @@ A
 5
 27
 
-Turnip
-Giant Ice Breathing Turnip {Turnip}
+2
 A
 44
 16
@@ -439,9 +390,7 @@ A
 5
 27
 
-6B4
-Turnip
-Giant Ice Breathing Turnip {Turnip}
+1
 A
 44
 16
@@ -455,9 +404,7 @@ A
 5
 27
 
-6B6
-Insane
-Insane False Kingdom Soldier {Insane}
+2
 A
 40
 12
@@ -471,8 +418,7 @@ A
 5
 27
 
-Turnip
-Giant Ice Breathing Turnip {Turnip}
+2
 A
 44
 16
@@ -486,9 +432,7 @@ A
 5
 27
 
-6B9
-Salmon
-Demon Possessed Salmon {Salmon}
+1
 A
 46
 18
@@ -502,9 +446,7 @@ A
 5
 30
 
-6C2
-Insane
-Insane False Kingdom Soldier {Insane}
+2
 A
 40
 12
@@ -518,8 +460,7 @@ A
 5
 25
 
-Insane
-Insane False Kingdom Soldier {Insane}
+2
 A
 40
 12
@@ -533,9 +474,7 @@ A
 5
 25
 
-6C5
-Turnip
-Giant Ice Breathing Turnip {Turnip}
+1
 A
 44
 16
@@ -549,9 +488,7 @@ A
 5
 27
 
-6A3
-Turnip
-Giant Ice Breathing Turnip {Turnip}
+1
 A
 44
 16
@@ -565,9 +502,7 @@ A
 5
 27
 
-6A5
-Salmon
-Demon Possessed Salmon {Salmon}
+1
 A
 46
 18
@@ -581,9 +516,7 @@ A
 5
 30
 
-6A8
-Mini Boss Bear Wearing a Tophat
-Mini Boss Bear Wearing a Tophat
+1
 A
 52
 23
@@ -597,9 +530,7 @@ A
 5
 50
 
-6A9
-Insane B
-Boss Insane False Kingdom Soldier {Insane B}
+1
 A
 58
 27
@@ -613,9 +544,7 @@ A
 5
 55
 
-7Inn2
-Pilp
-Mini Boss Pilp {Pilp}
+1
 A
 55
 24
@@ -629,9 +558,7 @@ A
 5
 50
 
-7Inn3
-Trew
-Boss Four Knights of Falsehood, Trew {Trew}
+1
 A
 63
 29
@@ -645,9 +572,7 @@ A
 5
 55
 
-8B1
-Gun
-Mogan Kingdom Guard Gun {Gun}
+1
 A
 53
 20
@@ -661,9 +586,7 @@ A
 5
 29
 
-8A5
-Cannon
-Mogan Kingdom Guard Cannon {Cannon}
+1
 A
 53
 20
@@ -677,9 +600,7 @@ A
 5
 28
 
-8A7
-Red
-Mini Boss Magitech Cyclops Red {Red}
+2
 A
 65
 27
@@ -693,8 +614,7 @@ A
 5
 50
 
-Blue
-Mini Boss Magitech Cyclops Blue {Blue}
+2
 A
 65
 27
@@ -708,9 +628,7 @@ A
 5
 50
 
-8B2
-Gun
-Mogan Kingdom Guard Gun {Gun}
+2
 A
 53
 20
@@ -724,8 +642,7 @@ A
 5
 29
 
-Gun
-Mogan Kingdom Guard Gun {Gun}
+2
 A
 53
 20
@@ -739,9 +656,7 @@ A
 5
 29
 
-8A9
-Cannon
-Mogan Kingdom Guard Cannon {Cannon}
+1
 A
 53
 20
@@ -755,9 +670,7 @@ A
 5
 28
 
-9A3
-Red
-Mini Boss Magitech Cyclops Red {Red}
+1
 A
 65
 27
@@ -771,9 +684,7 @@ A
 5
 50
 
-9A5
-Gun
-Mogan Kingdom Guard Gun {Gun}
+2
 A
 53
 20
@@ -787,8 +698,7 @@ A
 5
 29
 
-Cannon
-Mogan Kingdom Guard Cannon {Cannon}
+2
 A
 53
 20
@@ -802,9 +712,7 @@ A
 5
 29
 
-9A8
-Blue
-Mini Boss Magitech Cyclops Blue {Blue}
+1
 A
 65
 27
@@ -818,9 +726,7 @@ A
 5
 50
 
-9A11
-Shade
-Mini Boss Four Knights of Falsehood, Shade {Shade}
+1
 A
 73
 34
@@ -834,9 +740,7 @@ A
 5
 50
 
-9A15
-False
-Boss The False {False}
+1
 A
 79
 40
@@ -850,9 +754,7 @@ A
 5
 75
 
-0A3
-Truth
-Boss The Truth {Truth}
+1
 A
 87
 44
@@ -866,9 +768,7 @@ A
 5
 100
 
-0A4
-Darklight 
-Boss The Dragon of the False Kingdom, Darklight Truth {Darklight}
+1
 A
 92
 47

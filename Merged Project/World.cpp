@@ -147,7 +147,7 @@ void World::LoadNpcsFromFile(string p_npcFileName, Room* p_room)
 				int tempNumNpc = 0;
 				tempNumNpc = p_room->GetNumNpc() - t_npcCount;
 				string npcLine = static_cast<ostringstream*>( &(ostringstream() << tempNumNpc) )->str();
-				p_room->SetNumNpc(npcLine);
+				p_room->SetNumNpc(atoi(npcLine.c_str()));
 				myfile.close();
 			}
 		}
@@ -209,7 +209,7 @@ void World::LoadRoomsFromFile(string p_fileName, string p_npcFileName)
 				}
 				m_world[counter]->SetDesc(parsedDesc);
 				getline (myfile, line);
-				m_world[counter]->SetNumNpc(line);
+				m_world[counter]->SetNumNpc(atoi(line.c_str()));
 
 				if(m_world[counter]->GetNumNpc() > 0)
 				{

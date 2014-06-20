@@ -65,18 +65,14 @@ void Save()
 			{
 				if(World::GetInstance()->GetRooms()[a]->NpcList().size() > 0)
 				{
-					savefile << World::GetInstance()->GetRooms()[a]->GetName() << "\n";
-
 					for(int b = 0; b < World::GetInstance()->GetRooms()[a]->NpcList().size(); b++)
 					{
-						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetName() << "\n";					
-						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetDesc() << "\n";
-
 						if(World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetLife() == "")
 						{
 							World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetLife("A");
 						}
 
+						savefile << World::GetInstance()->GetRooms()[a]->GetNumNpc() << "\n";
 						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetLife() << "\n";
 						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxHp() << "\n";
 						savefile << World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->GetMaxMp() << "\n";
@@ -94,11 +90,10 @@ void Save()
 			}
 			
 			savefile.close();
-		}		
-
+		}
 		cout << endl << "Save Completed" << endl << endl;
 	}
-	else cout << "Unable to open file Save fialed";
+		else cout << "Unable to open file. Save failed.";
 }
 
 void Load()
@@ -163,17 +158,55 @@ void Load()
 			temp.SetMaxAs(temp.GetMaxAs()-atoi(line.c_str()));
 
 			PC->SetStats(temp);
-
-			cout << endl <<"Load Completed" << endl << endl;
-
 		}
-
-		else
-		{
-			cout << "Unable to Load file";
-		}
-
-		myfile.close();
 	}
-	else cout << "Unable to open file Load failed"; 
+	else
+		cout << "Unable to open load file. Load failed." << endl;
+	myfile.close();
+
+	ifstream loadfile ("NPCload.txt");
+	line = "";
+
+	if (loadfile.is_open())
+	{	
+		for(int a = 0; a < World::GetInstance()->RoomCount(); a++)
+		{
+			if(World::GetInstance()->GetRooms()[a]->NpcList().size() > 0)
+			{
+				for(int b = 0; b < World::GetInstance()->GetRooms()[a]->NpcList().size(); b++)
+				{
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->SetNumNpc(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetLife(line);
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetMaxHp(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetMaxMp(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetMaxStr(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetMaxAgi(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetMaxAs(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetHp(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetMp(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetStr(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetAgi(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetAs(atoi(line.c_str()));
+					getline(loadfile, line);
+					World::GetInstance()->GetRooms()[a]->NpcList()[b].GetStats()->SetExp(atoi(line.c_str()));
+				}
+			}
+		}
+		cout << endl <<"Load Completed" << endl << endl;
+		loadfile.close();
+	}
+	else
+		cout << "Unable to Load file";
 }

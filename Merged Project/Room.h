@@ -61,7 +61,7 @@ public:
 	string GetDesc() const {return m_desc;}
 	void SetDesc(string p_desc) {m_desc = p_desc;}
 	int GetNumNpc() const {return m_Numnpcs;}
-	void SetNumNpc(string p_num) {m_Numnpcs = atoi(p_num.c_str());}
+	void SetNumNpc(int p_num) {m_Numnpcs = p_num;}
 	void DisplayExits();
 	void NpcResize(int size);
 	void NpcAdd(Character p_npc);
