@@ -33,7 +33,7 @@ Player::Player()
 	m_eqStr = 0;
 	m_eqAgi = 0;
 	m_eqAs = 0;
-	m_bgmusic = true;
+	m_bgmusic = false;
 }
 
 void Player::SetMusic(int p_value)

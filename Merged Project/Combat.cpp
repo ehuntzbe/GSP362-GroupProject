@@ -110,7 +110,7 @@ combat_outcome Combat(Combatant *player, Combatant *enemy)
 		// ask for command input from player, and execute it
 		do
 		{
-			cout << "Attack \tGuard \tAbilities \tFlee \n"
+			cout << "Attack Guard Abilities Flee \n"
 				"HP: " << player->GetHp() << "/" << player->GetMaxHp() << " | MP: " << player->GetMp() << "/" << player->GetMaxMp() << " |>" << endl;
 			getline(cin, userInput);
 			for (int i = 0; i < userInput.size(); i++)

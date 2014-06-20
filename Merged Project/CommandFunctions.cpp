@@ -2,66 +2,358 @@
 #include "CommandFunctions.h"
 
 void Look()
-{
-	/*
-	
-	if(PC->GetCurrentRoom()->GetRoomId())
+{	
+	if(PC->GetCurrentRoom()->GetRoomId() == 9)
 	{
-		BackgroundSound(L".wav");
+		PC->SetMusic(1);
 	}
 	
-	if(PC->GetCurrentRoom()->GetRoomId())
+	if(PC->GetCurrentRoom()->GetRoomId() == 10)
 	{
-		BackgroundSound(L".wav");
+		PC->SetMusic(1);
 	}
 
-	if(PC->GetCurrentRoom()->GetRoomId())
+	if(PC->GetCurrentRoom()->GetRoomId() == 21)
 	{
-		BackgroundSound(L".wav");
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId())
-	{
-		BackgroundSound(L".wav");
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId())
-	{
-		BackgroundSound(L".wav");
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId())
-	{
-		BackgroundSound(L".wav");
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId())
-	{
-		BackgroundSound(L".wav");
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId())
-	{
-		BackgroundSound(L".wav");
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId())
-	{
-		BackgroundSound(L".wav");
+		PC->SetMusic(1);
 	}
 	
-	if(PC->GetCurrentRoom()->GetRoomId())
+	if(PC->GetCurrentRoom()->GetRoomId() == 22)
 	{
-		BackgroundSound(L".wav");
-	}
-	
-	if(PC->GetCurrentRoom()->GetRoomId())
-	{
-		BackgroundSound(L".wav");
+		PC->SetMusic(1);
 	}
 
-	*/
+	if(PC->GetCurrentRoom()->GetRoomId() == 29)
+	{
+		PC->SetMusic(1);
+	}
 	
+	if(PC->GetCurrentRoom()->GetRoomId() == 30)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 44)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 45)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 55)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 56)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 57)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 58)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 66)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 67)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 71)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 72)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 80)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 81)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 85)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 86)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 89)
+	{
+		PC->SetMusic(1);
+	}
+	
+	if(PC->GetCurrentRoom()->GetRoomId() == 90)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 91)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 93)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 94)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 95)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 99)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 100)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 101)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 102)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 103)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 104)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 105)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 120)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 121)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 124)
+	{
+		PC->SetMusic(1);
+	}
+
+	if(PC->GetCurrentRoom()->GetRoomId() == 125)
+	{
+		PC->SetMusic(1);
+	}
+
+	//Map 1 Forest = 0 - 9 : Forest Track
+	if((PC->GetCurrentRoom()->GetRoomId() >= 0) && (PC->GetCurrentRoom()->GetRoomId() <= 9))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"electricpercussion.wav");
+			PC->SetMusic(0);
+		}
+	}		
+
+	//Map 2 Dartosk kingdom = 10 - 21 : city/Kingdom track
+	if((PC->GetCurrentRoom()->GetRoomId() >= 10) && (PC->GetCurrentRoom()->GetRoomId() <= 21))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"Horror_Theme.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 3 Fedvel Forest = 22 - 29 : Forest Track or Forest Track 2 if you want variety
+	if((PC->GetCurrentRoom()->GetRoomId() >= 22) && (PC->GetCurrentRoom()->GetRoomId() <= 29))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"horrorambient.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 4 Fedvel Dungeon = 30 - 44 : Dungeon Track
+	if((PC->GetCurrentRoom()->GetRoomId() >= 30) && (PC->GetCurrentRoom()->GetRoomId() <= 44))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"electricpercussion.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 5 Fedvel Castle = 45 - 55 : Castle Track
+	if((PC->GetCurrentRoom()->GetRoomId() >= 45) && (PC->GetCurrentRoom()->GetRoomId() <= 55))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"Horror_Theme.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 6 Helot A Area = 56 – 57, 72 - 80 : Weird track A
+	if(((PC->GetCurrentRoom()->GetRoomId() >= 56) && (PC->GetCurrentRoom()->GetRoomId() <= 57)) || ((PC->GetCurrentRoom()->GetRoomId() >= 72) && (PC->GetCurrentRoom()->GetRoomId() <= 80)))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"horrorambient.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 6 Helot B Area = 58 - 66 : Weird Track b or beach music
+	if((PC->GetCurrentRoom()->GetRoomId() >= 58) && (PC->GetCurrentRoom()->GetRoomId() <= 66))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"electricpercussion.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 6 Helot C Area = 67 - 71 : Weird Track C or comic book related music
+	if((PC->GetCurrentRoom()->GetRoomId() >= 67) && (PC->GetCurrentRoom()->GetRoomId() <= 71))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"Horror_Theme.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 7 Grandhole Inn = 81 – 85, 90 : Forest Track or Forest Track 3 for Variety
+	if(((PC->GetCurrentRoom()->GetRoomId() >= 81) && (PC->GetCurrentRoom()->GetRoomId() <= 85)) || (PC->GetCurrentRoom()->GetRoomId() == 90))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"horrorambient.wav");
+			PC->SetMusic(0);
+		}
+	}
+	
+	//Map 7 Grandhole Inn Area = 86 - 89 : Inn Track
+	if((PC->GetCurrentRoom()->GetRoomId() >= 86) && (PC->GetCurrentRoom()->GetRoomId() <= 89))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"electricpercussion.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 8 Mogan Mountain/ Thieves Den A1- A10 = 91 – 93, 95 – 99, 101 - 102 : Mountain Track
+	if(((PC->GetCurrentRoom()->GetRoomId() >= 91) && (PC->GetCurrentRoom()->GetRoomId() <= 93)) || ((PC->GetCurrentRoom()->GetRoomId() >= 95) && (PC->GetCurrentRoom()->GetRoomId() <= 99)))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"Horror_Theme.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	if((PC->GetCurrentRoom()->GetRoomId() >= 101) && (PC->GetCurrentRoom()->GetRoomId() <= 102))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"Horror_Theme.wav");
+			PC->SetMusic(0);
+		}
+	}
+	//Map 8 Everything After = 94, 100, 103 - 104 : City/ Thieves Den Track
+	if((PC->GetCurrentRoom()->GetRoomId() == 94) && (PC->GetCurrentRoom()->GetRoomId() == 100))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"horrorambient.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	if((PC->GetCurrentRoom()->GetRoomId() >= 103) && (PC->GetCurrentRoom()->GetRoomId() <= 104))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"horrorambient.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Map 9 Mogan Castle = 105 - 120 : Castle Track or Castle Track 2
+	if((PC->GetCurrentRoom()->GetRoomId() >= 105) && (PC->GetCurrentRoom()->GetRoomId() <= 120))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"electricpercussion.wav");
+			PC->SetMusic(0);
+		}
+	}
+	//Map 10 Dartosk Castle = 121 - 124 : Castle Track or Castle Track 3
+	if((PC->GetCurrentRoom()->GetRoomId() >= 121) && (PC->GetCurrentRoom()->GetRoomId() <= 124))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"Horror_Theme.wav");
+			PC->SetMusic(0);
+		}
+	}
+
+	//Epilogue = 125 -126
+	if((PC->GetCurrentRoom()->GetRoomId() >= 125) && (PC->GetCurrentRoom()->GetRoomId() <= 126))
+	{
+		if(PC->GetMusic() != true)
+		{
+			BackgroundSound(L"horrorambient.wav");
+			PC->SetMusic(0);
+		}
+	}
+		
 	cout << endl << Player::GetInstance()->GetCurrentRoom()->GetName() << endl;
 	cout << PC->GetCurrentRoom()->GetDesc() << endl;
 	cout << "EXITS:"; PC->GetCurrentRoom()->DisplayExits(); cout << endl;	
@@ -94,7 +386,7 @@ void Kill(string p_target)
 	{
 		cout << "You have entered combat with " << opponent.GetName() << "!" << endl;
 		PC->SetMusic(1);
-		//BackgroundSound(L".wav");
+		BackgroundSound(L"Joke.wav");
 		battle = Combat(PC->GetStats(), opponent.GetStats());
 		switch (battle)
 		{
