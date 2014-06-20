@@ -132,10 +132,12 @@ combat_outcome Combat(Combatant *player, Combatant *enemy)
 			hp = enemy->GetHp();
 			hp = hp - damage;
 			enemy->SetHp(hp);
+			SoundEffect(L"defaultjump.wav", L"Joke.wav");
 			break;
 		case GUARD:
 			player_guard = true;
 			cout << "You put up your guard.." << endl;
+			SoundEffect(L"defaultjump.wav", L"Joke.wav");
 			break;
 		case FLEE:
 			cout << "You attempt to flee." << endl;
@@ -144,6 +146,7 @@ combat_outcome Combat(Combatant *player, Combatant *enemy)
 					return FLED;
 			}
 			cout << "You couldn't get away!" << endl;
+			SoundEffect(L"defaultjump.wav", L"Joke.wav");
 			break;
 		case ABILITIES:
 			ability choice = ChooseAbility();
@@ -186,9 +189,15 @@ combat_outcome Combat(Combatant *player, Combatant *enemy)
 					break;
 				}
 				if (choice.m_amount > 0)
+				{
 					cout << "restored by " << choice.m_amount << "." << endl;
+					SoundEffect(L"defaultjump.wav", L"Joke.wav");
+				}
 				else
+				{
 					cout << "damaged by " << -choice.m_amount << "." << endl;
+					SoundEffect(L"defaultjump.wav", L"Joke.wav");
+				}
 			}
 			else
 				valid = false;

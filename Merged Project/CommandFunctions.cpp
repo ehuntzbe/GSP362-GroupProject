@@ -2,190 +2,159 @@
 #include "CommandFunctions.h"
 
 void Look()
-{	
-	if(PC->GetCurrentRoom()->GetRoomId() == 9)
+{		
+	switch (PC->GetCurrentRoom()->GetRoomId())
 	{
+	case 9:
 		PC->SetMusic(1);
-	}
+		break;
+
+	case 10:
+		PC->SetMusic(1);
+		break;
+
+	case 21:
+		PC->SetMusic(1);
+		break;
+
+	case 22:
+		PC->SetMusic(1);
+		break;
+
+	case 29:
+		PC->SetMusic(1);
+		break;
+
+	case 30:
+		PC->SetMusic(1);
+		break;		
+
+	case 44:
+		PC->SetMusic(1);
+		break;
+
+	case 45:
+		PC->SetMusic(1);
+		break;
+
+	case 55:
+		PC->SetMusic(1);
+		break;
+
+	case 56:
+		PC->SetMusic(1);
+		break;
+
+	case 57:
+		PC->SetMusic(1);
+		break;
 	
-	if(PC->GetCurrentRoom()->GetRoomId() == 10)
-	{
+	case 58:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 21)
-	{
+	case 66:
 		PC->SetMusic(1);
-	}
+		break;
 	
-	if(PC->GetCurrentRoom()->GetRoomId() == 22)
-	{
+	case 67:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 29)
-	{
+	case 71:
 		PC->SetMusic(1);
-	}
+		break;
 	
-	if(PC->GetCurrentRoom()->GetRoomId() == 30)
-	{
+	case 72:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 44)
-	{
+	case 80:
 		PC->SetMusic(1);
-	}
+		break;
 	
-	if(PC->GetCurrentRoom()->GetRoomId() == 45)
-	{
+	case 81:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 55)
-	{
+	case 85:
 		PC->SetMusic(1);
-	}
+		break;
 	
-	if(PC->GetCurrentRoom()->GetRoomId() == 56)
-	{
+	case 86:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 57)
-	{
+	case 89:
 		PC->SetMusic(1);
-	}
+		break;
 	
-	if(PC->GetCurrentRoom()->GetRoomId() == 58)
-	{
+	case 90:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 66)
-	{
+	case 91:
 		PC->SetMusic(1);
-	}
-	
-	if(PC->GetCurrentRoom()->GetRoomId() == 67)
-	{
-		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 71)
-	{
+	case 93:
 		PC->SetMusic(1);
-	}
-	
-	if(PC->GetCurrentRoom()->GetRoomId() == 72)
-	{
-		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 80)
-	{
+	case 94:
 		PC->SetMusic(1);
-	}
-	
-	if(PC->GetCurrentRoom()->GetRoomId() == 81)
-	{
-		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 85)
-	{
+	case 95:
 		PC->SetMusic(1);
-	}
-	
-	if(PC->GetCurrentRoom()->GetRoomId() == 86)
-	{
-		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 89)
-	{
+	case 99:
 		PC->SetMusic(1);
-	}
-	
-	if(PC->GetCurrentRoom()->GetRoomId() == 90)
-	{
-		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 91)
-	{
+	case 100:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 93)
-	{
+	case 101:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 94)
-	{
+	case 102:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 95)
-	{
+	case 103:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 99)
-	{
+	case 104:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 100)
-	{
+	case 105:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 101)
-	{
+	case 120:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 102)
-	{
+	case 121:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 103)
-	{
+	case 124:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 104)
-	{
+	case 125:
 		PC->SetMusic(1);
-	}
+		break;
 
-	if(PC->GetCurrentRoom()->GetRoomId() == 105)
-	{
-		PC->SetMusic(1);
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId() == 120)
-	{
-		PC->SetMusic(1);
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId() == 121)
-	{
-		PC->SetMusic(1);
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId() == 124)
-	{
-		PC->SetMusic(1);
-	}
-
-	if(PC->GetCurrentRoom()->GetRoomId() == 125)
-	{
-		PC->SetMusic(1);
+	default :
+		break;
 	}
 
 	//Map 1 Forest = 0 - 9 : Forest Track
@@ -391,6 +360,7 @@ void Kill(string p_target)
 		switch (battle)
 		{
 		case DEAD:
+			SoundEffect(L"defaultjump.wav", L"Joke.wav");
 			cout << "Game over." << endl;
 			system("pause");
 			exit(0);
@@ -398,6 +368,7 @@ void Kill(string p_target)
 		case FLED:
 			//I don't think anything happens here, we can decide if we do want something to happen other than ending combat
 			//Remove debuffs placed on the player and enemy?
+			SoundEffect(L"defaultjump.wav", L"Joke.wav");
 			cout << "You got away." << endl;
 			break;
 		case KILLED:
@@ -411,6 +382,7 @@ void Kill(string p_target)
 					WorldItems::m_items[it->GetItemId()].SetRoomId(PC->GetCurrentRoom()->GetRoomId());
 				}
 			}
+			SoundEffect(L"defaultjump.wav", L"Joke.wav");
 			PC->AwardExperience(opponent.GetStats()->GetExp());			
 			//opponent.SetLife("D");
 			

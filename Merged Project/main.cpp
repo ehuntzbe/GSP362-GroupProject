@@ -12,7 +12,7 @@
 
 int main()
 {
-	//BackgroundSound(L"Joke.wav");
+	BackgroundSound(L"Joke.wav");
 	cout << " DDD      A      R R R  K   K   GGGGG U    U N      N \n"
 		" D  D    A A     R   R  K  K    G     U    U N N    N \n"
 		" D   D  A   A    R  R   K K     G     U    U N  N   N \n"
