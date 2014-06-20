@@ -23,7 +23,7 @@ void Inventory();
 void Abilities();
 void Help();
 void Growth();
-bool Quit();
+void Quit();
 void Equipment();
 void Wear(string p_target);
 void Remove(string p_target);

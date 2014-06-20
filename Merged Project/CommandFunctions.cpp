@@ -627,9 +627,19 @@ void Growth()
 	PC->ChangeStatFocus();
 }
 
-bool Quit()
+void Quit()
 {
-	return true;
+	
+	string input = "n";
+	do
+	{
+		cout << "Are you SURE you want to quit? All unsaved progress will be lost (y/n): ";
+		getline(cin, input);
+	} while (input != "y" && input != "n");
+	if (input == "y")
+	{
+		exit(0);
+	}
 }
 
 void Equipment()

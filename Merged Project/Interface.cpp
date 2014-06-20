@@ -68,7 +68,7 @@ void Interface::MainGame()
 		if (cmd == GROWTH)
 			Growth();
 		if (cmd == QUIT)
-			quitGame = Quit();
+			Quit();
 		if (cmd == INVENTORY)
 			Inventory();
 		if (cmd == EQUIPMENT)
