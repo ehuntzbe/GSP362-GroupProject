@@ -162,7 +162,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"electricpercussion.wav");
+			BackgroundSound(L"POL-quiet-woodlands-short.wav");
 			PC->SetMusic(0);
 		}
 	}		
@@ -172,7 +172,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"Horror_Theme.wav");
+			BackgroundSound(L"POL-into-the-castle-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -182,7 +182,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"horrorambient.wav");
+			BackgroundSound(L"POL-wind-valley-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -192,7 +192,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"electricpercussion.wav");
+			BackgroundSound(L"POL-bridge-over-darkness-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -202,7 +202,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"Horror_Theme.wav");
+			BackgroundSound(L"POL-into-the-castle-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -212,7 +212,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"horrorambient.wav");
+			BackgroundSound(L"POL-focus-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -222,7 +222,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"electricpercussion.wav");
+			BackgroundSound(L"POL-blue-horizon-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -242,7 +242,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"horrorambient.wav");
+			BackgroundSound(L"POL-jungle-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -299,7 +299,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"electricpercussion.wav");
+			BackgroundSound(L"POL-sadistic-game-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -308,7 +308,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"Horror_Theme.wav");
+			BackgroundSound(L"POL-hurry-up-short.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -318,7 +318,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"horrorambient.wav");
+			BackgroundSound(L"POL-goodbye-short.wav");
 			PC->SetMusic(0);
 		}
 	}
