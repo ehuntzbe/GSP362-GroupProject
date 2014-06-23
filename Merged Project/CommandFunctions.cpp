@@ -232,7 +232,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"Horror_Theme.wav");
+			BackgroundSound(L"Comic_music.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -252,7 +252,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"electricpercussion.wav");
+			BackgroundSound(L"inn_music.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -262,7 +262,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"Horror_Theme.wav");
+			BackgroundSound(L"mountain.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -271,7 +271,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"Horror_Theme.wav");
+			BackgroundSound(L"mountain.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -280,7 +280,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"horrorambient.wav");
+			BackgroundSound(L"thief_city.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -289,7 +289,7 @@ void Look()
 	{
 		if(PC->GetMusic() != true)
 		{
-			BackgroundSound(L"horrorambient.wav");
+			BackgroundSound(L"thief_city.wav");
 			PC->SetMusic(0);
 		}
 	}
@@ -355,12 +355,12 @@ void Kill(string p_target)
 	{
 		cout << "You have entered combat with " << opponent.GetName() << "!" << endl;
 		PC->SetMusic(1);
-		BackgroundSound(L"Joke.wav");
+		BackgroundSound(L"battletheme.wav");
 		battle = Combat(PC->GetStats(), opponent.GetStats());
 		switch (battle)
 		{
 		case DEAD:
-			SoundEffect(L"defaultjump.wav", L"Joke.wav");
+			BackgroundSound(L"Player_Death.wav");
 			cout << "Game over." << endl;
 			system("pause");
 			exit(0);
@@ -368,7 +368,7 @@ void Kill(string p_target)
 		case FLED:
 			//I don't think anything happens here, we can decide if we do want something to happen other than ending combat
 			//Remove debuffs placed on the player and enemy?
-			SoundEffect(L"defaultjump.wav", L"Joke.wav");
+			SoundEffect(L"Run_Success.wav", L"battletheme.wav");
 			cout << "You got away." << endl;
 			break;
 		case KILLED:
@@ -382,7 +382,7 @@ void Kill(string p_target)
 					WorldItems::m_items[it->GetItemId()].SetRoomId(PC->GetCurrentRoom()->GetRoomId());
 				}
 			}
-			SoundEffect(L"defaultjump.wav", L"Joke.wav");
+			SoundEffect(L"enemy_death.wav", L"battletheme.wav");
 			PC->AwardExperience(opponent.GetStats()->GetExp());			
 			//opponent.SetLife("D");
 			
